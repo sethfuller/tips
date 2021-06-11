@@ -29,8 +29,6 @@ _______________________
 
 #### JSON
 
-|  |  |
-|--|--|
 | [JSON Pretty Printer](https://jsonformatter.org/json-pretty-print)| [URL Encoder/Decoder](https://meyerweb.com/eric/tools/dencoder/)|
 
 _______________________
