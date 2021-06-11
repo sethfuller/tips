@@ -3,11 +3,10 @@
 ----------
 
 > ### [My Zsh Config Files](https://github.com/sethfuller/tips/tree/main/config/Zsh)
-| Config File                                                                                       | Config File                                                                                             |
-|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| #### [.zshenv](https://github.com/sethfuller/tips/tree/main/config/Zsh/.zshenv)                   | #### [.zshrc](https://github.com/sethfuller/tips/tree/main/config/Zsh/.zshrc)                           |
-| #### [.zshrc-functions](https://github.com/sethfuller/tips/tree/main/config/Zsh/.zshrc-functions) | #### [.zshrc-liquidprompt](https://github.com/sethfuller/tips/tree/main/config/Zsh/.zshrc-liquidprompt) |
-
+> #### [.zshenv](https://github.com/sethfuller/tips/tree/main/config/Zsh/.zshenv)
+> #### [.zshrc](https://github.com/sethfuller/tips/tree/main/config/Zsh/.zshrc)
+> #### [.zshrc-functions](https://github.com/sethfuller/tips/tree/main/config/Zsh/.zshrc-functions)
+> #### [.zshrc-liquidprompt](https://github.com/sethfuller/tips/tree/main/config/Zsh/.zshrc-liquidprompt)
 > ### [My Shell Scripts](https://github.com/sethfuller/tips/tree/main/scripts/shell)
 
 ### Zinit Plugin Manager
