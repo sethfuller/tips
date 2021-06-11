@@ -1,4 +1,4 @@
-### [Main Tips Page](/Users/sfulle176/Src/docs/tips.md)
+### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/tips.md)
 
 ----------
 
@@ -17,4 +17,4 @@
 
 ----------
 
-### [Main Tips Page](/Users/sfulle176/Src/docs/tips.md)
+### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/tips.md)
