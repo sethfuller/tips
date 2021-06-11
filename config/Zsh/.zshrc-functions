@@ -46,6 +46,22 @@ function allnet() {
     arp -a
 }
 
+numfiles() {
+    ARGS="$1"
+    NUM="$(ls $ARGS | wc -l)";
+    echo "$NUM files in $ARGS";
+}
+
+alias nf=numfiles
+
+numfiles_rec() {
+    ARGS="$1"
+    NUM="$(ls -R $ARGS | wc -l)";
+    echo "$NUM files in $ARGS";
+}
+
+alias nfr=numfiles_rec
+
 function add_shell() { # Show how to add a new shell
 #    about Shows how to add a new shell to the list of login shells
 #    about and how to switch to it as you login shell
