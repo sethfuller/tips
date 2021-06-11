@@ -1,6 +1,4 @@
-<title>
-	Main Tips Page
-</title>
+[README](https://github.com/sethfuller/tips/blob/main/README.md)
 
 ### [Chrome Tips](https://github.com/sethfuller/tips/blob/main/chrome_tips.md)
 _______________________
@@ -72,3 +70,4 @@ _______________________
 
 > ### [URL Encoder/Decoder](https://meyerweb.com/eric/tools/dencoder/)
 
+[README](https://github.com/sethfuller/tips/blob/main/README.md)
