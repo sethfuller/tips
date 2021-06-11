@@ -15,6 +15,8 @@ Technical and other tips in Markdown
 | [My Shell Scripts](https://github.com/sethfuller/tips/tree/main/scripts/shell) | [My Python Scripts](https://github.com/sethfuller/tips/tree/main/scripts/python) |
 
 
+______________________
+
 ### General
 |                                                                                      |   |
 |--------------------------------------------------------------------------------------|---|
