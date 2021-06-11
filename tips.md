@@ -3,15 +3,8 @@
 ### [Chrome Tips](https://github.com/sethfuller/tips/blob/main/chrome_tips.md)
 _______________________
 
-### Emacs
-> ### [Emacs Python Development](https://realpython.com/emacs-the-best-python-editor/)
+### [Emacs Tips]()
 
-> ### [Github Company Mode](http://company-mode.github.io/)
-
-> ### [Helm](http://tuhdo.github.io/helm-intro.html)
-> ### [Helm Github](https://github.com/emacs-helm/helm)
-
-> ### [Emacs Elisp Manual](https://ftp.gnu.org/old-gnu/Manuals/elisp-manual-20-2.5/html_node/elisp_toc.html)
 
 ### [Git Tips](https://github.com/sethfuller/tips/blob/main/git_tips.md)
 _______________________
