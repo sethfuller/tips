@@ -1,4 +1,4 @@
-### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/main_tech_tips.md)
+### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/main_tech_tips.md)
 
 ### [Emacs Config Files](https://github.com/sethfuller/tips/tree/main/config/Emacs)
 
@@ -8,4 +8,4 @@
 > ### [Helm Github](https://github.com/emacs-helm/helm)
 > ### [Emacs Elisp Manual](https://ftp.gnu.org/old-gnu/Manuals/elisp-manual-20-2.5/html_node/elisp_toc.html)
 
-### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/main_tech_tips.md)
+### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/main_tech_tips.md)

@@ -1,9 +1,9 @@
-### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/main_tech_tips.md)
+### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/main_tech_tips.md)
 
 ----------
 
 > ### [My Zsh Config Files](https://github.com/sethfuller/tips/tree/main/config/Zsh)
-> ### [My Zsh Aliases](https://github.com/sethfuller/tips/blob/main/aliases.md)
+> ### [My Zsh Aliases](https://github.com/sethfuller/tips/blob/main/tech_tips/aliases.md)
 
 ### Zinit Plugin Manager
 
@@ -35,4 +35,4 @@
 
 ----------
 
-### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/main_tech_tips.md)
+### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/main_tech_tips.md)

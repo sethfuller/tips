@@ -1,24 +1,24 @@
 ## [README](https://github.com/sethfuller/tips/blob/main/README.md)
 
-### [Chrome Tips](https://github.com/sethfuller/tips/blob/main/chrome_tips.md)
+### [Chrome Tips](https://github.com/sethfuller/tips/blob/main/tech_tips/chrome_tips.md)
 _______________________
 
-### [Emacs Tips](https://github.com/sethfuller/tips/blob/main/emacs_tips.md)
+### [Emacs Tips](https://github.com/sethfuller/tips/blob/main/tech_tips/emacs_tips.md)
 
 
-### [Git Tips](https://github.com/sethfuller/tips/blob/main/git_tips.md)
+### [Git Tips](https://github.com/sethfuller/tips/blob/main/tech_tips/git_tips.md)
 _______________________
 
-### [Iterm2 Tips](https://github.com/sethfuller/tips/blob/main/iTerm2_shortcuts.md)
+### [Iterm2 Tips](https://github.com/sethfuller/tips/blob/main/tech_tips/iTerm2_shortcuts.md)
 _______________________
 
-### [Mvn Tips](https://github.com/sethfuller/tips/blob/main/mvn_tips.md)
+### [Mvn Tips](https://github.com/sethfuller/tips/blob/main/tech_tips/mvn_tips.md)
 _______________________
 
-### [Zsh Tips](https://github.com/sethfuller/tips/blob/main/zsh_tips.md)
+### [Zsh Tips](https://github.com/sethfuller/tips/blob/main/tech_tips/zsh_tips.md)
 _______________________
 
-### [IntelliJ IDEA](https://github.com/sethfuller/tips/blob/main/intellij_idea_tips.md)
+### [IntelliJ IDEA](https://github.com/sethfuller/tips/blob/main/tech_tips/intellij_idea_tips.md)
 
 ### [Mac Tips]()
 
