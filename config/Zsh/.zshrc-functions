@@ -21,7 +21,12 @@ alias fdef="funcdef"
 # print -l "${(ok)functions[(I)[^_]*]}"
 
 function fall() {
-    print -roC1 ${(k)functions[(I)[^_]*]} | sort
+    # print -roC1 ${(k)functions[(I)[^_]*]} | sort
+    print -C1 ${(k)functions[(I)[^_]*]} | sort
+}
+
+function fallx() {
+    fall | more
 }
 
 # Show all builtins
