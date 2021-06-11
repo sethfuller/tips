@@ -1,4 +1,45 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
+
+
+# Show the body of a shell function
+function funcdef() {
+    # Also functions $1 shows the function def.
+    whence -f $1
+    RC=$?
+    if [ $RC -ne 0 ]
+    then
+	echo "function '$1' not found"
+#	return $RC
+    fi
+    type $1
+}
+
+alias fdef="funcdef"
+
+# functions - Show all functions with bodies (type functions at command line)
+# Below print all function names in order, excluding those beginning _
+# print -l "${(ok)functions[(I)[^_]*]}"
+
+function fall() {
+    print -roC1 ${(k)functions[(I)[^_]*]} | sort
+}
+
+# Show all builtins
+function fblt() {
+    print -raC2 ${(kv)builtins} |sort
+}
+
+# Show all aliases
+function pal() {
+    print -aC2 ${(kv)aliases} |sort
+}
+
+alias aliases='pal'
+
+# All devices on the WI-FI network
+function allnet() {
+    arp -a
+}
 
 function add_shell() { # Show how to add a new shell
 #    about Shows how to add a new shell to the list of login shells
@@ -54,159 +95,6 @@ function tree_sd() { # Print a directory tree with size and date
     find $start_dir -ls | awk '{printf "%s(%d)[%s %2d %s]\n", $NF, $7, $8, $9, $10}' | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
 }
 
-# function functions() { # Display the list of functions
-#     # about show bash functions where defined and optionally show source
-#     # param -f\|--function function name show only function\'s location
-#     # param -a\|--all show function name and definition location for all functions \(default\)
-#     # param -p\|--path show function name and definition location for functions matching a partial or full path
-#     # param -b\|--body show function body \(works with -f or -a\)
-#     # param -u\|--usage show function usage \(works with -f or -a\)
-#     # param -h\|--help display help and exit
-#     # example '$ functions -f git_alias'
-#     # example '$ functions -f tree_sd -b'
-#     # group sethfuller
-
-#     usage="$FUNCNAME -f function -a (all - default) -b (show function body)"
-#     local func=""
-#     local all=""
-#     local body="0"
-#     local usage="0"
-#     local path=""
-#     local help=false
-#     for param in "$@"; do
-#         shift
-#         case "$param" in
-#             "--function")        set -- "$@" "-f" ;;
-#             "--all")             set -- "$@" "-a" ;;
-#             "--ALL")             set -- "$@" "-A" ;;
-#             "--body")            set -- "$@" "-b" ;;
-#             "--path")            set -- "$@" "-p" ;;
-#             "--usage")           set -- "$@" "-u" ;;
-#             "--help")            set -- "$@" "-h" ;;
-#             *)                   set -- "$@" "$param"
-#         esac
-#     done
-# #    local arg_list=$(process_args 'function:f|all:a|body:b|path:p|usage:u|help:h' $@)
-# #    echo "ARGS: $FUNCNAME \$@='$@' help=${help}"
-
-# #    OPTS=$(getopt --options f:abhup: --longoptions function:,all,body,path,usage -- "$@")
-# #    local retVal=$?
-#     # if [ $retVal != 0 ]; then
-#     #     echo "Failed parsing options Error: ${retVal}." >&2
-#     #     exit 1
-#     # fi
-#     # echo "OPTS=$OPTS"
-#     # eval set -- "$OPTS"
-#     OPTIND=1
-#     while getopts f:abup:h opt
-#     do
-#         case "$opt" in
-#             "f") func="$OPTARG"
-#                  ;;
-#             "a") all=1
-#                  ;;
-#             "A") ALL=1
-#                  ;;
-#             "b") body=1
-#                  ;;
-#             "u") usage=1
-#                  ;;
-#             "p") path="$OPTARG"
-#                  ;;
-#             "h") help=true
-#                  ;;
-#         esac
-#     done
-#     # while true;  do
-#     #     case "$1" in
-#     #         "f") func="$OPTARG"
-#     #              ;;
-#     #         -a | --all ) all=1
-#     #              ;;
-#     #         "b") body=1
-#     #              ;;
-#     #         "u") usage=1
-#     #              ;;
-#     #         "p") path="$OPTARG"
-#     #              ;;
-#     #         -h | --help ) help=true
-#     #              ;;
-#     #     esac
-#     # done
-#     shift $(expr $OPTIND - 1)
-
-
-#     if [ "$help" = true ]
-#     then
-#         reference functions
-#         return
-#     fi
-
-#     if [ ! -z "$ALL" ]
-#     then
-#         all=1
-#     fi
-    
-#     if [ ! -z "$func" -a ! -z "$all" ]; then
-#         echo "Use either -f function or -a"
-#         # echo "$usage"
-#         reference functions
-#         return 1
-#     fi
-#     if [ -z "$func" -a -z "$all" ]; then
-#         all=1
-#     fi
-
-#     if [ ! -z "$func" ]; then
-#         # echo "show_func \"$func\" \"$body\" \"$usage\""
-#         _show_func "$func" "$body" "$usage"
-#     else
-#         declare -F | while read decl dash_f func
-#         do
-#             #            echo "all=$all ALL=$ALL"
-#             no_us=$(echo $func | egrep -v "^_")
-#             if [ -z "$ALL" -a -z "$no_us" ]
-#             then
-#                 continue
-#             fi
-# #            echo "func=$func no_us=$no_us"
-#             # echo "show_func \"$func\" \"$body\" \"$usage\""
-#             _show_func "$func" "$body" "$usage"
-#             echo ""
-#         done
-#     fi
-# }
-
-function _show_func() {
-    func=$1
-    body="$2"
-    usage="$3"
-    # echo "$FUNCNAME: func='$func' body='$body' usage='$usage'"
-    if [ ! -z "$func" ]; then
-        # Tuen on extended shell debugging
-        shopt -s extdebug
-        # declare -F - Now shows function_name line_no file_path
-        declare -F $func | while read func_name line_no file_name
-        do
-            if [ -f "$file_name" ]
-            then
-                echo "Func: $func_name Line: $line_no File: $file_name"
-                doc=$(sed -n "${line_no}p" $file_name | sed -n '/\#/p' | sed 's/^.*\#\s*//')
-                if [ ! -z "$doc" ]; then
-                    echo "Doc: $doc"
-                fi
-            fi
-        done
-        # Turn off extended shell debugging
-        shopt -u extdebug
-        if [ $body -gt 0 ]; then
-            declare -f $func
-        fi
-        if [ $usage -gt 0 ]; then
-            reference $func
-        fi
-    fi
-}
 
 function aliases() {
     # about find aliases or the subject of the aliases matching the string
@@ -405,10 +293,6 @@ function py3 () {
     python3 $*
 }
 
-function em () {
-    /Applications/Emacs.app/Contents/MacOS/Emacs 2> /dev/null &
-}
-
 # Set the terminal window header title
 settitle () {
   echo -ne "\e]2;$@\a\e]1;$@\a";
@@ -451,47 +335,6 @@ function gpl() {
     git pull $*
     set +x
     echo "Done at: $(date)"
-}
-
-# Show the body of a zsh function
-# <a name="funcdef">Show the body of a zsh function</a>
-function funcdef() {
-    # Also functions $1 shows the function def.
-    whence -f $1
-    RC=$?
-    if [ $RC -ne 0 ]
-    then
-	echo "function '$1' not found"
-#	return $RC
-    fi
-    type $1
-}
-
-alias fdef="funcdef"
-
-# functions - Show all functions with bodies (type functions at command line)
-# Below print all function names in order, excluding those beginning _
-# print -l "${(ok)functions[(I)[^_]*]}"
-
-function fall() {
-    print -roC1 ${(k)functions[(I)[^_]*]} | sort
-}
-
-# Show all builtins
-function fblt() {
-    print -raC2 ${(kv)builtins} |sort
-}
-
-# Show all aliases
-function pal() {
-    print -aC2 ${(kv)aliases} |sort
-}
-
-alias aliases='pal'
-
-# All devices on the WI-FI network
-function allnet() {
-    arp -a
 }
 
 # MySql Functions
