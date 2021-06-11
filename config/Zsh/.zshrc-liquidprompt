@@ -1,0 +1,12 @@
+#!/bin/zsh
+
+# Add the following lines to your bash or zsh config (e.g. ~/.bash_profile):
+if [ -f $(brew --prefix)/share/liquidprompt ]; then
+  source $(brew --prefix)/share/liquidprompt
+fi
+
+# If you'd like to reconfigure options, you may do so in ~/.liquidpromptrc.
+# A sample file you may copy and modify has been installed to
+# $(brew --prefix)/share/liquidpromptrc-dist
+
+echo "Finish $HOME/.zshrc-liquidprompt At: $(date)"

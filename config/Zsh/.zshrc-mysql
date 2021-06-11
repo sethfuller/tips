@@ -1,0 +1,812 @@
+#!/bin/bash
+
+function my_adduser {
+    about add a MySQL user with password
+    param -h\|--help display help and exit
+    param -u\|--user The MySQL user
+    param -p\|--pasword The user\'s password
+    example '$ my_adduser -u\|--user username -p\|--password password [-h\|--help]'
+    group sethfuller
+
+    local help=false
+    local debug=false
+
+    local orig_args="$@"
+
+    for param in "$@"; do
+        shift
+        case "$param" in
+            "--help")        set -- "$@" "-h" ;;
+            "--user")        set -- "$@" "-u" ;;
+            "--debug")       set -- "$@" "-d" ;;
+            "--password")    set -- "$@" "-p" ;;
+            *)               set -- "$@" "$param"
+        esac
+    done
+
+    local user=""
+    local password=""
+
+    OPTIND=1
+    while getopts hdu:p: opt
+    do
+        case "$opt" in
+            "h") help=true
+                 ;;
+            "d") debug=true
+                 ;;
+            "u") user="$OPTARG"
+                 ;;
+            "p") password="$OPTARG"
+                 ;;
+        esac
+    done
+    shift $(expr $OPTIND - 1)
+
+
+    local error=0
+    if [[ $debug = true ]]; then
+        printf "$FUNCNAME ARGS: %s help=%s user=%s password=%s\n", $orig_args, $help, $user, $password
+    fi
+    if [[ $help = true ]]; then
+        reference my_adduser
+        return
+    fi
+    if [ -z "$user" ]; then
+        echo "Specify a user"
+        error=1
+    fi
+    if [ -z "$password" ]; then
+        echo "Specify a password"
+        error=1
+    fi
+
+    if [ $error != 0 ]; then
+        reference my_adduser
+        return 1
+    fi
+
+    local data_sql_dir="$HOME/data/sql"
+    local add_user_tmpl_sql="${data_sql_dir}/add_user_tmpl.sql"
+    local epoch_time=$(date -j -f "%a %b %d %T %Z %Y" "`date`" "+%s")
+    local add_user_sql_file="$data_sql_dir/${user}_${epoch_time}.sql"
+cat $add_user_tmpl_sql  |sed "s/__user__/'$user'/g;s/__password__/'$password'/g;s/__localhost__/'localhost'/g;s/__%__/'%'/g" > $add_user_sql_file
+
+if [[ $debug = true ]]; then
+    set -x
+    echo "$add_user_sql_file"
+    cat "$add_user_sql_file"
+fi
+
+# No space between the -p option and the password
+mysql -u root -p'Hbteensj92$' mysql < $add_user_sql_file
+
+set +x
+
+}
+
+function my_dbs() {
+    about show the databases for a server
+    param -h\|--help display help and exit
+    param -b\|--debug display debug information
+    
+    example '$ my_dbs [-h\|--help] [-b\|--debug]'
+    group sethfuller
+
+    local help=false
+    local debug=false
+
+    for param in "$@"; do
+        shift
+        case "$param" in
+            "--help")        set -- "$@" "-h" ;;
+            "--debug")       set -- "$@" "-b" ;;
+            *)               set -- "$@" "$param"
+        esac
+    done
+
+    OPTIND=1
+    while getopts hbd: opt
+    do
+        case "$opt" in
+            "h") help=true
+                 ;;
+            "b") debug=true
+                 ;;
+        esac
+    done
+    shift $(expr $OPTIND - 1)
+
+    if [[ $help = true ]]; then
+        reference my_dbs
+        return
+    fi
+
+    local debug_opt=""
+    if [[ $debug = true ]]; then
+        debug_opt="-b"
+    fi
+
+    local sql_cmd="SHOW DATABASES;"
+    echo "sql_cmd='$sql_cmd'"
+
+    _run_mysql -s "$sql_cmd" $debug_opt
+}
+
+function my_tables() {
+    about show the tables for a database
+    param -h\|--help display help and exit
+    param -b\|--debug display debug information
+    param -d\|--database The database the table belongs to \(default mysql\)
+    
+    example '$ my_tables -d\|--database db_name [-h\|--help] [-b\|--debug]'
+    group sethfuller
+
+    local help=false
+    local debug=false
+    local db_name="mysql"
+
+    for param in "$@"; do
+        shift
+        case "$param" in
+            "--help")        set -- "$@" "-h" ;;
+            "--debug")       set -- "$@" "-b" ;;
+            "--database")    set -- "$@" "-d" ;;
+            *)               set -- "$@" "$param"
+        esac
+    done
+
+    OPTIND=1
+    while getopts hbd: opt
+    do
+        case "$opt" in
+            "h") help=true
+                 ;;
+            "b") debug=true
+                 ;;
+            "d") db_name="$OPTARG"
+                 ;;
+        esac
+    done
+    shift $(expr $OPTIND - 1)
+
+    if [[ $help = true ]]; then
+        reference my_tables
+        return
+    fi
+
+    local debug_opt=""
+    if [[ $debug = true ]]; then
+        debug_opt="-b"
+    fi
+
+    local sql_cmd="SHOW TABLES;"
+
+    echo "sql_cmd='$sql_cmd'"
+
+    _run_mysql -s "$sql_cmd" $debug_opt -d "$db_name"
+}
+
+function my_db_table() {
+    about show a table\'s schema
+    param -h\|--help display help and exit
+    param -b\|--debug display debug information
+    param -d\|--database The database the table belongs to \(default mysql\)
+    param -t\|--table Show definition of the specified table for the specified database
+    
+    example '$ my_db_table -d\|--database db_name -t\|--table table_name [-h\|--help] [-b\|--debug]'
+    group sethfuller
+
+    local help=false
+    local debug=false
+    local db_name="mysql"
+    local table=""
+
+    for param in "$@"; do
+        shift
+        case "$param" in
+            "--help")        set -- "$@" "-h" ;;
+            "--debug")       set -- "$@" "-b" ;;
+            "--database")    set -- "$@" "-d" ;;
+            "--table")       set -- "$@" "-t" ;;
+            *)               set -- "$@" "$param"
+        esac
+    done
+
+    OPTIND=1
+    while getopts hbd:t: opt
+    do
+        case "$opt" in
+            "h") help=true
+                 ;;
+            "b") debug=true
+                 ;;
+            "d") db_name="$OPTARG"
+                 ;;
+            "t") table="$OPTARG"
+                 ;;
+        esac
+    done
+    shift $(expr $OPTIND - 1)
+
+    if [[ $help = true ]]; then
+        reference my_db_table
+        return
+    fi
+
+    local debug_opt=""
+    if [[ $debug = true ]]; then
+        debug_opt="-b"
+    fi
+
+    local sql_cmd="DESCRIBE $table;"
+
+    echo "sql_cmd='$sql_cmd' db='$db_name'"
+
+    _run_mysql -s "$sql_cmd" $debug_opt -d "$db_name"
+    # _run_mysql -f $sql_file -l '|' -d "$db_name" | while read field type null key default extra
+    # do
+    #     printf "%-23s %-34s %5s %5s " "$field" "$type" "$null" "$key"
+    #     if [ ! -z "$default" ]; then
+    #         printf "%8s " "$default"
+    #     fi
+    #     if [ ! -z "$extra" ]; then
+    #         printf "%8s " "$extra"
+    #     fi
+    #     printf "\n"
+    # done
+}
+
+function my_users() {
+    about show the users for this server
+    param -h\|--help display help and exit
+    param -b\|--debug display debug information
+    param -u\|--user The MySQL user \(default root\)
+    param -p\|--pasword The user\'s password \(default root password\)
+    
+    example '$ my_users  [-u\|--user username] [-p\|--password password] [-h\|--help] [-b\|--debug]'
+    group sethfuller
+    local help=false
+    local debug=false
+    local user=""
+    local password=""
+    local file=""
+
+    for param in "$@"; do
+        shift
+        case "$param" in
+            "--help")        set -- "$@" "-h" ;;
+            "--debug")       set -- "$@" "-b" ;;
+            "--user")        set -- "$@" "-p" ;;
+            "--password")    set -- "$@" "-p" ;;
+            *)               set -- "$@" "$param"
+        esac
+    done
+
+    OPTIND=1
+    while getopts hbu:p: opt
+    do
+        case "$opt" in
+            "h") help=true
+                 ;;
+            "b") debug=true
+                 ;;
+            "u") user="$OPTARG"
+                 ;;
+            "p") password="$OPTARG"
+                 ;;
+            "f") file="$OPTARG"
+                 ;;
+        esac
+    done
+    shift $(expr $OPTIND - 1)
+
+    if [[ $help = true ]]; then
+        reference my_users
+        return
+    fi
+
+    local error=0
+    if [ -z "$user" -a -n "$password" ]; then
+        echo "If a password is specified a user must be specified"
+        error=1
+    fi
+    if [ -n "$user" -a -z "$password" ]; then
+        echo "If a user is specified a password must be specified"
+        error=1
+    fi
+    if [ $error -gt 0 ]; then
+        reference my_users
+        return 1
+    fi
+    if [ -z "$user" ]; then
+        user="root"
+        password="Hbteensj92$"
+    fi
+    local db_name="mysql"
+
+    local sql_cmd="SELECT user, host FROM user ORDER BY user, host"
+
+    _run_mysql -d $db_name -s "$sql_cmd"
+}
+
+function _run_mysql() {
+
+    local db_name="mysql"
+    local delimiter=""
+    local sql_cmd=""
+    local sql_file=""
+    local user="root"
+    local password="Hbteensj92$"
+    local debug=false
+    local opt_pwd=""
+    local opt_user=""
+
+    OPTIND=1
+    while getopts bd:s:f:p:u: opt
+    do
+        case "$opt" in
+            "b") debug=true
+                 ;;
+            "d") db_name="$OPTARG"
+                 ;;
+            "f") sql_file="$OPTARG"
+                 ;;
+            "s") sql_cmd="$OPTARG"
+                 ;;
+            "p") opt_pwd="$OPTARG"
+                 ;;
+            "u") opt_user="$OPTARG"
+                 ;;
+        esac
+    done
+    shift $(expr $OPTIND - 1)
+
+    if [ ! -z "$opt_pwd" -a ! -z "$opt_user" ]; then
+        user=$opt_user
+        password=$opt_pwd
+    fi
+
+    mysql_args=" -u ${user} -p${password}"
+    if [ ! -z "$delimiter" ]; then
+        delimiter=$(echo "$delimiter" | tr -d "'")
+        delim_opt="--delimiter=$delimiter"
+        mysql_args="${mysql_args} ${delim_opt}"
+    fi
+    
+    if [[ $debug = true ]]; then
+        set -x
+        echo "mysql_args=${mysql_args}"
+    fi
+    if [ ! -z "$sql_cmd" ]; then
+        mysql $mysql_args --execute="$sql_cmd" $db_name
+    elif [ ! -z "$sql_file" ]; then
+        mysql $mysql_args $db_name < $sql_file
+    fi
+
+    set +x
+}
+
+function my_sql_file() {
+    about Run sql from a file
+    param -h\|--help display help and exit
+    param -b\|--debug display debug information
+    param -d\|--database The database the SQL is run on
+    param -f\|--file SQL file
+    
+    example '$ my_sql_file -f\|--file sql_file -d\|--database db_name [-h\|--help] [-b\|--debug]'
+    group sethfuller
+
+    local help=false
+    local debug=false
+    local db_name=""
+    local sql_file=""
+
+    for param in "$@"; do
+        shift
+        case "$param" in
+            "--help")        set -- "$@" "-h" ;;
+            "--debug")       set -- "$@" "-b" ;;
+            "--database")    set -- "$@" "-d" ;;
+            "--file")        set -- "$@" "-f" ;;
+            *)               set -- "$@" "$param"
+        esac
+    done
+
+    OPTIND=1
+    while getopts hbd:f: opt
+    do
+        case "$opt" in
+            "h") help=true
+                 ;;
+            "b") debug=true
+                 ;;
+            "d") db_name="$OPTARG"
+                 ;;
+            "f") sql_file="$OPTARG"
+                 ;;
+        esac
+    done
+    shift $(expr $OPTIND - 1)
+
+    if [[ $help = true ]]; then
+        reference my_sql_file
+        return
+    fi
+
+    local error=0
+    if [ -z "$db_name" ]; then
+        echo "Specify a database name"
+        error=1
+    fi
+
+    if [ -z "$sql_file" ]; then
+        echo "Specify a SQL File"
+        error=1
+    elif [ ! -f "$sql_file" ]; then
+        echo "Specify a SQL File"
+        error=1
+    fi
+
+    if [ $error -gt 0 ]; then
+        reference my_sql_file
+        return 1
+    fi
+    _run_mysql -f "$sql_file" -d "$db_name"
+}
+
+function my_server_stop() {
+    about Stop the MySql server 
+    param -h\|--help display help and exit
+    example '$ my_server_stop [-h\|--help]'
+    group sethfuller
+
+    local help=false
+
+    for param in "$@"; do
+        shift
+        case "$param" in
+            "--help")        set -- "$@" "-h" ;;
+            *)               set -- "$@" "$param"
+        esac
+    done
+
+    OPTIND=1
+    while getopts h opt
+    do
+        case "$opt" in
+            "h") help=true
+                 ;;
+        esac
+    done
+    shift $(expr $OPTIND - 1)
+
+    if [[ $help = true ]]; then
+        reference my_server_stop
+        return
+    fi
+
+    _my_run_launchctl -t
+
+    # local command="sudo launchctl unload -F /Library/LaunchDaemon/com.oracle.oss.mysql.mysqld.plist"
+    # echo "$command"
+
+    # exec "$command"
+
+
+}
+
+function my_server_start() {
+    about Start the MySql server 
+    param -h\|--help display help and exit
+    example '$ my_server_start [-h\|--help]'
+    group sethfuller
+
+    local help=false
+
+    for param in "$@"; do
+        shift
+        case "$param" in
+            "--help")        set -- "$@" "-h" ;;
+            *)               set -- "$@" "$param"
+        esac
+    done
+
+    OPTIND=1
+    while getopts h opt
+    do
+        case "$opt" in
+            "h") help=true
+                 ;;
+        esac
+    done
+    shift $(expr $OPTIND - 1)
+
+    if [[ $help = true ]]; then
+        reference my_server_stop
+        return
+    fi
+
+    _my_run_launchctl -s
+
+}
+
+function _my_run_launchctl() {
+
+    local stop=false
+    local start=false
+    OPTIND=1
+    while getopts st opt
+    do
+        case "$opt" in
+            "s") start=true
+                 ;;
+            "t") stop=true
+                 ;;
+        esac
+    done
+    shift $(expr $OPTIND - 1)
+
+    local action="load"
+    if [[ $stop = true ]]; then
+        action="unload"
+    fi
+
+    local command="sudo launchctl $action -F /Library/LaunchDaemons/com.oracle.oss.mysql.mysqld.plist"
+    echo "$command"
+
+    eval "$command"
+
+}
+
+function my_sql_cmd() {
+    about Run a sql command
+    param -h\|--help display help and exit
+    param -b\|--debug display debug information
+    param -d\|--database The database the SQL is run on
+    param -s\|--sql SQL command
+    
+    example '$ my_sql_cmd -s\|--sql "sql command" -d\|--database db_name [-h\|--help] [-b\|--debug]'
+    group sethfuller
+
+    local help=false
+    local debug=false
+    local db_name=""
+    local sql_cmd=""
+
+    for param in "$@"; do
+        shift
+        case "$param" in
+            "--help")        set -- "$@" "-h" ;;
+            "--debug")       set -- "$@" "-b" ;;
+            "--database")    set -- "$@" "-d" ;;
+            "--sql")         set -- "$@" "-s" ;;
+            *)               set -- "$@" "$param"
+        esac
+    done
+
+    OPTIND=1
+    while getopts hbd:s: opt
+    do
+        case "$opt" in
+            "h") help=true
+                 ;;
+            "b") debug=true
+                 ;;
+            "d") db_name="$OPTARG"
+                 ;;
+            "s") sql_cmd="$OPTARG"
+                 ;;
+        esac
+    done
+    shift $(expr $OPTIND - 1)
+
+    if [[ $help = true ]]; then
+        reference my_sql_cmd
+        return
+    fi
+
+    local error=0
+    if [ -z "$db_name" ]; then
+        echo "Specify a database name"
+        error=1
+    fi
+
+    if [ -z "$sql_cmd" ]; then
+        echo "Specify a SQL Command"
+        error=1
+    fi
+
+    if [ $error -gt 0 ]; then
+        reference my_sql_cmd
+        return 1
+    fi
+    _run_mysql -s "$sql_cmd" -d "$db_name"
+}
+
+function my_dump() {
+    about Dump a MySQL database
+    param -h\|--help display help and exit
+    param -u\|--user The MySQL user \(default root\)
+    param -p\|--pasword The user\'s password \(default root password\)
+    param -d\|--database The database to dump 
+    param -f\|--file The file to export the dump to \(default \$db_name.sql\)
+    param -b\|--debug display debug information
+    
+    example '$ my_adduser -d\|--database db_name [-u\|--user username] [-p\|--password password] [-f\|--file filename] [-h\|--help] [-b\|--debug]'
+    group sethfuller
+
+    local help=false
+    local debug=false
+    local db_name=""
+    local user=""
+    local password=""
+    local file=""
+
+    for param in "$@"; do
+        shift
+        case "$param" in
+            "--help")        set -- "$@" "-h" ;;
+            "--debug")       set -- "$@" "-b" ;;
+            "--database")    set -- "$@" "-d" ;;
+            "--user")        set -- "$@" "-p" ;;
+            "--password")    set -- "$@" "-p" ;;
+            "--file")        set -- "$@" "-f" ;;
+            *)               set -- "$@" "$param"
+        esac
+    done
+
+    OPTIND=1
+    while getopts hbd:u:p:f: opt
+    do
+        case "$opt" in
+            "h") help=true
+                 ;;
+            "b") debug=true
+                 ;;
+            "d") db_name="$OPTARG"
+                 ;;
+            "u") user="$OPTARG"
+                 ;;
+            "p") password="$OPTARG"
+                 ;;
+            "f") file="$OPTARG"
+                 ;;
+        esac
+    done
+    shift $(expr $OPTIND - 1)
+
+    if [[ $help = true ]]; then
+        reference my_dump
+        return
+    fi
+
+    local error=0
+    if [ -z "$db_name" ]; then
+        echo "Specify a database name"
+        error=1
+    fi
+    if [ -z "$user" -a -n "$password" ]; then
+        echo "If a password is specified a user must be specified"
+        error=1
+    fi
+    if [ -n "$user" -a -z "$password" ]; then
+        echo "If a user is specified a password must be specified"
+        error=1
+    fi
+    if [ $error -gt 0 ]; then
+        reference my_dump
+        return 1
+    fi
+    if [ -z "$user" ]; then
+        user="root"
+        password="Hbteensj92$"
+    fi
+    if [ -z "$file" ]; then
+        file="${db_name}.sql"
+    fi
+
+    mysqldump --user="$user" --password="$password" $db_name > $file
+}
+
+function my_grants() {
+    about Show privileges for a user
+    param -h\|--help display help and exit
+    param -b\|--debug display debug information
+    param -u\|--user The user to show grants for
+    param -p\|--password The user\'s password
+    param -a\|--all Show privileges for all users \(default current user\)
+    
+    example '$ my_grants -u\|--user user_name -p\|--password password [-a\|--all] [-h\|--help] [-b\|--debug]'
+
+    group sethfuller
+
+    local help=false
+    local debug=false
+    local all=false
+    local user=""
+    local password=""
+
+    for param in "$@"; do
+        shift
+        case "$param" in
+            "--help")        set -- "$@" "-h" ;;
+            "--debug")       set -- "$@" "-b" ;;
+            "--user")        set -- "$@" "-u" ;;
+            "--password")    set -- "$@" "-p" ;;
+            "--all")         set -- "$@" "-a" ;;
+            *)               set -- "$@" "$param"
+        esac
+    done
+
+    OPTIND=1
+    while getopts hbu:p:a opt
+    do
+        case "$opt" in
+            "h") help=true
+                 ;;
+            "b") debug=true
+                 ;;
+            "u") user="$OPTARG"
+                 ;;
+            "p") password="$OPTARG"
+                 ;;
+            "a") all=true
+                 ;;
+        esac
+    done
+    shift $(expr $OPTIND - 1)
+
+    if [[ $help = true ]]; then
+        reference my_grants
+        return
+    fi
+    local error=0
+    if [ -z "$user" ]; then
+       echo "Must specify -u user"
+       error=1
+    fi
+    if [ -z "$password" ]; then
+       echo "Must specify -p password"
+       error=1
+    fi
+    if [ $error -gt 0 ]; then
+        reference my_grants
+        return 1
+    fi
+
+    if [[ $debug = true ]]; then
+        echo "$FUNCNAME: debug=$debug"
+        set -x
+    fi
+
+    local grants="SHOW GRANTS;"
+    grants="SELECT DISTINCT CONCAT(
+    'SHOW GRANTS FOR ''', user, '''@''', host, ''';'
+    ) AS query FROM mysql.user"
+    if [[ $all = false ]]; then
+        grants="$grants WHERE user = '$user'"
+    fi
+#    grants="$grants ORDER BY user, host"
+    # --batch (-B) - use tab as the column seperator; each row on a new line
+    # --skip-column-names (-N) - Don't write column names in results
+    # mysql --batch --skip-column-names -u$user -p$password -e "$grants" | sort | mysql -u$user -p$password | \
+    #     sed 's/\(GRANT .*\)/\1;/;s/^\(Grants for\) \(.*\)/\1 "\2" ##/;/##/{x;p;x;};s/ ##/:/'
+
+    echo "=====grants w/o sed for user: $user"
+    # --batch (-B) - use tab as the column seperator; each row on a new line
+    # --skip-column-names (-N) - Don't write column names in results
+    mysql --batch --skip-column-names -u$user -p$password -e "$grants" | sort | \
+        mysql -u$user -p$password
+#    mysql -B -N -u$user -p$password -e "$grants" | sort | mysql -u$user -p$password
+
+    set +x
+}
+
+function my_user() {
+    echo "user='seth_fuller'"
+    echo "password='Snejtehb92#'"
+}
+
+echo "$HOME/.zsh-mysql At: $(date)"
+

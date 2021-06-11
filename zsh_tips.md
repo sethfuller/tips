@@ -1,4 +1,4 @@
-### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/main_tips.md)
+### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/main_tech_tips.md)
 
 ----------
 
@@ -34,4 +34,4 @@
 
 ----------
 
-### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/main_tips.md)
+### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/main_tech_tips.md)

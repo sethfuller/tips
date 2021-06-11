@@ -1,0 +1,15 @@
+#!/bin/zsh
+
+source $(brew --prefix)/share/antigen/antigen.zsh
+
+antigen bundle git
+antigen bundle pip
+antigen bundle command-not-found
+
+# Syntax highlighting bundle
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+# Tell Antigen I'm done.
+antigen apply
+
+echo "Finish $HOME/.zshrc-antigen At: $(date)"
