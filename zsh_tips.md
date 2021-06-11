@@ -1,8 +1,8 @@
-### [Main Tips Page](/Users/sfulle176/Src/docs/tips.md)
+### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/tips.md)
 
 ----------
 
-> ### [My Zsh Aliases](/Users/sfulle176/Src/Shell/aliases.md)
+> ### [My Zsh Aliases](https://github.com/sethfuller/tips/blob/main/aliases.md)
 
 ### Zinit Plugin Manager
 
@@ -34,4 +34,4 @@
 
 ----------
 
-### [Main Tips Page](/Users/sfulle176/Src/docs/tips.md)
+### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/tips.md)
