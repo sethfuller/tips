@@ -1,4 +1,4 @@
-[README](https://github.com/sethfuller/tips/blob/main/README.md)
+## [README](https://github.com/sethfuller/tips/blob/main/README.md)
 
 ### [Chrome Tips](https://github.com/sethfuller/tips/blob/main/chrome_tips.md)
 _______________________
