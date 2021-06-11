@@ -1,9 +1,14 @@
-[Cut the Cord](https://cordcuttingreport.com/cord-cutting-guide/)
+## [README](https://github.com/sethfuller/tips/blob/main/README.md)
 
-[Change Land Line to Google Voice](https://cordcuttingreport.com/port-phone-number-google-voice/)
+### [Cut the Cord](https://cordcuttingreport.com/cord-cutting-guide/)
 
-[Philo Streaming Service](https://www.philo.com/login/subscribe?redirect_uri=https%3A%2F%2Fwww.philo.com%2Fplayer)
+### [Change Land Line to Google Voice](https://cordcuttingreport.com/port-phone-number-google-voice/)
 
-[Sling TV Channels 2021](https://www.cordcuttersnews.com/sling-tv-channels-list/)
+### Streaming Services
 
-[Sling TV](https://www.sling.com/)
+> #### [Sling TV Channels 2021](https://www.cordcuttersnews.com/sling-tv-channels-list/)
+> #### [Sling TV](https://www.sling.com/)
+> #### [Philo Streaming Service](https://www.philo.com/login/subscribe?redirect_uri=https%3A%2F%2Fwww.philo.com%2Fplayer)
+
+
+## [README](https://github.com/sethfuller/tips/blob/main/README.md)
