@@ -35,10 +35,6 @@
 | [75 Zsh Commands/Plugins/Aliases/Tools](https://www.sitepoint.com/zsh-commands-plugins-aliases-tools/) | [Useful Zsh Aliases](https://gist.github.com/JonathanBeech/3403282) |
 |                                                                                                        |                                                                     |
 
-### Not Maintained
-
-> ### [Antigen article](http://mikbuch.github.io/articles/2019/02/16/Zsh-Antigen.html)
-
 ----------
 
 ### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)
