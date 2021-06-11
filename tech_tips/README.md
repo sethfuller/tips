@@ -1,4 +1,4 @@
-## [Top Level README](https://github.com/sethfuller/tips/blob/main/README.md)
+## [Top Level README](https://github.com/sethfuller/tips)
 
 _______________________
 
@@ -35,4 +35,4 @@ _______________________
 
 _______________________
 
-## [Top Level README](https://github.com/sethfuller/tips/blob/main/README.md)
+## [Top Level README](https://github.com/sethfuller/tips)
