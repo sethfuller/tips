@@ -1,4 +1,4 @@
-## [README](https://github.com/sethfuller/tips/blob/main/README.md)
+## [Top Level README](https://github.com/sethfuller/tips/blob/main/README.md)
 
 ### [Cord Cutting Web Site](https://cordcuttingreport.com/cord-cutting-guide/)
 
@@ -11,4 +11,4 @@
 > #### [Philo Streaming Service](https://www.philo.com/login/subscribe?redirect_uri=https%3A%2F%2Fwww.philo.com%2Fplayer)
 
 
-## [README](https://github.com/sethfuller/tips/blob/main/README.md)
+## [Top Level README](https://github.com/sethfuller/tips/blob/main/README.md)
