@@ -2,6 +2,7 @@
 
 ----------
 
+> ### [My Zsh Config Files](https://github.com/sethfuller/tips/tree/main/config/Zsh)
 > ### [My Zsh Aliases](https://github.com/sethfuller/tips/blob/main/aliases.md)
 
 ### Zinit Plugin Manager

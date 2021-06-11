@@ -1,5 +1,7 @@
 ### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/main_tech_tips.md)
 
+### [Emacs Config Files](https://github.com/sethfuller/tips/tree/main/config/Emacs)
+
 > ### [Emacs Python Development](https://realpython.com/emacs-the-best-python-editor/)
 > ### [Github Company Mode](http://company-mode.github.io/)
 > ### [Helm](http://tuhdo.github.io/helm-intro.html)

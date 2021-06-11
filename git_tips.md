@@ -1,6 +1,7 @@
 ### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/main_tech_tips.md)
 
 ----------
+> ### [My Git Config Files](https://github.com/sethfuller/tips/tree/main/config/Git)
 
 <a name="top"></a>
 
