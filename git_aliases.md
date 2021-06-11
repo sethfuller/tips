@@ -1,8 +1,8 @@
-### [Main Tips Page](/Users/sfulle176/Src/Docs/tips.md)
+### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/main_tips.md)
 
 ----------
 
-### [Git Tips Page](/Users/sfulle176/Src/Docs/git_tips.md)
+### [Git Tips Page](https://github.com/sethfuller/tips/blob/main/git_tips.md)
 
 ## My Git Aliases
 ### Use shell alias gal to see all aliases with comments
@@ -54,9 +54,10 @@
 ### Use shell function _gsd [stash_no:default=0]
 ### Show Fetch and Push URLS for Repository
 > 	rv = remote -v
-### [Git Tips Page](/Users/sfulle176/Src/Docs/git_tips.md)
+### [Git Tips Page](https://github.com/sethfuller/tips/blob/main/git_tips.md)
 
 ----------
 
-### [Main Tips Page](/Users/sfulle176/Src/Docs/tips.md)
+### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/main_tips.md)
+
 

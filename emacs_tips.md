@@ -1,4 +1,4 @@
-### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/tips.md)
+### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/main_tips.md)
 
 > ### [Emacs Python Development](https://realpython.com/emacs-the-best-python-editor/)
 > ### [Github Company Mode](http://company-mode.github.io/)
@@ -6,4 +6,4 @@
 > ### [Helm Github](https://github.com/emacs-helm/helm)
 > ### [Emacs Elisp Manual](https://ftp.gnu.org/old-gnu/Manuals/elisp-manual-20-2.5/html_node/elisp_toc.html)
 
-### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/tips.md)
+### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/main_tips.md)

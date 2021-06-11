@@ -18,35 +18,9 @@ _______________________
 ### [Zsh Tips](https://github.com/sethfuller/tips/blob/main/zsh_tips.md)
 _______________________
 
-### IntelliJ IDEA
-#### Shortcuts
+### [IntelliJ IDEA](https://github.com/sethfuller/tips/blob/main/intellij_idea_tips.md)
 
-| Keys                      | Description         |
-|---------------------------|---------------------|
-| **\<Shift>-\<Command>-F** | Search Files        |
-| **\<Command>-F**          | Search Current File |
-
-> ### [IntelliJ IDEA Documentation](https://www.jetbrains.com/help/idea/discover-intellij-idea.html)
-
-_______________________
-
-### Mac
-> ### [Karibiner Key Customizer Documentation](https://karabiner-elements.pqrs.org/docs/)
-> ### [Output 256 Colors](https://ccp.sys.comcast.net/secure/RapidBoard.jspa?rapidView=6625)
-> ### [ANSI Color Script](https://code.google.com/archive/p/ansi-color/)
-
-#### Shortcuts
-
-| Keys                         | Description                   |
-|------------------------------|-------------------------------|
-| **\<Control>-\<Command>-F**  | Toggle Full Screen            |
-| **\<Control>-\<Down Arrow>** | Show only current application |
-| **\<Control>-\<Up Arrow>**   | Show all windows              |
-
-
-> ### [Apple Support Mac Shortcuts](https://support.apple.com/en-us/HT201236)
-
-_______________________
+### [Mac Tips]()
 
 ### Python
 > ### [Non-Blocking Read Stdin](https://stackoverflow.com/questions/21791621/taking-input-from-sys-stdin-non-blocking)
