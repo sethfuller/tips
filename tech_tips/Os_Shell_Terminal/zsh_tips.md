@@ -12,11 +12,11 @@
 
 
 ### Plugins
-|                                                                       |                                               |
-|-----------------------------------------------------------------------|-----------------------------------------------|
-| [Zinit Plugin Manager Github](https://github.com/zdharma/zinit)[ | Zinit Wiki](https://zdharma.github.io/zinit/wiki/) |
-| [Awesome Zsh Plugins](https://github.com/unixorn/awesome-zsh-plugins) | [OhMyZsh](https://github.com/ohmyzsh/ohmyzsh) |
-|                                                                       |                                               |
+|                                                                       |                                                     |
+|-----------------------------------------------------------------------|-----------------------------------------------------|
+| [Zinit Plugin Manager Github](https://github.com/zdharma/zinit)       | [Zinit Wiki](https://zdharma.github.io/zinit/wiki/) |
+| [Awesome Zsh Plugins](https://github.com/unixorn/awesome-zsh-plugins) | [OhMyZsh](https://github.com/ohmyzsh/ohmyzsh)       |
+
 
 ### Zsh Documentation
 
