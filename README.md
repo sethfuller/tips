@@ -4,10 +4,16 @@ Technical and other tips in Markdown
     - scripts
 
 ### [Technical Tips and Config Files](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)
-|                                                                                |   |                                                                                    |
-|--------------------------------------------------------------------------------|---|------------------------------------------------------------------------------------|
-| [My Zsh Config Files](https://github.com/sethfuller/tips/tree/main/config/Zsh) |   | [My Emacs Config Files](https://github.com/sethfuller/tips/tree/main/config/Emacs) |
-| [My Git Config Files](https://github.com/sethfuller/tips/tree/main/config/Git) |   |                                                                                    |
+### Config Files
+|                                                                                |                                                                                    |
+|--------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| [My Zsh Config Files](https://github.com/sethfuller/tips/tree/main/config/Zsh) |[My Emacs Config Files](https://github.com/sethfuller/tips/tree/main/config/Emacs) |
+| [My Git Config Files](https://github.com/sethfuller/tips/tree/main/config/Git) |                                                                                    |
+### Scripts
+|                                                                                |                                                                                  |
+|--------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| [My Shell Scripts](https://github.com/sethfuller/tips/tree/main/scripts/shell) | [My Python Scripts](https://github.com/sethfuller/tips/tree/main/scripts/python) |
+
 
 ### General
 |                                                                                      |   |
