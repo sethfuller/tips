@@ -11,7 +11,7 @@ alias egrep='egrep --color=auto'                # show differences in colour
 alias fgrep='fgrep --color=auto'                # show differences in colour
 
 # ls aliases
-alias ll='ls -lG'                               # -G show colorized output
+alias ll='ls -lGF'                              # -G (colorized output) -F (show type of listing)
 alias la='ll -A'                                # -A show all files/dirs exept . and ..
 alias ltr='ll -tr'                              # long list reverse sort by time
 alias lh='ll -h'                                # long list (sizes human readable)
@@ -70,7 +70,7 @@ source $HOME/.zshrc-functions
 # source $ZPLUG_HOME/init.zsh
 # zplug "plugins/git" from:oh-my-zsh
 
-source $HOME/.zshrc-emacs
+# source $HOME/.zshrc-emacs
 # source $HOME/.zshrc-antigen
 source $HOME/.zshrc-liquidprompt
 
