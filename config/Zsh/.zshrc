@@ -1,15 +1,30 @@
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
-# -G show colorized output
-alias ll='ls -lG'
-alias la='ll -A'
+# Default to human readable figures
+alias df='df -h'
+alias du='du -h'
 
-alias mkdir='mkdir -pv'
+# Grep
+alias grep='grep --color'                     # show differences in colour
+alias egrep='egrep --color=auto'              # show differences in colour
+alias fgrep='fgrep --color=auto'              # show differences in colour
 
-# Display in reverse line order
-alias tac='tail -r'
-alias br=brew
+# ls aliases
+alias ll='ls -lG'                            # -G show colorized output
+alias la='ll -A'                             # -A show all files/dirs exept . and ..
+alias ltr='ll -tr'                           # long list reverse sort by time
+alias lh='ll -h'                             # long list (sizes human readable)
+
+alias mkdir='mkdir -pv'                      # Create missing dirs. and show them
+
+alias tac='tail -r'                          # Display in reverse line order
+alias br=brew                                # Brew
+
+# Python pip
+alias pip='pip3'
+alias pipi='pip install'
+alias pips='pip search'
 
 # alias -g (global) - Alias can appear anywhere on command line
 alias -g ...='../..'
