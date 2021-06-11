@@ -454,6 +454,7 @@ function gpl() {
 }
 
 # Show the body of a zsh function
+# <a name="funcdef">Show the body of a zsh function</a>
 function funcdef() {
     # Also functions $1 shows the function def.
     whence -f $1

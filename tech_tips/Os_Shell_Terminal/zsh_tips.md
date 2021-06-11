@@ -3,6 +3,7 @@
 ----------
 
 > ### [My Zsh Config Files](https://github.com/sethfuller/tips/tree/main/config/Zsh)
+> #### [.zshrc-functions show function def.](https://github.com/sethfuller/tips/tree/main/config/Zsh/.zshrc-functions#funcdef)
 > ### [My Shell Scripts](https://github.com/sethfuller/tips/tree/main/scripts/shell)
 > ### [My Zsh Aliases](https://github.com/sethfuller/tips/blob/main/tech_tips/aliases.md)
 
