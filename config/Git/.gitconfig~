@@ -58,6 +58,3 @@
 # Use shell function _gsd [stash_no:default=0]
 # Show Fetch and Push URLS for Repository
 	rv = remote -v
-
-[pull]
-	rebase = false
