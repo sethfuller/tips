@@ -4,7 +4,7 @@ _______________________
 
 ### OS/Shell/Terminal
 
-> #### [Iterm2 Tips](https://github.com/sethfuller/tips/blob/main/tech_tips/iTerm2_shortcuts.md)
+> #### [Iterm2 Tips](https://github.com/sethfuller/tips/blob/main/tech_tips/iTerm2_tips.md)
 > #### [Mac Tips](https://github.com/sethfuller/tips/blob/main/tech_tips/mac_tips.md)
 > #### [Zsh Tips](https://github.com/sethfuller/tips/blob/main/tech_tips/zsh_tips.md)
 
