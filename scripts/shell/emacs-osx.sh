@@ -6,5 +6,7 @@ then
 fi
 
 set -x
-/Applications/Emacs.app/Contents/MacOS/Emacs --with-profile $PROFILE &
+# /Applications/Emacs.app/Contents/MacOS/Emacs --with-profile $PROFILE &
+
+/Applications/Emacs.app/Contents/MacOS/Emacs-x86_64-10_14 &
 set +x
