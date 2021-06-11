@@ -1,4 +1,4 @@
-### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/main_tech_tips.md)
+### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)
 
 ----------
 > ### [My Git Config Files](https://github.com/sethfuller/tips/tree/main/config/Git)
@@ -131,4 +131,4 @@ code listing will be the most recent commit.
 
 ----------
 
-### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/main_tech_tips.md)
+### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)

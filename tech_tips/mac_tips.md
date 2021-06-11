@@ -1,4 +1,4 @@
-### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/main_tech_tips.md)
+### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)
 
 ### Documentation
 
@@ -17,5 +17,5 @@
 
 > ### [Apple Support Mac Shortcuts](https://support.apple.com/en-us/HT201236)
 
-### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/main_tech_tips.md)
+### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)
 
