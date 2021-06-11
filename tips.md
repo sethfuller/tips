@@ -3,7 +3,7 @@
 ### [Chrome Tips](https://github.com/sethfuller/tips/blob/main/chrome_tips.md)
 _______________________
 
-### [Emacs Tips]()
+### [Emacs Tips](https://github.com/sethfuller/tips/blob/main/emacs_tips.md)
 
 
 ### [Git Tips](https://github.com/sethfuller/tips/blob/main/git_tips.md)
