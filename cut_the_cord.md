@@ -1,6 +1,6 @@
 ## [README](https://github.com/sethfuller/tips/blob/main/README.md)
 
-### [Cut the Cord](https://cordcuttingreport.com/cord-cutting-guide/)
+### [Cord Cutting](https://cordcuttingreport.com/cord-cutting-guide/)
 
 ### [Change Land Line to Google Voice](https://cordcuttingreport.com/port-phone-number-google-voice/)
 
