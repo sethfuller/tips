@@ -6,20 +6,23 @@ alias df='df -h'
 alias du='du -h'
 
 # Grep
-alias grep='grep --color'                     # show differences in colour
-alias egrep='egrep --color=auto'              # show differences in colour
-alias fgrep='fgrep --color=auto'              # show differences in colour
+alias grep='grep --color'                       # show differences in colour
+alias egrep='egrep --color=auto'                # show differences in colour
+alias fgrep='fgrep --color=auto'                # show differences in colour
 
 # ls aliases
-alias ll='ls -lG'                            # -G show colorized output
-alias la='ll -A'                             # -A show all files/dirs exept . and ..
-alias ltr='ll -tr'                           # long list reverse sort by time
-alias lh='ll -h'                             # long list (sizes human readable)
+alias ll='ls -lG'                               # -G show colorized output
+alias la='ll -A'                                # -A show all files/dirs exept . and ..
+alias ltr='ll -tr'                              # long list reverse sort by time
+alias lh='ll -h'                                # long list (sizes human readable)
 
-alias mkdir='mkdir -pv'                      # Create missing dirs. and show them
+alias mkdir='mkdir -pv'                         # Create missing dirs. and show them
 
-alias tac='tail -r'                          # Display in reverse line order
-alias br=brew                                # Brew
+alias tac='tail -r'                             # Display in reverse line order
+alias br=brew                                   # Brew
+
+alias extip="curl http://ipecho.net/plain;echo" # Public IP
+alias myip='echo "Current IP: $(ifconfig | grep 192.)"' # Internal IP
 
 # Python pip
 alias pip='pip3'
