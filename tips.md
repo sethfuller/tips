@@ -2,7 +2,7 @@
 	Main Tips Page
 </title>
 
-### [Chrome Tips](/Users/sfulle176/Src/docs/chrome_tips.md)
+### [Chrome Tips](https://github.com/sethfuller/tips/blob/main/chrome_tips.md)
 _______________________
 
 ### Emacs
@@ -15,16 +15,16 @@ _______________________
 
 > ### [Emacs Elisp Manual](https://ftp.gnu.org/old-gnu/Manuals/elisp-manual-20-2.5/html_node/elisp_toc.html)
 
-### [Git Tips](/Users/sfulle176/Src/docs/git_tips.md)
+### [Git Tips](https://github.com/sethfuller/tips/blob/main/git_tips.md)
 _______________________
 
-### [Iterm2 Tips](/Users/sfulle176/Src/docs/iTerm2_shortcuts.md)
+### [Iterm2 Tips](https://github.com/sethfuller/tips/blob/main/iTerm2_shortcuts.md)
 _______________________
 
-### [Mvn Tips](/Users/sfulle176/Src/docs/mvn_tips.md)
+### [Mvn Tips](https://github.com/sethfuller/tips/blob/main/mvn_tips.md)
 _______________________
 
-### [Zsh Tips](/Users/sfulle176/Src/docs/zsh_tips.md)
+### [Zsh Tips](https://github.com/sethfuller/tips/blob/main/zsh_tips.md)
 _______________________
 
 ### IntelliJ IDEA
