@@ -12,8 +12,9 @@
 
 
 ### Iterm2 Documentation
-> ### [Iterm2 Documentation on Web](https://iterm2.com/documentation.html)
-> ### [Iterm2 Github Source](https://github.com/gnachman/iTerm2)
+|                                                                      |                                                            |
+|----------------------------------------------------------------------|------------------------------------------------------------|
+| [Iterm2 Documentation on Web](https://iterm2.com/documentation.html) | [Iterm2 Github Source](https://github.com/gnachman/iTerm2) |
 
 ----------
 

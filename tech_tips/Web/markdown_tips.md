@@ -3,12 +3,12 @@
 
 
 
-> ### [Markdown Docs](https://www.markdownguide.org/)
-> ### [Github Flavored Markdown (GFM) Docs](https://github.github.com/gfm/)
-> ### [Chrome Markdown Viewer Extension](https://github.com/simov/markdown-viewer)
-> ### [Emacs Wiki Markdown Mode](https://www.emacswiki.org/emacs/MarkdownMode)
-> ### [Emacs Markdown Mode Manual](https://leanpub.com/markdown-mode/read)
-> ### [Emacs Markdown Mode By Jason Blevins](https://jblevins.org/projects/markdown-mode/)
+|                                                                              |                                                                                      |
+|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| [Markdown Docs](https://www.markdownguide.org/)                              | [Github Flavored Markdown (GFM) Docs](https://github.github.com/gfm/)                |
+| [Chrome Markdown Viewer Extension](https://github.com/simov/markdown-viewer) | [Emacs Wiki Markdown Mode](https://www.emacswiki.org/emacs/MarkdownMode)             |
+| [Emacs Markdown Mode Manual](https://leanpub.com/markdown-mode/read)         | [Emacs Markdown Mode By Jason Blevins](https://jblevins.org/projects/markdown-mode/) |
+|                                                                              |                                                                                      |
 
 ### Script
 

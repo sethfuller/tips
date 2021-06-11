@@ -113,21 +113,13 @@ code listing will be the most recent commit.
 > ### [My Git Aliases](/Users/sfulle176/Src/Docs/git_aliases.md)
 
 ### Git Tips
-> ### [Git Tips from the Pros](https://code.tutsplus.com/tutorials/git-tips-from-the-pros--net-29799)
-> ### [13 Git Tips](https://opensource.com/article/18/4/git-tips)
-> ### [Git Tips](https://github.com/git-tips/tips#show-helpful-guides-that-come-with-git)
-
-> ### [Git Documentation](https://git-scm.com/doc)
-
-> ### [Github Search](https://docs.github.com/en/github/searching-for-information-on-github/about-searching-on-github)
-> ### [Github Searching for Commits](https://docs.github.com/en/github/searching-for-information-on-github/searching-commits)
-> ### [Push Branch to Remote Diff. Scenarios](https://devconnected.com/how-to-push-git-branch-to-remote/)
-
-> ### [Git Tips Project](https://github.com/git-tips/tips.git)
-
-> ### [Must Have Git Aliases Article](https://www.durdn.com/blog/2012/11/22/must-have-git-aliases-advanced-examples/)
-
-> ### [Nicola Paolucci Gitconfig](https://github.com/durdn/cfg/blob/master/.gitconfig)
+|  |  |
+|--|--|
+| [Git Tips from the Pros](https://code.tutsplus.com/tutorials/git-tips-from-the-pros--net-29799)| [13 Git Tips](https://opensource.com/article/18/4/git-tips)|
+| [Git Tips](https://github.com/git-tips/tips#show-helpful-guides-that-come-with-git)| [Git Documentation](https://git-scm.com/doc)|
+| [Github Search](https://docs.github.com/en/github/searching-for-information-on-github/about-searching-on-github)| [Github Searching for Commits](https://docs.github.com/en/github/searching-for-information-on-github/searching-commits)
+| [Push Branch to Remote Diff. Scenarios](https://devconnected.com/how-to-push-git-branch-to-remote/)| [Git Tips Project](https://github.com/git-tips/tips.git)|
+| [Must Have Git Aliases Article](https://www.durdn.com/blog/2012/11/22/must-have-git-aliases-advanced-examples/)| [Nicola Paolucci Gitconfig](https://github.com/durdn/cfg/blob/master/.gitconfig)|
 
 ----------
 

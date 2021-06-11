@@ -2,9 +2,10 @@
 
 ### Documentation
 
-> ### [Karibiner Key Customizer Documentation](https://karabiner-elements.pqrs.org/docs/)
-> ### [Output 256 Colors](https://ccp.sys.comcast.net/secure/RapidBoard.jspa?rapidView=6625)
-> ### [ANSI Color Script](https://code.google.com/archive/p/ansi-color/)
+|                                                                                     |                                                                                        |
+|-------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| [Karibiner Key Customizer Documentation](https://karabiner-elements.pqrs.org/docs/) | [Output 256 Colors](https://ccp.sys.comcast.net/secure/RapidBoard.jspa?rapidView=6625) |
+| [ANSI Color Script](https://code.google.com/archive/p/ansi-color/)                  |                                                                                        |
 
 ### Shortcuts
 

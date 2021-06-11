@@ -33,7 +33,6 @@
 |--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
 | [5 Tips Productivity Zsh](https://opensource.com/article/18/9/tips-productivity-zsh)                   | [Zsh Tips & Tricks](https://www.sitepoint.com/zsh-tips-tricks/)     |
 | [75 Zsh Commands/Plugins/Aliases/Tools](https://www.sitepoint.com/zsh-commands-plugins-aliases-tools/) | [Useful Zsh Aliases](https://gist.github.com/JonathanBeech/3403282) |
-|                                                                                                        |                                                                     |
 
 ----------
 

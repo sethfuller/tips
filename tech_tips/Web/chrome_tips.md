@@ -15,8 +15,9 @@
 > ### [Screenshot Types](https://www.businessinsider.com/how-to-screenshot-on-google-chrome)
 
 ### Shortcuts
-> ### [Chrome Shortcuts](https://support.google.com/chrome/answer/157179?co=GENIE.Platform%3DDesktop&hl=en#zippy=%2Ctab-and-window-shortcuts%2Cgoogle-chrome-feature-shortcuts%2Caddress-bar-shortcuts%2Cwebpage-shortcuts%2Cmouse-shortcuts)
-> ### [Useful Shortcuts](https://blog.hubspot.com/sales/chrome-keyboard-shortcuts)
+|                                                                                                                                                                                                                                         |                                                                              |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
+| [Chrome Shortcuts](https://support.google.com/chrome/answer/157179?co=GENIE.Platform%3DDesktop&hl=en#zippy=%2Ctab-and-window-shortcuts%2Cgoogle-chrome-feature-shortcuts%2Caddress-bar-shortcuts%2Cwebpage-shortcuts%2Cmouse-shortcuts) | [Useful Shortcuts](https://blog.hubspot.com/sales/chrome-keyboard-shortcuts) |
 
 #### Frequently Used Shortcuts
 | Action               | Shortcut                          |

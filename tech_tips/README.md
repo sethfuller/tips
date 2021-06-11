@@ -4,9 +4,10 @@ _______________________
 
 ### OS/Shell/Terminal
 
-> #### [Iterm2 Tips](https://github.com/sethfuller/tips/blob/main/tech_tips/Os_Shell_Terminal/iTerm2_tips.md)
-> #### [Mac Tips](https://github.com/sethfuller/tips/blob/main/tech_tips/Os_Shell_Terminal/mac_tips.md)
-> #### [Zsh Tips](https://github.com/sethfuller/tips/blob/main/tech_tips/Os_Shell_Terminal/zsh_tips.md)
+|  |  |
+|--|--|
+| [Iterm2 Tips](https://github.com/sethfuller/tips/blob/main/tech_tips/Os_Shell_Terminal/iTerm2_tips.md)| [Mac Tips](https://github.com/sethfuller/tips/blob/main/tech_tips/Os_Shell_Terminal/mac_tips.md)|
+| [Zsh Tips](https://github.com/sethfuller/tips/blob/main/tech_tips/Os_Shell_Terminal/zsh_tips.md)||
 
 _______________________
 
