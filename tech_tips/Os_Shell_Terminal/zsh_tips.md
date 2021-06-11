@@ -3,7 +3,7 @@
 ----------
 
 > ### [My Zsh Config Files](https://github.com/sethfuller/tips/tree/main/config/Zsh)
-| Config File                                                                                       | Config File                                                                                             |
+|                                                                                        |                                                                                              |
 |---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
 | [.zshenv](https://github.com/sethfuller/tips/tree/main/config/Zsh/.zshenv)                   |  [.zshrc](https://github.com/sethfuller/tips/tree/main/config/Zsh/.zshrc)                           |
 | [.zshrc-functions](https://github.com/sethfuller/tips/tree/main/config/Zsh/.zshrc-functions) | [.zshrc-liquidprompt](https://github.com/sethfuller/tips/tree/main/config/Zsh/.zshrc-liquidprompt) |
@@ -29,7 +29,7 @@
 > ### [Liquidprompt Docs.](https://liquidprompt.readthedocs.io/en/stable/config.html)
 
 ### Zsh Tips
-| Link                                                                                                   | Link                                                                |
+|                                                                                                   |                                                                 |
 |--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
 | [5 Tips Productivity Zsh](https://opensource.com/article/18/9/tips-productivity-zsh)                   | [Zsh Tips & Tricks](https://www.sitepoint.com/zsh-tips-tricks/)     |
 | [75 Zsh Commands/Plugins/Aliases/Tools](https://www.sitepoint.com/zsh-commands-plugins-aliases-tools/) | [Useful Zsh Aliases](https://gist.github.com/JonathanBeech/3403282) |
