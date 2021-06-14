@@ -1,0 +1,15 @@
+-
+  dir: /path/to/clean/directory
+  days: 30
+  glob: *.txt
+  env: labelX
+-
+# Multiple file patterns can be specified in the same directory
+# with different or the same expiration days.
+  dir: /path/to/clean/directory
+  days: 60
+  glob: '*.tar.gz'
+-
+  dir: /path/to/other/directory
+  days: 90
+  glob: '*.zip'
