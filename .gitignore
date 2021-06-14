@@ -2,4 +2,25 @@
 *~
 
 # Python cache directory
-__pycache__
+__pycache__/
+
+# Log files
+*.log
+
+# Java class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+
+# C extensions
+*.so
+
+# Python
+*.py[cod]
+*$py.class
