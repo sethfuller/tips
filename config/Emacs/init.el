@@ -36,6 +36,11 @@
 ; show the current column number in the status bar
 (column-number-mode 1)
 
+;; Org mode commands available globally
+(global-set-key (kbd "C-c l") 'org-store-link)
+(global-set-key (kbd "C-c a") 'org-agenda)
+(global-set-key (kbd "C-c c") 'org-capture)
+
 ;; automatically reload files when they change on disk
 ;; (global-auto-revert-mode 1)
 
