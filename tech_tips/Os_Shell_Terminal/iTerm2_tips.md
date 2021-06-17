@@ -2,13 +2,14 @@
 
 ----------
 
-| Keys                          | Description      |
-|-------------------------------|------------------|
-| **\<Command>-\<left_arrow>**  | Next Tab         |
-| **\<Command>-\<right_arrow>** | Previous Tab     |
-| **\<Command>-\<number>**      | Go to Tab Number |
-| **\<Command>-T**              | New Tab          |
-| **\<Command>-N**              | New Window       |
+| Keys                                  | Description                           |
+|---------------------------------------|---------------------------------------|
+| **\<Command>-\<left_arrow>**          | Next Tab                              |
+| **\<Command>-\<right_arrow>**         | Previous Tab                          |
+| **\<Command>-\<number>**              | Go to Tab Number                      |
+| **\<Option/Alt><Command>-\<number>** | Go to Window Number (by opened order) |
+| **\<Command>-T**                      | New Tab                               |
+| **\<Command>-N**                      | New Window                            |
 
 
 ### Iterm2 Documentation
