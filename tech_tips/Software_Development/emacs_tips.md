@@ -32,4 +32,10 @@
     2. Go to the Applications folder
     3. Double click on Emacs1
 
+### Organice
+    A clone of org mode that runs in the browser
+
+> ### [Organice Github](https://github.com/200ok-ch/organice)
+
+
 ### [Main Tech Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)
