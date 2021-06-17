@@ -1,6 +1,9 @@
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
+# print 1 column
+alias pr1='print -C1'
+
 # Default to human readable figures
 alias df='df -h'
 alias du='du -h'
@@ -49,10 +52,20 @@ alias brg="git brr | grep"
 
 # alias em="$HOME/bin/emacs-mac.sh"
 alias em="$HOME/bin/emacs-osx.sh"
+alias emp="$HOME/bin/emacs-mac.sh default 1 2 3"
+alias emp1="$HOME/bin/emacs-mac.sh default 1"
+alias emp2="$HOME/bin/emacs-mac.sh default 2"
+alias emp3="$HOME/bin/emacs-mac.sh default 3"
+alias emp4="$HOME/bin/emacs-mac.sh default 4"
 
 # git Branch Prefixes
 export X1="sfulle176_EMX1"
 export DV="develop"
+
+# Make fpath contain only unique entries
+typeset -U fpath
+typeset -U cdpath
+cdpath=(.. ~/Comcast ~/Src /usr/local /usr/local/opt)
 
 if type brew &>/dev/null; then
   fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
@@ -118,5 +131,8 @@ zinit load zsh-users/zsh-syntax-highlighting
 
 autoload -Uz compinit
 compinit
+
+unalias gsd
+alias gsd='_gsd'
 
 echo "End .zshrc $(date)"
