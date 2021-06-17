@@ -1,4 +1,4 @@
-### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)
+### [Main Tech Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)
 
 #### Shortcuts
 
@@ -11,4 +11,4 @@
 
 > ### [IntelliJ IDEA Documentation](https://www.jetbrains.com/help/idea/discover-intellij-idea.html)
 
-### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)
+### [Main Tech Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)

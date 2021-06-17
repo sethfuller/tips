@@ -1,4 +1,4 @@
-### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)
+### [Main Tech Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)
 
 ----------
 
@@ -41,4 +41,4 @@ mvn help:eeffective-pom
 
 ----------
 
-### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)
+### [Main Tech Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)

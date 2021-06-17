@@ -1,4 +1,4 @@
-### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)
+### [Main Tech Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)
 
 ### [Emacs Config Files](https://github.com/sethfuller/tips/tree/main/config/Emacs)
 
@@ -9,6 +9,9 @@
 | [Emacs Elisp Manual](https://ftp.gnu.org/old-gnu/Manuals/elisp-manual-20-2.5/html_node/elisp_toc.html) |                                                       |
 
 ### Setup Multiple Emacs Copies with Different Icons
+    Doing this will cause multiple copies of Emacs to run at once if you
+    open both the original and new Emacs apps.
+
     To get alternative icons:
     1. cd ~/<some_dir> (to clone emacs-icons-project into)
     2. git clone https://github.com/emacsfodder/emacs-icons-project.git
@@ -29,4 +32,4 @@
     2. Go to the Applications folder
     3. Double click on Emacs1
 
-### [Main Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)
+### [Main Tech Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)
