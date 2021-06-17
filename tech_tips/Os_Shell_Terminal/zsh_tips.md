@@ -20,9 +20,10 @@
 
 ### Zsh Documentation
 
-|                                                                 |                                                                                                            |
-|-----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [Zsh Manual](http://zsh.sourceforge.net/Doc/Release/index.html) | [Writing Zsh Completion Scripts](https://mads-hartmann.com/2017/08/06/writing-zsh-completion-scripts.html) |
+|                                                                                                      |                                                                                                            |
+|------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+| [Zsh Manual](http://zsh.sourceforge.net/Doc/Release/index.html)                                      | [Writing Zsh Completion Scripts](https://mads-hartmann.com/2017/08/06/writing-zsh-completion-scripts.html) |
+| [Setting Color for ls](https://www.cyberciti.biz/faq/apple-mac-osx-terminal-color-ls-output-option/) |                                                                                                            |
 
 ### Liquidprompt
 
