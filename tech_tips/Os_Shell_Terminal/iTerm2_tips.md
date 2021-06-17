@@ -7,7 +7,7 @@
 | **\<Command>-\<left_arrow>**          | Next Tab                              |
 | **\<Command>-\<right_arrow>**         | Previous Tab                          |
 | **\<Command>-\<number>**              | Go to Tab Number                      |
-| **\<Option/Alt><Command>-\<number>** | Go to Window Number (by opened order) |
+| **\<Option/Alt>\<Command>-\<number>** | Go to Window Number (by opened order) |
 | **\<Command>-T**                      | New Tab                               |
 | **\<Command>-N**                      | New Window                            |
 
