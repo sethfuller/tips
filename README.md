@@ -1,6 +1,7 @@
 # Seth's Tips
-Technical and other tips in Markdown
-    - config files
+
+Technical and other tips also:
+    - config files (Emacs, zsh, iTerm2, Mac, Git, Maven, Python, etc.)
     - scripts
 
 ### [Technical Tips and Config Files](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)
