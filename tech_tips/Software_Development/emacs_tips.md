@@ -11,7 +11,7 @@
 ### Setup Multiple Emacs Copies with Different Icons
     To get alternative icons:
     1. cd ~/<some_dir> (to clone emacs-icons-project into)
-    2. git clone https://github.com/emacsfodder/emacs-icons-project.git
+    21. git clone https://github.com/emacsfodder/emacs-icons-project.git
     3. cd emacs-icons-project
     4. Examine the png files to find an icon you like
 
