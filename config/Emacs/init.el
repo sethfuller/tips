@@ -1,26 +1,30 @@
-;; dos to unix
-;; C-x RET f undecided-unix
+;; Author: Seth Fuller
+;; Date: 17-June-2021
+;;
+;; Convert a file with dos line endings <CR><LF> to unix <LF>
+;; <Ctrl>-x RET f (defaults to utf-8-unix which is a good selection)
+;;
+;; On Mac:
+;; The Emacs start script is written in ruby so:
 ;; Must enable full disk access for /usr/bin/ruby to access directories
 ;; To do so:
 ;; System Preferences -> Security & Privacy -> Privacy (tab)
 ;; In left pane click on Full Disk Access
 ;; click + to add ruby
-;; The /usr directory is hidden by default Command-Shift-. unhides it.
+;; The /usr directory is hidden by default <Command>-<Shift>-. (period) unhides it.
 
 ;; Turn off Package cl is deprecated warning
 (setq byte-compile-warnings '(cl-functions))
 
 ;; Since Emacs 27.1 the splash screen default directory is /
 (setq default-directory "~/")
+;; Same when Emacs is run from the command line
 (setq command-line-default-directory "~/")
 
 ;; Common Lisp Library
+;; cl-lib is a standard library that comes with Emacs
 (require 'cl-lib)
 
-;; (setenv "M2_HOME" "/usr/local/apache-maven-3.8.1/bin")
-;; (setenv "PATH" (concat (getenv "PATH") ":/Users/sfulle176/bin"))
-;; (getenv "SHELL")
-; show which function the cursor is in for language modes that support it
 (which-function-mode 1)
 
 ;; word movement commands move to words in camel cased text
@@ -59,6 +63,7 @@
 ;; Do not use tabs to indent
 (setq-default indent-tabs-mode nil)
 
+;; uniquify is a standard library that comes with Emacs
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'reverse)
 
@@ -85,6 +90,7 @@
 ;; (when (eq system-type 'darwin)
 ;;   (setq mac-right-option-modifier 'none))
 
+;; multi-web-mode is available in Melpa and Melpa-stable
 (require 'multi-web-mode)
 (setq mweb-default-major-mode 'html-mode)
 (setq mweb-tags '((php-mode "<\\?php\\|<\\? \\|<\\?=" "\\?>")
@@ -102,10 +108,14 @@
 
 (set-background-color "ivory")
 
+;; ls-lisp is a standard library that comes with Emacs
+;; It provides options that MacOS ls does not
 (when (eq system-type 'darwin)
   (require 'ls-lisp)
   (setq ls-lisp-use-insert-directory-program nil))
 
+;; package is a standard library that comes with Emacs
+;; It provides the list-packages and package-install commands
 (require 'package)
 (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/"))
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
@@ -129,12 +139,18 @@
 
 (add-to-list 'load-path "~/.emacs.d/lisp")
 
+;; Read environment variables from .zshenv, .bashrc, or .bash_profile
+;; For zsh use .zshenv to define environment variables you want since this is only
+;; read once on startup
+;; By default PATH is loaded. Add any other variables you want access to
+;; with exec-path-from-shell-copy-env as shown below
 (setq exec-path-from-shell-arguments nil)
 (exec-path-from-shell-initialize)
 (exec-path-from-shell-copy-env "JAVA_HOME")
 (exec-path-from-shell-copy-env "M2_HOME")
 (exec-path-from-shell-copy-env "CM")
 
+;; Function to toggle between opening and closing parens
 (defun match-paren (arg)
   "Go to the matching paren if on a paren; otherwise insert %."
   (interactive "p")
@@ -167,18 +183,26 @@
 
 ;; When using sort adds option to sort by time (t), name (n), extension (x), and size (s)
 ;; In dired buffer type s, then one of the above character
+;; In lisp/dired-sort-map.el
 (require 'dired-sort-map)
 
 ;; (load "helm-local-config")
+;; ido-open is a standard library that comes with Emacs
 (load "ido-open")
 ;; (require 'bm-ext)
+
+;; List all buffers and their memory usage
+;; In lisp/memory-usage.el
 (require 'memory-usage)
 
+;; use-package Available in Melpa and Melpa-stable
 (require 'use-package)
 (use-package properties-mode
   :mode "\\.\\(properties\\|env\\)\\'")
 
 ;; BEGIN JavaScript Configuration
+;; Improved JavaScript mode
+;; All modules available in Melpa and Melpa-stable
 (require 'js2-mode)
 (require 'js2-refactor)
 (require 'xref-js2)
@@ -186,16 +210,18 @@
 ;; JavaScript indentation
 (setq js-indent-level 2)
 
+;; All files ending in .js load using js2-mode
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 
 ;; Better imenu
 (add-hook 'js2-mode-hook #'js2-imenu-extras-mode)
 
 (add-hook 'js2-mode-hook #'js2-refactor-mode)
+
 (js2r-add-keybindings-with-prefix "C-c C-r")
 (define-key js2-mode-map (kbd "C-k") #'js2r-kill)
 
-;; js-mode (which js2 is based on) binds "M-." which conflicts with xref, so
+;; js-mode (which js2-mode is based on) binds "M-." which conflicts with xref, so
 ;; unbind it.
 (define-key js-mode-map (kbd "M-.") nil)
 
@@ -203,7 +229,8 @@
 			   (add-hook 'xref-backend-functions #'xref-js2-xref-backend nil t)))
 ;; END JavaScript Configuration
 
-;; display any item that contains the chars I typed
+;; display any item that contains the chars I typed when visiting files
+;; with <Ctrl>-x <Ctrl>-f or <Ctrl>-x <Ctrl>-f
 (setq ido-enable-flex-matching t)
 (setq ido-use-filename-at-point nil)
 
@@ -222,7 +249,7 @@
 (global-set-key (kbd "s-r") 'revert-buffer-no-confirm)
 
 ;; Use <Command>-i or <Ctrl>-<F9> or <Command>-<Left Mouse Click>
-;; Saves the highlighted text
+;; Saves the highlighted text without removing it from the buffer
 (global-set-key (kbd "C-<f9>") 'kill-ring-save)
 (global-set-key (kbd "s-i") 'kill-ring-save)
 (global-set-key (kbd "s-<mouse-1>") 'kill-ring-save)
@@ -233,34 +260,47 @@
 ;; Normally '<Ctrl>-X <Ctrl>-z' and <Ctrl>-Z minify frame to dock - I never want to do this
 (global-set-key (kbd "C-x C-z") `ignore)
 (global-set-key (kbd "C-z") 'ignore)
+
+;; M-<up> and M-<down> are activated by <Option>-<Up|Down Arrow> or <Escape<Up|Down Arrow>
 (global-set-key (kbd "M-<up>") 'beginning-of-buffer) ; ESC-up arrow
 (global-set-key (kbd "M-<down>") 'end-of-buffer)     ; ESC-down arrow
+;; Old style key bindings
 ;; (global-set-key [?\e up] 'beginning-of-buffer) ; ESC-up arrow
 ;; (global-set-key [?\e down] 'end-of-buffer)     ; ESC-down arrow
 
-; Bind compile to ESC-P
+; Bind compile to ESC-P and  ESC-C-P
 (global-set-key (kbd "M-p") 'compile)
-; Bind compile to ESC-C-P
 (global-set-key (kbd "M-C-p") 'compile)
 
+;; Create a list of my key bindings with the functions they are bound to
+;; so that I can examine the list with:
+;; <Ctrl>-h v<Return>my-key-bindings
+;; Or Since no other variable (in my Emacs bindings) begins with 'my'
+;; <Ctrl>-h v<Return>my<Tab>
 (setq my-key-bindings '())
 
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "C-x C-z")) "C-x C-z"))
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "C-z")) "C-z"))
+(add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-a")) "s-a"))
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-f")) "s-f"))
+(add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-i")) "s-i"))
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-m")) "s-m"))
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-r")) "s-r"))
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "C-<f9>")) "C-<f9>"))
-(add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-i")) "s-i"))
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-<mouse-1>")) "s-<mouse-1>"))
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "C-/")) "C-/"))
-;; M-<up> and M-<down> are activated by <Option>-<Up|Down Arrow>
+
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "M-<up>")) "M-<up> (<Option>-<Up Arrow>)"))
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "M-<down>")) "M-<down> (<Option>-<Down Arrow>)"))
 
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "M-p")) "M-p"))
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "M-C-p")) "M-C-p"))
 
+;; Create a list of interesting Emacs default key bindings with the functions they are bound to
+;; so I don't have to remember them
+;; The variable starts with underscore '_' because while it is a valid character in a
+;; variable name, no other variable starts with it (in my Emacs bindings), so I can type:
+;; <Ctrl>-h v<Return>_<Tab>
 (setq _emacs-key-bindings '())
 (add-to-list '_emacs-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-n")) "s-n"))
 (add-to-list '_emacs-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-D")) "s-D"))
@@ -281,9 +321,14 @@
 
 (add-hook 'python-mode-hook 'my/python-mode-hook)
 
+;; Auto completion with Company variables
+;; Wait .5 second before suggesting completions
 (setq company-idle-delay 0.5)
+;; Show number next to completion suggestion
 (setq company-show-numbers t)
+;; Limit completion suggestions to 20
 (setq company-tooltip-limit 20)
+;; The user must type at least 2 characters before completion suggestions are offered
 (setq company-minimum-prefix-length 2)
 (setq company-tooltip-align-annotations t)
 ;; invert the navigation direction if the the completion popup-isearch-match
@@ -293,22 +338,37 @@
 ;; (global-company-mode 1)
 (add-hook 'after-init-hook 'global-company-mode)
 
+;; Emmet mode allows using abbreviations to enter tags in html, sgml, css files
+;; See https://docs.emmet.io/ for description of Emmet standard
+;; emmet-mode available in Melpa and Melpa-stable
 (require 'emmet-mode)
 (add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
 (add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
 
+;; Command to run in a markdown buffer to convert it to other formats (e.g. html)
+;; The output is displayed in another buffer
 (setq markdown-command "pandoc")
 
 ;;(load "~/.emacs.d/lisp/org_bh_config.el")
 ;; (load "~/.emacs.d/lisp/org_sf_config.el")
 ;; (load "~/.emacs.d/lisp/org_bh_todo.el")
 
+;; Load the grep module in order to change grep command settings
+;; The grep module normally isn't loaded when init.el is read
+;; grep is a standard library that comes with Emacs
 (require 'grep)
 
 (grep-compute-defaults)
 (grep-apply-setting 'grep-command "egrep -nH -r --exclude-dir='svn' srch *")
-;; (grep-apply-setting 'grep-find-command "find . -type f '!' -wholename '*/.svn/*' '!' -wholename '*/.git/*' -print0 | xargs -0 egrep -nH -e ")
 
+;; The default for this command runs find and then execs egrep for each file
+;; This definition runs recursive grep and exclude files and directories
+;; I'm not interested in. The -E option allows regular expressions (like egrep) in search
+;; (surrounded by single quotes). E.g.
+;; 'Phrase 1|Phrase 2' (match either 'Phrase 1' 'Phrase 2'
+;; . 199 places the cursor at the 199th character in the command
+;; (Between '-E' and '.', e.g. '-E _ .' where '_' is the place the search term goes
 (grep-apply-setting 'grep-find-command '("grep --recursive --exclude=\\*.class --exclude=\\*.grep --exclude=\\*.log --exclude=\\*~ --exclude-dir=target --exclude-dir=test --exclude-dir=dist --exclude-dir=node_modules --exclude-dir=\\.git -Hn -E  ." . 199))
-;; (setq grep-find-command '("find . -type d \\( -name '.git' \\) -prune -type f -exec egrep  -nH --null -e  \\{\\} +" . 77))
+
+;; (setq grep-find-command '("find . -type f \\( -name '.git' \\) -prune -type f -exec egrep  -nH --null -e  \\{\\} +" . 77))
 ;; (setq grep-find-template "find <D> <X> -type f <F> -exec egrep <C> -nH -e <R> \\{\\} +")
