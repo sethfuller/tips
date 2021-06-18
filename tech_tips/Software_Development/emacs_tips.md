@@ -57,12 +57,13 @@
 ### Add Command Suggestions With dired-x
 ```elisp
 (setq dired-guess-shell-alist-user
-      '(("\\.pdf\\'" "evince" "okular")
+      '(("\\.pdf\\'" "open" "evince" "okular")
         ("\\.\\(?:djvu\\|eps\\)\\'" "evince")
         ("\\.\\(?:jpg\\|jpeg\\|png\\|gif\\|xpm\\)\\'" "eog")
         ("\\.\\(?:xcf\\)\\'" "gimp")
         ("\\.csv\\'" "libreoffice")
         ("\\.tex\\'" "pdflatex" "latex")
+        ("\\.mov\\'" "open")
         ("\\.\\(?:mp4\\|mkv\\|avi\\|flv\\|ogv\\)\\(?:\\.part\\)?\\'"
          "vlc")
         ("\\.\\(?:mp3\\|flac\\)\\'" "rhythmbox")
