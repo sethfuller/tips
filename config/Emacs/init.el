@@ -25,19 +25,21 @@
 ;; cl-lib is a standard library that comes with Emacs
 (require 'cl-lib)
 
+;; If the mode can figure out what function the cursor is in
+;; display the function name in the mode line
 (which-function-mode 1)
 
 ;; word movement commands move to words in camel cased text
 (global-subword-mode 1)
 
-; Highlights both parens when on one of the parens 
-; (and curly braces, square brackets)
+;; Highlights both parens when on one of the parens
+;; (and curly braces, square brackets)
 (show-paren-mode 1)
 
-; turn on syntax color highlighting in all modes that support it
+;; turn on syntax color highlighting in all modes that support it
 (global-font-lock-mode 1)
 
-; show the current column number in the status bar
+;; show the current column number in the status bar
 (column-number-mode 1)
 
 ;; Org mode commands available globally
