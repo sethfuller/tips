@@ -56,16 +56,6 @@
 (add-to-list 'default-frame-alist (cons 'height frame-default-height))
 (add-to-list 'default-frame-alist (cons 'width  frame-default-width))
 
-;; Source: http://www.emacswiki.org/emacs-en/download/misc-cmds.el
-(defun revert-buffer-no-confirm ()
-    "Revert buffer without confirmation."
-    (interactive)
-    (revert-buffer :ignore-auto :noconfirm))
-
-;; (add-to-list 'load-path "~/.emacs.d/archive/icicles/")
-;; (require 'icicles)
-;; (icy-mode 1)
-
 ;; Do not use tabs to indent
 (setq-default indent-tabs-mode nil)
 
@@ -152,6 +142,9 @@
         ((looking-at "\\s)") (forward-char 1) (backward-list 1))
         (t (self-insert-command (or arg 1)))))
 
+;; Use % to jump back and forth between opening and closing paren with match-paren
+(global-set-key "%" 'match-paren)
+
 ;; Dired extensions
 ;; dired-x loading
 (add-hook 'dired-load-hook
@@ -162,11 +155,24 @@
             ;; (setq dired-x-hands-off-my-keys nil)
             ))
 
+;; From dired-x suggest possible commands for file types
+(setq dired-guess-shell-alist-user
+      '(("\\.pdf\\'" "open")
+        ("\\.mov\\'" "open")
+        ))
+
+;; (require 'dired-sort-menu)
+;; (require 'dired-sort-menu+)
+;; (require 'dired+)
+
+;; When using sort adds option to sort by time (t), name (n), extension (x), and size (s)
+;; In dired buffer type s, then one of the above character
+(require 'dired-sort-map)
+
 ;; (load "helm-local-config")
 (load "ido-open")
 ;; (require 'bm-ext)
 (require 'memory-usage)
-(require 'dired-sort-map)
 
 (require 'use-package)
 (use-package properties-mode
@@ -201,29 +207,30 @@
 (setq ido-enable-flex-matching t)
 (setq ido-use-filename-at-point nil)
 
-(global-set-key "%" 'match-paren)
+;; Source: http://www.emacswiki.org/emacs-en/download/misc-cmds.el
+;; Revert (reload) buffer without asking for confirmation
+(defun revert-buffer-no-confirm ()
+    "Revert buffer without confirmation."
+    (interactive)
+    (revert-buffer :ignore-auto :noconfirm))
 
-;; (global-set-key (kbd "c-x 8 r") 'revert-buffer-no-confirm)
-
-(global-set-key (kbd "s-r") 'revert-buffer-no-confirm)
-
-;; (global-unset-key (kbd "s-f"))
+;; On Mac run following commands by type <Command>-<Character>
+(global-set-key (kbd "s-a") 'mark-whole-buffer)
 (global-set-key (kbd "s-d") 'find-dired)
 (global-set-key (kbd "s-f") 'grep-find)
 (global-set-key (kbd "s-m") 'manual-entry)
-;; Use <cmd>-i (press both at the same time)
-;; <cmd>-a (mark whole buffer) <cmd>-i (save marked region, i.e. whole buffer)
+(global-set-key (kbd "s-r") 'revert-buffer-no-confirm)
+
+;; Use <Command>-i or <Ctrl>-<F9> or <Command>-<Left Mouse Click>
+;; Saves the highlighted text
 (global-set-key (kbd "C-<f9>") 'kill-ring-save)
 (global-set-key (kbd "s-i") 'kill-ring-save)
 (global-set-key (kbd "s-<mouse-1>") 'kill-ring-save)
 
 (global-set-key (kbd "C-/") 'comment-region)
-;; the mnemonic is C-x REALLY QUIT
-;; (global-set-key (kbd "C-x r q") 'save-buffers-kill-terminal)
-;; Unset normal keybinding for above
-;; (global-unset-key (kbd "C-x C-c"))
-;; (global-set-key (kbd "C-x C-c") 'save-buffers-kill-terminal)
-;; Set suspend-frame to ignore (does nothing) (minifies frame to dock) - I never want to do this
+
+;; Set suspend-frame to ignore (does nothing)
+;; Normally '<Ctrl>-X <Ctrl>-z' and <Ctrl>-Z minify frame to dock - I never want to do this
 (global-set-key (kbd "C-x C-z") `ignore)
 (global-set-key (kbd "C-z") 'ignore)
 (global-set-key (kbd "M-<up>") 'beginning-of-buffer) ; ESC-up arrow
@@ -289,12 +296,6 @@
 (require 'emmet-mode)
 (add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
 (add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
-
-;; (require 'dired-sort-menu)
-;; (require 'dired-sort-menu+)
-;; (require 'dired+)
-(require 'dired-sort-map)
-;; dired+ details '('
 
 (setq markdown-command "pandoc")
 
