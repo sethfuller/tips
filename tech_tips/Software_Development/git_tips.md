@@ -52,6 +52,13 @@
 	git checkout|co -
 ```
 
+#### Fix Detached Head
+Checkout the branch you want
+
+```bash
+	git checkout|co develop
+```
+
 [Top](#top)
 
 #### Show all Branches that have been Merged (or Not)
