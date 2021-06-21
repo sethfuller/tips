@@ -1,5 +1,5 @@
-;; Author: Seth Fuller
-;; Date: 17-June-2021
+;;^ ## Author: Seth Fuller
+;;^ ## Date: 17-June-2021
 ;;
 ;; Convert a file with dos line endings <CR><LF> to unix <LF>
 ;; <Ctrl>-x RET f (defaults to utf-8-unix which is a good selection)
@@ -163,7 +163,7 @@
 ;; Use % to jump back and forth between opening and closing paren with match-paren
 (global-set-key "%" 'match-paren)
 
-;; Dired extensions
+;;^ ## Dired extensions
 ;; dired-x loading
 (add-hook 'dired-load-hook
           (lambda ()
@@ -203,6 +203,7 @@
   :mode "\\.\\(properties\\|env\\)\\'")
 
 ;; BEGIN JavaScript Configuration
+;;^ ## JavaScript Configuration
 ;; Improved JavaScript mode
 ;; All modules available in Melpa and Melpa-stable
 (require 'js2-mode)
