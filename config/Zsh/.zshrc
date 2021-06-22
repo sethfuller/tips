@@ -51,12 +51,14 @@ alias gal="$HOME/bin/git_aliases.py NO_PRINT"
 alias brg="git brr | grep"
 
 # alias em="$HOME/bin/emacs-mac.sh"
-alias em="$HOME/bin/emacs-osx.sh"
-alias emp="$HOME/bin/emacs-mac.sh default 1 2 3"
-alias emp1="$HOME/bin/emacs-mac.sh default 1"
-alias emp2="$HOME/bin/emacs-mac.sh default 2"
-alias emp3="$HOME/bin/emacs-mac.sh default 3"
-alias emp4="$HOME/bin/emacs-mac.sh default 4"
+alias em="$HOME/bin/emacs-mac.sh "
+alias emp="$HOME/bin/emacs-mac.sh 1 2 3"
+alias emp1="$HOME/bin/emacs-mac.sh 1"
+alias emp2="$HOME/bin/emacs-mac.sh 2"
+alias emp3="$HOME/bin/emacs-mac.sh 3"
+alias emp4="$HOME/bin/emacs-mac.sh 4"
+
+alias ssht='~/Comcast/bin/ssh_tunnel.sh'
 
 # git Branch Prefixes
 export X1="sfulle176_EMX1"
