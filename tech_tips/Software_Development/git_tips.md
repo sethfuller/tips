@@ -101,7 +101,11 @@ List all stashes.
 	git stash list
 ```
 
+#### Submodules
+> ### [Git Submodule Documentation](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+
 #### Submodule Update Branch
+> ### [Stackoverflow Submodule Detached HEAD](https://stackoverflow.com/questions/18770545/why-is-my-git-submodule-head-detached-from-master)
 
 To move a submodule to a particular branch:
 
