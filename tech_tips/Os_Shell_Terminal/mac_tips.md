@@ -9,7 +9,7 @@
 
 ### Shortcuts
 
-| Keys                         | Description                         |
+| Shortcut                     | Description                         |
 |------------------------------|-------------------------------------|
 | **\<Control>-\<Command>-F**  | Toggle Full Screen                  |
 | **\<Control>-\<Down Arrow>** | Show only current application       |
