@@ -246,7 +246,9 @@
 
 ;; On Mac run following commands by type <Command>-<Character>
 (global-set-key (kbd "s-a") 'mark-whole-buffer)
+(global-set-key (kbd "s-b") 'ediff-buffers)
 (global-set-key (kbd "s-d") 'find-dired)
+(global-set-key (kbd "s-e") 'ediff-directories)
 (global-set-key (kbd "s-f") 'grep-find)
 (global-set-key (kbd "s-m") 'manual-entry)
 (global-set-key (kbd "s-r") 'revert-buffer-no-confirm)
@@ -258,6 +260,7 @@
 (global-set-key (kbd "s-<mouse-1>") 'kill-ring-save)
 
 (global-set-key (kbd "C-/") 'comment-region)
+(global-set-key (kbd "C-\\") 'uncomment-region)
 
 ;; Set suspend-frame to ignore (does nothing)
 ;; Normally '<Ctrl>-X <Ctrl>-z' and <Ctrl>-Z minify frame to dock - I never want to do this
@@ -285,6 +288,9 @@
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "C-x C-z")) "C-x C-z"))
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "C-z")) "C-z"))
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-a")) "s-a"))
+(add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-a")) "s-a"))
+(add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-d")) "s-d"))
+(add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-e")) "s-e"))
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-f")) "s-f"))
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-i")) "s-i"))
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-m")) "s-m"))
@@ -292,6 +298,7 @@
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "C-<f9>")) "C-<f9>"))
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-<mouse-1>")) "s-<mouse-1>"))
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "C-/")) "C-/"))
+(add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "C-\\")) "C-\\"))
 
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "M-<up>")) "M-<up> (<Option>-<Up Arrow>)"))
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "M-<down>")) "M-<down> (<Option>-<Down Arrow>)"))
@@ -319,8 +326,8 @@
 
 (add-to-list 'load-path "~/.emacs.d/lisp/multi-web-mode")
 
-(defun my/python-mode-hook ()
-  (add-to-list 'company-backends 'company-jedi))
+;; (defun my/python-mode-hook ()
+;;   (add-to-list 'company-backends 'company-jedi))
 
 (add-hook 'python-mode-hook 'my/python-mode-hook)
 
