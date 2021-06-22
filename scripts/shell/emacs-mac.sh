@@ -1,23 +1,21 @@
 
-PROFILE=$1
-if [ -z "$PROFILE" ]
-then
-    PROFILE="default"
-fi
+# PROFILE=$1
+# if [ -z "$PROFILE" ]
+# then
+#     PROFILE="default"
+#     shift
+# fi
 
-VERSION=""
-VERS_US=""
-if [ $# -gt 1 ]
-then
-    VERSION="$2"
-    VERS_US="_$VERSION"
-fi
+PROFILE="default"
 
 echo "\$#=$#"
 
 set -x
 # /usr/local/opt/emacs-plus${VERS_US}/Emacs${VERSION}.app/Contents/MacOS/Emacs --with-profile $PROFILE $ICON &
 
-/Applications/Emacs${VERSION}.app/Contents/MacOS/Emacs --with-profile $PROFILE &
+for VERSION in $*
+do
+    /Applications/Emacs${VERSION}.app/Contents/MacOS/Emacs --with-profile $PROFILE &
+done
 
 set +x
