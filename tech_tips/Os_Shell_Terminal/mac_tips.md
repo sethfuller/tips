@@ -16,9 +16,9 @@
 | **\<Control>-\<Up Arrow>**   | Show all windows              |
 
 
-|                                                                         |   |
-|-------------------------------------------------------------------------|---|
-| [Apple Support Mac Shortcuts](https://support.apple.com/en-us/HT201236) |   |
+|                                                                         |                                                               |
+|-------------------------------------------------------------------------|---------------------------------------------------------------|
+| [Apple Support Mac Shortcuts](https://support.apple.com/en-us/HT201236) | [ICanHazShortcut](https://github.com/deseven/icanhazshortcut) |
 
 ### [Main Tech Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)
 
