@@ -2,10 +2,11 @@
 
 #### Shortcuts
 
-| Keys                      | Description         |
-|---------------------------|---------------------|
-| **\<Shift>-\<Command>-F** | Search Files        |
-| **\<Command>-F**          | Search Current File |
+| Keys                      | Description          |
+|---------------------------|----------------------|
+| **\<Shift>-\<Command>-F** | Search Files         |
+| **\<Command>-F**          | Search Current File  |
+| **\<Command>-O**          | Find a Class by Name |
 
 ### Documentation
 
