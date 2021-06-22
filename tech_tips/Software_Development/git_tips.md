@@ -92,6 +92,8 @@ Checkout the branch you want
 	git diff stage@{0}
 ```
 
+In thw above diff command replace '0' with the stash number.
+
 #### Find an Earlier Stash
 List all stashes.
 
@@ -99,16 +101,25 @@ List all stashes.
 	git stash list
 ```
 
-#### Submodule Update
-When a submodule has changes that have been committed the parent will show the status
-for the submodule as changed. This is because the HEAD commit has changed. To update
-the submodule HEAD commit for the parent do this:
+#### Submodule Update Branch
+
+To move a submodule to a particular branch:
 
 ```bash
-	git submodule update
+    cd submodule_directory
+    git checkout|co <branch_name>
+    cd ..
+	git add submodule_directory
+    git commit -m "Moved submodule_directory to <branch_name>"
+    git push
 ```
 
-In thw above diff command replace '0' with the stash number.
+For another developer to change submodule to the branch:
+
+```bash
+    git pull
+    git submodule update --init
+```
 
 [Top](#top)
 
