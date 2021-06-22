@@ -9,11 +9,11 @@
 
 ### Shortcuts
 
-| Keys                         | Description                   |
-|------------------------------|-------------------------------|
-| **\<Control>-\<Command>-F**  | Toggle Full Screen            |
-| **\<Control>-\<Down Arrow>** | Show only current application |
-| **\<Control>-\<Up Arrow>**   | Show all windows              |
+| Keys                         | Description                         |
+|------------------------------|-------------------------------------|
+| **\<Control>-\<Command>-F**  | Toggle Full Screen                  |
+| **\<Control>-\<Down Arrow>** | Show only current application       |
+| **\<Control>-\<Up Arrow>**   | Show all windows for an application |
 
 
 |                                                                         |                                                               |
