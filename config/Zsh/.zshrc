@@ -24,6 +24,10 @@ alias mkdir='mkdir -pv'                         # Create missing dirs. and show 
 alias tac='tail -r'                             # Display in reverse line order
 alias br=brew                                   # Brew
 
+export MVN_CL_INS="clean install -DskipTests"
+alias mci="mvn $MVN_CL_INS"
+alias muci="mvn -U $MVN_CL_INS"
+
 alias extip="curl http://ipecho.net/plain;echo" # Public IP
 alias myip='echo "Current IP: $(ifconfig | grep 192.)"' # Internal IP
 
