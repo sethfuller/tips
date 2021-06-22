@@ -2,11 +2,13 @@
 
 ### [Emacs Config Files](https://github.com/sethfuller/tips/tree/main/config/Emacs)
 
-|                                                                                                        |                                                            |
-|--------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| [Emacs Python Development](https://realpython.com/emacs-the-best-python-editor/)                       | [Github Company Mode](http://company-mode.github.io/)      |
-| [Helm](http://tuhdo.github.io/helm-intro.html)                                                         | [Helm Github](https://github.com/emacs-helm/helm)          |
-| [Emacs Elisp Manual](https://ftp.gnu.org/old-gnu/Manuals/elisp-manual-20-2.5/html_node/elisp_toc.html) | [Multiple Configs](https://github.com/plexus/chemacs2.git) |
+|                                                                                                        |                                                                          |
+|--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| [Emacs Python Development](https://realpython.com/emacs-the-best-python-editor/)                       | [Github Company Mode](http://company-mode.github.io/)                    |
+| [Helm](http://tuhdo.github.io/helm-intro.html)                                                         | [Helm Github](https://github.com/emacs-helm/helm)                        |
+| [Emacs Elisp Manual](https://ftp.gnu.org/old-gnu/Manuals/elisp-manual-20-2.5/html_node/elisp_toc.html) | [Multiple Configs](https://github.com/plexus/chemacs2.git)               |
+| [Using emacsclient on MacOS](https://blog.lambda.cx/posts/using-emacsclient-on-macos/)                 | [Jason Aeschliman Gist Emacs Hacks](https://gist.github.com/jaeschliman) |
+| [Homebrew Emacs Plus](https://github.com/d12frosted/homebrew-emacs-plus)                               |                                                                          |
 
 
 ### Setup Multiple Emacs Copies with Different Icons
