@@ -7,6 +7,9 @@
 | **\<Shift>-\<Command>-F** | Search Files         |
 | **\<Command>-F**          | Search Current File  |
 | **\<Command>-O**          | Find a Class by Name |
+| **\<Ctrl>-D**             | Run Debug Mode       |
+| **\<Ctrl>-R**             | Run                  |
+| **\<Command>-\<F2>**      | Stop                 |
 
 ### Documentation
 
