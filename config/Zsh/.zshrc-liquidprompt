@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 
 # Add the following lines to your bash or zsh config (e.g. ~/.bash_profile):
 if [ -f $(brew --prefix)/share/liquidprompt ]; then
