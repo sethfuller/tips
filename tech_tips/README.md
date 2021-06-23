@@ -23,15 +23,10 @@ _______________________
 
 ### Web
 
-|  |  |
-|--|--|
-| [Chrome Tips](https://github.com/sethfuller/tips/blob/main/tech_tips/Web/chrome_tips.md)| [Markdown Tips](https://github.com/sethfuller/tips/blob/main/tech_tips/Web/markdown_tips.md)|
-
-#### JSON
-
-|  |  |
-|--|--|
-| [JSON Pretty Printer](https://jsonformatter.org/json-pretty-print)| [URL Encoder/Decoder](https://meyerweb.com/eric/tools/dencoder/)|
+|                                                                                          |                                                                                              |                                                                    |                                                                  |   |
+|------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------------------|---|
+| [Chrome Tips](https://github.com/sethfuller/tips/blob/main/tech_tips/Web/chrome_tips.md) | [Markdown Tips](https://github.com/sethfuller/tips/blob/main/tech_tips/Web/markdown_tips.md) |                                                                    |                                                                  |   |
+| [Development](https://github.com/sethfuller/tips/blob/main/tech_tips/Web/development.md) |                                                                                              | [JSON Pretty Printer](https://jsonformatter.org/json-pretty-print) | [URL Encoder/Decoder](https://meyerweb.com/eric/tools/dencoder/) |   |
 
 _______________________
 
