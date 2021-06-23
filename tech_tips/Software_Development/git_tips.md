@@ -12,10 +12,16 @@
 ```bash
 	git reset --soft HEAD~1
 ```
-#### Undo Last Pushed Commit
+#### Undo a Pushed Commit
+This only reverts the specific commit:
 
 ```bash
 	git revert <commit-hash>
+	git push
+```
+To undo a range of commits do:
+```bash
+	git revert <oldest-commit-hash>..<newest-commit-hash>
 	git push
 ```
 
