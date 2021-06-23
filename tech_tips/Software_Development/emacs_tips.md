@@ -4,11 +4,13 @@
 
 |                                                                                                        |                                                                          |
 |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| [Emacs Python Development](https://realpython.com/emacs-the-best-python-editor/)                       | [Github Company Mode](http://company-mode.github.io/)                    |
+| [Emacs Python Development](https://realpython.com/emacs-the-best-python-editor/)                       | [Emacs Orphanage Github](https://github.com/emacsorphanage)              |
+| [Github Company Mode](http://company-mode.github.io/)                                                  | [Better Company Article](https://tychoish.com/post/better-company/)      |
 | [Helm](http://tuhdo.github.io/helm-intro.html)                                                         | [Helm Github](https://github.com/emacs-helm/helm)                        |
 | [Emacs Elisp Manual](https://ftp.gnu.org/old-gnu/Manuals/elisp-manual-20-2.5/html_node/elisp_toc.html) | [Multiple Configs](https://github.com/plexus/chemacs2.git)               |
 | [Using emacsclient on MacOS](https://blog.lambda.cx/posts/using-emacsclient-on-macos/)                 | [Jason Aeschliman Gist Emacs Hacks](https://gist.github.com/jaeschliman) |
-| [Homebrew Emacs Plus](https://github.com/d12frosted/homebrew-emacs-plus)                               |                                                                          |
+| [Homebrew Emacs Plus](https://github.com/d12frosted/homebrew-emacs-plus)                               | [Org Mode Manual](https://orgmode.org/manual/index.html)                 |
+| [Dot Emacs Example Repo](https://github.com/snosov1/dot-emacs)                                         |                                                                          |
 
 
 ### Setup Multiple Emacs Copies with Different Icons
@@ -77,6 +79,6 @@
 
     A clone of org mode that runs in the browser.
 
-    > ### [Organice Github](https://github.com/200ok-ch/organice)
+> ### [Organice Github](https://github.com/200ok-ch/organice)
 
 ### [Main Tech Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)

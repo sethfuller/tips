@@ -13,9 +13,10 @@
 
 
 ### Iterm2 Documentation
-|                                                                      |                                                            |
-|----------------------------------------------------------------------|------------------------------------------------------------|
-| [Iterm2 Documentation on Web](https://iterm2.com/documentation.html) | [Iterm2 Github Source](https://github.com/gnachman/iTerm2) |
+|                                                                                                    |                                                            |
+|----------------------------------------------------------------------------------------------------|------------------------------------------------------------|
+| [iTerm2 Documentation on Web](https://iterm2.com/documentation.html)                               | [Iterm2 Github Source](https://github.com/gnachman/iTerm2) |
+| [iTerm2 Color Schemes Repo](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes) |                                                            |
 
 ----------
 

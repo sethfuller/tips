@@ -18,6 +18,8 @@
 |                                                                                                                                                                                                                                         |                                                                              |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | [Chrome Shortcuts](https://support.google.com/chrome/answer/157179?co=GENIE.Platform%3DDesktop&hl=en#zippy=%2Ctab-and-window-shortcuts%2Cgoogle-chrome-feature-shortcuts%2Caddress-bar-shortcuts%2Cwebpage-shortcuts%2Cmouse-shortcuts) | [Useful Shortcuts](https://blog.hubspot.com/sales/chrome-keyboard-shortcuts) |
+| [My Extensions](chrome://extensions/shortcuts)                                                                                                                                                                                          | [My Settings](chrome://settings/)                                            |
+| [My Bookmarks](chrome://bookmarks/)                                                                                                                                                                                                     | [Chrome Web Store](https://chrome.google.com/webstore/category/extensions)   |
 
 #### Frequently Used Shortcuts
 | Shortcut                              | Description                              |

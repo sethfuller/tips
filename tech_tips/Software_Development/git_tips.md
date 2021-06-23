@@ -1,9 +1,12 @@
 ### [Main Tech Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)
 
-----------
-> ### [My Git Config Files](https://github.com/sethfuller/tips/tree/main/config/Git)
-
 <a name="top"></a>
+----------
+
+|                                                                                    |                                                            |
+|------------------------------------------------------------------------------------|------------------------------------------------------------|
+| [My Git Config Files](https://github.com/sethfuller/tips/tree/main/config/Git)     | [Git Ignore Repo](https://github.com/github/gitignore)     |
+| [Git Submodule Documentation](https://git-scm.com/book/en/v2/Git-Tools-Submodules) | [My Git Aliases](/Users/sfulle176/Src/Docs/git_aliases.md) |
 
 ### Git Tips
 
@@ -114,10 +117,12 @@ List all stashes.
 ```
 
 #### Submodules
-> ### [Git Submodule Documentation](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+
 
 #### Submodule Update Branch
-> ### [Stackoverflow Submodule Detached HEAD](https://stackoverflow.com/questions/18770545/why-is-my-git-submodule-head-detached-from-master)
+|                                                                                                                                         |   |
+|-----------------------------------------------------------------------------------------------------------------------------------------|---|
+| [Stackoverflow Submodule Detached HEAD](https://stackoverflow.com/questions/18770545/why-is-my-git-submodule-head-detached-from-master) |   |
 
 To move a submodule to a particular branch:
 
@@ -143,8 +148,6 @@ For another developer to change submodule to the branch:
 After merging a pull request, go to the main page of the repository
 (e.g. https://github.comcast.com/ottx/thor-xre-platform) and above the
 code listing will be the most recent commit.
-
-> ### [My Git Aliases](/Users/sfulle176/Src/Docs/git_aliases.md)
 
 ### Git Tips
 |                                                                                                                                                                                  |                                                                                                                         |
