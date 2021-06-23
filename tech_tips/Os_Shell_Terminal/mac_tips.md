@@ -1,5 +1,7 @@
 ### [Main Tech Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)
 
+----------
+
 ### Documentation
 
 |                                                                                                                    |                                                                |
@@ -20,9 +22,6 @@
 | **\<Control>-\<Down Arrow>** | Show only current application       |
 | **\<Control>-\<Up Arrow>**   | Show all windows for an application |
 
-
-|                                                                                                                    |                                                                |
-|--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
+----------
 
 ### [Main Tech Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)
-

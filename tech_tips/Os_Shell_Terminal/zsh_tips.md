@@ -12,10 +12,11 @@
 
 
 ### Plugins
-|                                                                       |                                                     |
-|-----------------------------------------------------------------------|-----------------------------------------------------|
-| [Zinit Plugin Manager Github](https://github.com/zdharma/zinit)       | [Zinit Wiki](https://zdharma.github.io/zinit/wiki/) |
-| [Awesome Zsh Plugins](https://github.com/unixorn/awesome-zsh-plugins) | [OhMyZsh](https://github.com/ohmyzsh/ohmyzsh)       |
+|                                                                                 |                                                     |
+|---------------------------------------------------------------------------------|-----------------------------------------------------|
+| [Zinit Plugin Manager Github](https://github.com/zdharma/zinit)                 | [Zinit Wiki](https://zdharma.github.io/zinit/wiki/) |
+| [Awesome Zsh Plugins](https://github.com/unixorn/awesome-zsh-plugins)           | [OhMyZsh](https://github.com/ohmyzsh/ohmyzsh)       |
+| [Liquidprompt Docs.](https://liquidprompt.readthedocs.io/en/stable/config.html) |                                                     |
 
 
 ### Zsh Documentation
@@ -25,10 +26,6 @@
 | [Zsh Manual](http://zsh.sourceforge.net/Doc/Release/index.html)                                      | [Writing Zsh Completion Scripts](https://mads-hartmann.com/2017/08/06/writing-zsh-completion-scripts.html) |
 | [Setting Color for ls](https://www.cyberciti.biz/faq/apple-mac-osx-terminal-color-ls-output-option/) | [Output 256 Colors](https://askubuntu.com/questions/821157/print-a-256-color-test-pattern-in-the-terminal) |
 | [ANSI Color Script](https://code.google.com/archive/p/ansi-color/)                                   |                                                                                                            |
-
-### Liquidprompt
-
-> ### [Liquidprompt Docs.](https://liquidprompt.readthedocs.io/en/stable/config.html)
 
 ### Zsh Tips
 |                                                                                                   |                                                                 |
