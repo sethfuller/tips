@@ -12,6 +12,12 @@
 ```bash
 	git reset --soft HEAD~1
 ```
+#### Undo Last Pushed Commit
+
+```bash
+	git revert <commit-hash>
+	git push
+```
 
 #### Undo to a Specific Commit (Using Commit's Partial or Full SHA-1)
 
