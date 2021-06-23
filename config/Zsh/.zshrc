@@ -51,7 +51,7 @@ alias -g cod='checkout develop'
 
 # Show all git aliases with comments
 
-alias gal="$HOME/bin/git_aliases.py NO_PRINT"
+alias gal="$HOME/bin/git_aliases.py"
 alias brg="git brr | grep"
 
 # alias em="$HOME/bin/emacs-mac.sh"
