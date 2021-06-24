@@ -39,6 +39,32 @@ mvn fr.jcgay.maven.plugins:buildplan-maven-plugin:list -Dbuildplan.tasks=clean,d
 mvn help:eeffective-pom
 ```
 
+### Get Sources/Javadoc
+#### Sources For All Dependencies
+```bash
+    mvn dependency:sources
+```
+
+#### Sources For a Specific Dependency
+```bash
+    mvn dependency:sources -DincludeGroupIds=com.example.api.agents -DincludeArtifactIds=api-agent-spark
+```
+
+#### Javadoc for All Dependencies
+```bash
+    mvn dependency:resolve -Dclassifier=javadoc
+```
+
+#### Sources and Javadoc for All Dependencies
+```bash
+    mvn dependency:sources dependency:resolve -Dclassifier=javadoc
+```
+
+#### Sources/Javadoc For a Specific Dependency
+```bash
+    mvn dependency:sources dependency:resolve -Dclassifier=javadoc -DincludeGroupIds=com.example.api.agents -DincludeArtifactIds=api-agent-spark
+```
+
 ----------
 
 ### [Main Tech Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)
