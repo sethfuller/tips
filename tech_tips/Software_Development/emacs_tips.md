@@ -11,6 +11,7 @@
 | [Using emacsclient on MacOS](https://blog.lambda.cx/posts/using-emacsclient-on-macos/)                 | [Jason Aeschliman Gist Emacs Hacks](https://gist.github.com/jaeschliman) |
 | [Homebrew Emacs Plus](https://github.com/d12frosted/homebrew-emacs-plus)                               | [Org Mode Manual](https://orgmode.org/manual/index.html)                 |
 | [Dot Emacs Example Repo](https://github.com/snosov1/dot-emacs)                                         |                                                                          |
+| [Emacs Source](https://savannah.gnu.org/git/?group=emacs)                                              |                                                                          |
 
 
 ### Setup Multiple Emacs Copies with Different Icons

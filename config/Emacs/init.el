@@ -319,6 +319,7 @@
 (add-to-list '_emacs-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-|")) "s-|"))
 (add-to-list '_emacs-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-l")) "s-l"))
 (add-to-list '_emacs-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-s")) "s-s"))
+(add-to-list '_emacs-key-bindings  (cons (lookup-key (current-global-map) (kbd "C-M-\\")) "C-M-\\"))
 (add-to-list '_emacs-key-bindings  (cons (lookup-key (current-global-map) (kbd "C-<wheel-down>")) "C-<wheel-down>"))
 (add-to-list '_emacs-key-bindings  (cons (lookup-key (current-global-map) (kbd "C-<wheel-up>")) "C-<wheel-up>"))
 
