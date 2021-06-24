@@ -19,8 +19,17 @@
 | Shortcut                     | Description                         |
 |------------------------------|-------------------------------------|
 | **\<Control>-\<Command>-F**  | Toggle Full Screen                  |
-| **\<Control>-\<Down Arrow>** | Show only current application       |
-| **\<Control>-\<Up Arrow>**   | Show all windows for an application |
+| **\<Command>-W**             | Close Current Window                |
+| **\<Control>-\<Down Arrow>** | Show only current Application       |
+| **\<Control>-\<Up Arrow>**   | Show all windows for an Application |
+
+### MS Teams Shortcuts
+
+| Shortcut                     | Description                         |
+|------------------------------|-------------------------------------|
+| **\<Command>-\<Shift>-B**    | Leave Meeting                       |
+| **\<Command>-\<Shift>-M**    | Toggle Mute                         |
+| **\<Command>-\<Shift>-E**    | Share Content                       |
 
 ----------
 
