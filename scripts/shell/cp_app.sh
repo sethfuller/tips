@@ -1,15 +1,31 @@
 #!/usr/bin/env bash
 ##^ ## Author: Seth Fuller
 ##^ ## Date: 25-June-20201
+##^ ## This script will create a new EmacsX.app with links from the original Emacs.app
+##^ ## The main purpose is to create another EmacsX.app that can be run separately with a different icon
+##^ ## The Emacs Plus Homebrew project has many good icons in the icons directory.
+##^ ## The Git repository is: https://github.com/d12frosted/homebrew-emacs-plus.git
+
+##% If new_app_path or orig_app_path do not begin with a '/' /Applications/ will be prepended to them
+##% If new_app_path or orig_app_path do not end with '.app' .app will be appended to them
+##% -i /path/to/icon/file (Optional)
+##% -o /path/to/original/app (Optional - Defaults to /Applications/Emacs.app)
+##% -n - Don't delete Emacs.icns
+##% 
+##% A valid command line could be:
+##% 
 
 usage() {
-    message "Usage: $0 new_app_path [-n] [-i new_icon_path] [-o orig_app_path - Defaults to /Applications/Emacs.app]"
-    echo "If new_app_path or orig_app_path do not begin with a '/' /Applications/ will be prepended to them"
-    echo "If new_app_path or orig_app_path do not end with '.app' .app will be appended to them"
-    echo "-n - Don't delete Emacs.icns"
-    message "A valid command line could be:"
+
+    message "Usage: $0 new_app_path [-n] [-i new_icon_path] [-o orig_app_path]"
+    grep '##% ' $0 |grep -v grep |sed 's/^\#\#\% //'
+
+    # echo "If new_app_path or orig_app_path do not begin with a '/' /Applications/ will be prepended to them"
+    # echo "If new_app_path or orig_app_path do not end with '.app' .app will be appended to them"
+    # echo "-n - Don't delete Emacs.icns"
+    # message "A valid command line could be:"
     message "$0 Emacs2 -i /path/to/icon/file -o Emacs"
-    echo "The new_icon_path is the .icns file that will replace Emacs.icns in /Applications/<new_app>/Countents/Resources"
+    # echo "The new_icon_path is the .icns file that will replace Emacs.icns in /Applications/<new_app>/Countents/Resources"
     exit 1
 }
 
