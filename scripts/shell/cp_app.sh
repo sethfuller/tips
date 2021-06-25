@@ -3,9 +3,10 @@
 ##^ ## Date: 25-June-20201
 
 usage() {
-    message "Usage: $0 new_app_path [-i new_icon_path] [-o orig_app_path - Defaults to /Applications/Emacs.app]"
+    message "Usage: $0 new_app_path [-n] [-i new_icon_path] [-o orig_app_path - Defaults to /Applications/Emacs.app]"
     echo "If new_app_path or orig_app_path do not begin with a '/' /Applications/ will be prepended to them"
     echo "If new_app_path or orig_app_path do not end with '.app' .app will be appended to them"
+    echo "-n - Don't delete Emacs.icns"
     message "A valid command line could be:"
     message "$0 Emacs2 -i /path/to/icon/file -o Emacs"
     echo "The new_icon_path is the .icns file that will replace Emacs.icns in /Applications/<new_app>/Countents/Resources"
@@ -20,7 +21,7 @@ message() {
 NEW_APP=$1
 shift
 
-PARSED_ARGS=$(getopt i:o: $*)
+PARSED_ARGS=$(getopt ni:o: $*)
 VALID_ARGUMENTS=$?
 
 if [ "$VALID_ARGUMENTS" != "0" ]; then
@@ -44,6 +45,7 @@ fi
 
 set -- $PARSED_ARGS
 
+NO_DEL_ICON=""
 for i
 do
 #    echo "i=$i 2=$2"
@@ -52,6 +54,10 @@ do
         -i)
             # echo icon is "'"$2"'"
             NEW_ICON="$2"; shift;
+            shift;;
+        -n)
+            # echo icon is "'"$2"'"
+            NO_DEL_ICON="1"
             shift;;
         -o)
             # echo orig app is "'"$2"'"
@@ -77,6 +83,12 @@ else
     fi
 fi
 
+if [ ! -z "$NO_DEL_ICON" -a ! -z "NEW_ICON" ]
+then
+    echo "Both -n (no delete icon) and -i /path/to/icon/file were specified. These are incompatible"
+    usage
+fi
+
 # echo "icon=$NEW_ICON orig=$ORIG_APP new_app=$NEW_APP"
 message "icon=$NEW_ICON orig=$ORIG_APP new_app=$NEW_APP"
 mkdir -pv "${NEW_APP}/Contents/Resources"
@@ -92,8 +104,14 @@ cd ${NEW_APP}/Contents/Resources
 
 ln -s ${ORIG_APP}/Contents/Resources/* .
 
-message "Removing ${NEW_APP}/Contents/Resources/Emacs.icns a link to ${ORIG_APP}/Contents/Resources/Emacs.icns"
-rm ${NEW_APP}/Contents/Resources/Emacs.icns
+if [ -z "$NO_DEL_ICONS" ]
+then
+    message "Removing ${NEW_APP}/Contents/Resources/Emacs.icns a link to ${ORIG_APP}/Contents/Resources/Emacs.icns"
+    rm ${NEW_APP}/Contents/Resources/Emacs.icns
+else
+    echo "No deleting ${NEW_APP}/Contents/Resources/Emacs.icns"
+    message "You will have to delete it (it is a symlink) before copying icon"
+fi
 
 if [ ! -z "$NEW_ICON" -a -f "$NEW_ICON" ]
 then
