@@ -202,6 +202,8 @@
 (setq dired-guess-shell-alist-user
       '(("\\.pdf\\'" "open")
         ("\\.mov\\'" "open")
+        ("\\.pptx\\'" "open")
+        ("\\.xslx\\'" "open")
         ))
 
 ;; (require 'dired-sort-menu)
