@@ -9,8 +9,8 @@ Technical and other tips also:
 ### Config Files
 |                                                                             |                                                                                 |
 |-----------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| [Zsh Config Files](https://github.com/sethfuller/tips/tree/main/config/Zsh) | [Emacs Config Files](https://github.com/sethfuller/tips/tree/main/config/Emacs) |
-| [Git Config Files](https://github.com/sethfuller/tips/tree/main/config/Git) |                                                                                 |
+| [Zsh Config Files](https://github.com/sethfuller/tips/tree/main/config/Zsh) | [Bash Config Files](https://github.com/sethfuller/tips/tree/main/config/Bash)   |
+| [Git Config Files](https://github.com/sethfuller/tips/tree/main/config/Git) | [Emacs Config Files](https://github.com/sethfuller/tips/tree/main/config/Emacs) |
 
 ### Scripts
 |                                                                                |                                                                                  |
