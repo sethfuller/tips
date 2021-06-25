@@ -20,12 +20,8 @@ usage() {
     message "Usage: $0 new_app_path [-n] [-i new_icon_path] [-o orig_app_path]"
     grep '##% ' $0 |grep -v grep |sed 's/^\#\#\% //'
 
-    # echo "If new_app_path or orig_app_path do not begin with a '/' /Applications/ will be prepended to them"
-    # echo "If new_app_path or orig_app_path do not end with '.app' .app will be appended to them"
-    # echo "-n - Don't delete Emacs.icns"
-    # message "A valid command line could be:"
     message "$0 Emacs2 -i /path/to/icon/file -o Emacs"
-    # echo "The new_icon_path is the .icns file that will replace Emacs.icns in /Applications/<new_app>/Countents/Resources"
+
     exit 1
 }
 
