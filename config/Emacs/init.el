@@ -149,6 +149,7 @@
 
 (package-initialize)
 
+;; Add smex to package-selected-packages
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -216,6 +217,11 @@
 ;; ido-open is a standard library that comes with Emacs
 (load "ido-open")
 ;; (require 'bm-ext)
+
+;; smex - helps search for recent and most frquently used commands along with ido-mode
+(require 'smex)
+;; smex-initialize is optional - may cause a small delay
+(smex-initialize)
 
 ;; List all buffers and their memory usage
 ;; In lisp/memory-usage.el
