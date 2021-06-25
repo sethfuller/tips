@@ -12,7 +12,7 @@
 | [Homebrew Emacs Plus](https://github.com/d12frosted/homebrew-emacs-plus)                               | [Org Mode Manual](https://orgmode.org/manual/index.html)                 |
 | [Dot Emacs Example Repo](https://github.com/snosov1/dot-emacs)                                         |                                                                          |
 | [Emacs Source](https://savannah.gnu.org/git/?group=emacs)                                              | [Set Emacs App Icon](https://gist.github.com/jaeschliman/8591515)        |
-| [Smex](https://github.com/nonsequitur/smex)                                                            |                                                                          |
+| [Smex](https://github.com/nonsequitur/smex)                                                            | [Awesome Emacs Packages](https://github.com/emacs-tw/awesome-emacs)      |
 
 
 ### Setup Multiple Emacs Copies with Different Icons
