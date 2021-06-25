@@ -12,6 +12,8 @@
 ##% -o /path/to/original/app (Optional - Defaults to /Applications/Emacs.app)
 ##% -n - Don't delete Emacs.icns
 ##% 
+##% You cannot specify -i and -n at the same time
+##% 
 ##% A valid command line could be:
 ##% 
 
