@@ -59,4 +59,3 @@ do
         echo "$EMACS_APP - DOES NOT EXIST"
     fi
 done
-
