@@ -29,6 +29,15 @@
 ;; display the function name in the mode line
 (which-function-mode 1)
 
+;; Turn on/off the toolbar at the top of the frame (window)
+(tool-bar-mode 0)
+
+;; Turn on/off scroll bar can also set to right (default) or left
+;; (scroll-bar-mode 0)
+
+;; Turn on/off menu bar
+;; (menu-bar-mode 1)
+
 ;; word movement commands move to words in camel cased text
 (global-subword-mode 1)
 
@@ -41,6 +50,21 @@
 
 ;; show the current column number in the status bar
 (column-number-mode 1)
+
+;; Show size of buffer in mode line
+(size-indication-mode t)
+
+;; Set the frame title - same format as mode-line-format
+;; (setq frame-title-format "%b - emacs")
+
+;; Add further minor-modes to be enabled by semantic-mode.
+;; See doc-string of `semantic-default-submodes' for other things
+;; you can use here.
+(add-to-list 'semantic-default-submodes 'global-semantic-idle-summary-mode)
+(add-to-list 'semantic-default-submodes 'global-semantic-idle-completions-mode)
+
+;; Enable Semantic
+(semantic-mode 1)
 
 ;; Org mode commands available globally
 (global-set-key (kbd "C-c l") 'org-store-link)
@@ -259,6 +283,9 @@
 (global-set-key (kbd "s-i") 'kill-ring-save)
 (global-set-key (kbd "s-<mouse-1>") 'kill-ring-save)
 
+;; find-file-at-point - If the string at the current point in the buffer
+;; can be interpreted as a file, go to that file
+(global-set-key (kbd "C-<tab>") 'find-file-at-point)
 (global-set-key (kbd "C-/") 'comment-region)
 (global-set-key (kbd "C-\\") 'uncomment-region)
 
@@ -267,14 +294,14 @@
 (global-set-key (kbd "C-x C-z") `ignore)
 (global-set-key (kbd "C-z") 'ignore)
 
-;; M-<up> and M-<down> are activated by <Option>-<Up|Down Arrow> or <Escape<Up|Down Arrow>
+;; M-<up> and M-<down> are activated by <Option|ESC>-<Up|Down Arrow>
 (global-set-key (kbd "M-<up>") 'beginning-of-buffer) ; ESC-up arrow
 (global-set-key (kbd "M-<down>") 'end-of-buffer)     ; ESC-down arrow
 ;; Old style key bindings
 ;; (global-set-key [?\e up] 'beginning-of-buffer) ; ESC-up arrow
 ;; (global-set-key [?\e down] 'end-of-buffer)     ; ESC-down arrow
 
-; Bind compile to ESC-P and  ESC-C-P
+; Bind compile to <Option|ESC>-P and  <Option|ESC>-C-P
 (global-set-key (kbd "M-p") 'compile)
 (global-set-key (kbd "M-C-p") 'compile)
 
@@ -312,6 +339,8 @@
 ;; variable name, no other variable starts with it (in my Emacs bindings), so I can type:
 ;; <Ctrl>-h v<Return>_<Tab>
 (setq _emacs-key-bindings '())
+(add-to-list '_emacs-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-+")) "s-+"))
+(add-to-list '_emacs-key-bindings  (cons (lookup-key (current-global-map) (kbd "s--")) "s--"))
 (add-to-list '_emacs-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-n")) "s-n"))
 (add-to-list '_emacs-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-D")) "s-D"))
 (add-to-list '_emacs-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-M")) "s-M"))
