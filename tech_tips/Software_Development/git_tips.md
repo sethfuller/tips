@@ -22,13 +22,13 @@ This only reverts the specific commit:
 	git revert <commit-hash>
 	git push
 ```
-To undo a range of commits do:
+#### Undo a Range of Commits
 ```bash
 	git revert <oldest-commit-hash>..<newest-commit-hash>
 	git push
 ```
 
-#### Undo to a Specific Commit (Using Commit's Partial or Full SHA-1)
+#### Undo to a Specific Commit Before Being Pushed (Using Commit's Partial or Full SHA-1)
 
 ```bash
 	git reset 9ef9173
@@ -158,7 +158,8 @@ code listing will be the most recent commit.
 | [Push Branch to Remote Diff. Scenarios](https://devconnected.com/how-to-push-git-branch-to-remote/)                                                                              | [Git Tips Project](https://github.com/git-tips/tips.git)                                                                |
 | [Must Have Git Aliases Article](https://www.durdn.com/blog/2012/11/22/must-have-git-aliases-advanced-examples/)                                                                  | [Nicola Paolucci Gitconfig](https://github.com/durdn/cfg/blob/master/.gitconfig)                                        |
 | [Copy Files from One Repository to Another w/History](https://stackoverflow.com/questions/1365541/how-to-move-files-from-one-git-repo-to-another-not-a-clone-preserving-history) | [Script to Copy Files from One Repository to Another w/History](https://gist.github.com/whistler/de34b77aba2221ed8b2e)  |
-| [Remove Sensitive Data from Repo](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)     |                                                                                                                         |
+| [Remove Sensitive Data from Repo](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)     | [BFG Repo Cleaner](https://rtyley.github.io/bfg-repo-cleaner/)                                                          |
+| [Revert a Commit](https://gist.github.com/gunjanpatel/18f9e4d1eb609597c50c2118e416e6a6)                                                                                                                                                                                 |                                                                                                                         |
 
 ----------
 
