@@ -277,9 +277,9 @@
 (global-set-key (kbd "s-m") 'manual-entry)
 (global-set-key (kbd "s-r") 'revert-buffer-no-confirm)
 
-;; Use <Command>-i or <Ctrl>-<F9> or <Command>-<Left Mouse Click>
+;; Use <Command>-i or <Command>-<Left Mouse Click>
 ;; Saves the highlighted text without removing it from the buffer
-(global-set-key (kbd "C-<f9>") 'kill-ring-save)
+;; (global-set-key (kbd "C-<f9>") 'kill-ring-save)
 (global-set-key (kbd "s-i") 'kill-ring-save)
 (global-set-key (kbd "s-<mouse-1>") 'kill-ring-save)
 
@@ -322,7 +322,7 @@
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-i")) "s-i"))
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-m")) "s-m"))
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-r")) "s-r"))
-(add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "C-<f9>")) "C-<f9>"))
+;; (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "C-<f9>")) "C-<f9>"))
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-<mouse-1>")) "s-<mouse-1>"))
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "C-/")) "C-/"))
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "C-\\")) "C-\\"))
@@ -339,7 +339,7 @@
 ;; variable name, no other variable starts with it (in my Emacs bindings), so I can type:
 ;; <Ctrl>-h v<Return>_<Tab>
 (setq _emacs-key-bindings '())
-(add-to-list '_emacs-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-+")) "s-+"))
+(add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-+")) "s-+|s-="))
 (add-to-list '_emacs-key-bindings  (cons (lookup-key (current-global-map) (kbd "s--")) "s--"))
 (add-to-list '_emacs-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-n")) "s-n"))
 (add-to-list '_emacs-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-D")) "s-D"))
