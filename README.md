@@ -1,7 +1,7 @@
 # Seth's Tips
 
 Technical and other tips also:
-    - config files (Emacs, zsh, iTerm2, Mac, Git, Maven, Python, etc.)
+    - config files (Emacs, bash, zsh, iTerm2, Mac, Git, Maven, Python, etc.)
     - scripts
 
 ### [Technical Tips](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)
