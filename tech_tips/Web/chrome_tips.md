@@ -32,6 +32,11 @@
 | **\<Shift> \<left-mouse-click>**      | Open Link New Window                     |
 | **\<Command> `** (backtick)           | Cycle Between Windows                    |
 
+### General Tips
+|                                                                                                         |   |
+|---------------------------------------------------------------------------------------------------------|---|
+| [Name Windows](https://www.howtogeek.com/723486/how-to-name-chrome-windows-for-alttab-and-the-taskbar/) |   |
+
 ### Session Buddy
 > ### [Session Buddy Data Location](https://sessionbuddy.com/data-location/)
 
