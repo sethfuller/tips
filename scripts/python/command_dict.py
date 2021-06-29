@@ -62,6 +62,26 @@ commands = {
                 'command': '',
             },
         ],
+        'diff': [
+            {
+                'description': 'Diff Files Added With "git add"',
+                'command': 'git diff --cached',
+            },
+            {
+                'description': 'Diff Files With Stash Number <number>',
+                'command': 'git diff stage@{<number>}',
+            },
+        ],
+        'stash': [
+            {
+                'description': 'List All Stashes',
+                'command': 'git stash last',
+            },
+            {
+                'description': 'Stash Current Changes',
+                'command': 'git stash',
+            },
+        ],
     },
     'dummy': {
         'category': [
