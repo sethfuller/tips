@@ -88,11 +88,6 @@ Checkout the branch you want
 ```
 
 ### Delete all Merged Branches
-```bash
-	git branch --merged | xargs git branch -d
-```
-
-### Delete all Merged Branches
 	Add --remote to get remote branches
 
 ```bash
