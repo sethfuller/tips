@@ -9,7 +9,8 @@
 | [Helm](http://tuhdo.github.io/helm-intro.html)                                                         | [Helm Github](https://github.com/emacs-helm/helm)                        |
 | [Emacs Elisp Manual](https://ftp.gnu.org/old-gnu/Manuals/elisp-manual-20-2.5/html_node/elisp_toc.html) | [Multiple Configs](https://github.com/plexus/chemacs2.git)               |
 | [Using emacsclient on MacOS](https://blog.lambda.cx/posts/using-emacsclient-on-macos/)                 | [Jason Aeschliman Gist Emacs Hacks](https://gist.github.com/jaeschliman) |
-| [Homebrew Emacs Plus](https://github.com/d12frosted/homebrew-emacs-plus)                               | [Org Mode Manual](https://orgmode.org/manual/index.html)                 |
+| [Homebrew Emacs Plus](https://github.com/d12frosted/homebrew-emacs-plus)                               |                                                                          |
+| [Org Mode Cheatsheet](https://www.gnu.org/software/emacs/refcards/pdf/orgcard.pdf)                     | [Org Mode Manual](https://orgmode.org/manual/index.html)                 |
 | [Dot Emacs Example Repo](https://github.com/snosov1/dot-emacs)                                         |                                                                          |
 | [Emacs Source](https://savannah.gnu.org/git/?group=emacs)                                              | [Set Emacs App Icon](https://gist.github.com/jaeschliman/8591515)        |
 | [Smex](https://github.com/nonsequitur/smex)                                                            | [Awesome Emacs Packages](https://github.com/emacs-tw/awesome-emacs)      |
