@@ -5,9 +5,10 @@
 <a name="top"></a>
 
 ### JavaScript
-|                                                                                         |   |
-|-----------------------------------------------------------------------------------------|---|
-| [Mozilla JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript) |   |
+|                                                                                         |                                           |
+|-----------------------------------------------------------------------------------------|-------------------------------------------|
+| [Mozilla JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript) | [FuseJS Fuzzy Search](https://fusejs.io/) |
+
 
 ----------
 
