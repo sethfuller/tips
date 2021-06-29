@@ -104,7 +104,7 @@
 
 (add-to-list 'auto-mode-alist '("\\.jsp\\'" . mhtml-mode))
 
-(add-to-list 'load-path "~/.emacs.d/lisp/multi-web-mode")
+;; (add-to-list 'load-path "~/.emacs.d/lisp/multi-web-mode")
 
 ;; Auto select on selection of text
 ;; (setq mouse-drag-copy-region t) ;; only on mouse selection
@@ -117,13 +117,14 @@
 ;;   (setq mac-right-option-modifier 'none))
 
 ;; multi-web-mode is available in Melpa and Melpa-stable
-(require 'multi-web-mode)
-(setq mweb-default-major-mode 'html-mode)
-(setq mweb-tags '((php-mode "<\\?php\\|<\\? \\|<\\?=" "\\?>")
-                  (js-mode "<script[^>]*>" "</script>")
-                  (css-mode "<style[^>]*>" "</style>")))
-(setq mweb-filename-extensions '("php" "htm" "html" "ctp" "phtml" "php4" "php5"))
-(multi-web-global-mode 1)
+
+;; (require 'multi-web-mode)
+;; (setq mweb-default-major-mode 'html-mode)
+;; (setq mweb-tags '((php-mode "<\\?php\\|<\\? \\|<\\?=" "\\?>")
+;;                   (js-mode "<script[^>]*>" "</script>")
+;;                   (css-mode "<style[^>]*>" "</style>")))
+;; (setq mweb-filename-extensions '("php" "htm" "html" "ctp" "phtml" "php4" "php5"))
+;; (multi-web-global-mode 1)
 
 ;; (require 'psvn)
 
