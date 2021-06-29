@@ -19,6 +19,56 @@ def print_log_error(msg, logger):
 
 
 
+def run_process(command):
+    """
+    Run a process and return the process object
+    Parameters
+    ----------
+    command: str
+       The command to run
+    """
+    command_to_run = shlex.split(command)
+    process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    return process
+
+def read_process_output(process, output_types):
+    process_output = {
+        'stdout': [],
+        'stderr': []
+    }
+
+    if not output_types or output_types.get('stdout'):
+        for line in process.stdout:
+            text_line = line.decode()
+            process_output['stdout'].append(text_line)
+
+        if not output_types or output_types.get('stderr'):
+            for line in process.stderr:
+                text_line = line.decode()
+                process_output['stderr'].append(text_line)
+
+    process.communicate() ## Throw away any other output
+
+    return process_output
+
+def process_ret_code(process, command, rc_tries = 10):
+    """
+    Try up to rc_tries times to get return code of process.
+    process.poll() returns None while process is still running
+    """
+
+    i = 0
+    while i < 10:
+        ret_code = process.poll()
+        if ret_code is not None:
+            break
+        i += 1
+
+        if ret_code:
+            print("Error running " + command)
+            print("Return Code " + str(ret_code))
+            sys.exit(1)
+
 def source_file(file, cmd_args):
     """
     Emulate the bash source file_name command
