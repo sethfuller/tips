@@ -104,6 +104,12 @@ then
     usage
 fi
 
+if [ ! -d "$ORIG_APP" ]
+then
+    message "$ORIG_APP does not exist"
+    usage
+fi
+
 # echo "icon=$NEW_ICON orig=$ORIG_APP new_app=$NEW_APP"
 message "icon=$NEW_ICON orig=$ORIG_APP new_app=$NEW_APP"
 mkdir -pv "${NEW_APP}/Contents/Resources"
