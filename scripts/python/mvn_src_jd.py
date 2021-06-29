@@ -11,11 +11,11 @@ class MvnSrcJavadoc:
     """
 
     def __init__(self):
-        self.parse_args()
+        self.init_args()
         self.validate_args()
         self.init_cmds()
 
-    def parse_args(self):
+    def init_args(self):
         # Process command line arguments
         parser = argparse.ArgumentParser(description='Get mvn sources/javadocs')
         parser.add_argument('--log_level', '-l',
@@ -61,7 +61,7 @@ class MvnSrcJavadoc:
         has_errors = False
 
         if not self.args.all and not self.args.source and not self.args.javadoc:
-            print('Must pick one of --all --source or --javadoc')
+            print('Must pick one of --all or --source or --javadoc')
             has_errors = True
 
         if has_errors:
