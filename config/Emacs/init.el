@@ -285,6 +285,7 @@
 (global-set-key (kbd "s-f") 'grep-find)
 (global-set-key (kbd "s-m") 'manual-entry)
 (global-set-key (kbd "s-r") 'revert-buffer-no-confirm)
+(global-set-key (kbd "s-x") 'make-frame-command)
 
 ;; Use <Command>-i or <Command>-<Left Mouse Click>
 ;; Saves the highlighted text without removing it from the buffer
@@ -331,6 +332,7 @@
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-i")) "s-i"))
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-m")) "s-m"))
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-r")) "s-r"))
+(add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-x")) "s-x"))
 ;; (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "C-<f9>")) "C-<f9>"))
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-<mouse-1>")) "s-<mouse-1>"))
 (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "C-/")) "C-/"))
