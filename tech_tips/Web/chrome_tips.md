@@ -40,6 +40,10 @@
 ### Session Buddy
 > ### [Session Buddy Data Location](https://sessionbuddy.com/data-location/)
 
+|                                               |                                                                                                                     |
+|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| [Chromium Website](https://www.chromium.org/) | [Chromium for Mac](https://chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/mac_build_instructions.md) |
+
 ----------
 
 ### [Main Tech Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)
