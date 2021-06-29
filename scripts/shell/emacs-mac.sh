@@ -51,6 +51,9 @@ fi
 for VERSION in $*
 do
     EMACS_APP="/Applications/Emacs${VERSION}.app/Contents/MacOS/Emacs"
+    # Use this on M1 Macs
+    # EMACS_APP="/Applications/Emacs${VERSION}.app/Contents/MacOS/Emacs-x86_64-10_14"
+
     if [ -f "$EMACS_APP" ]
     then
         echo "START: $EMACS_APP $EMACS_ARGS &"
