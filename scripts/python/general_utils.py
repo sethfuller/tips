@@ -27,11 +27,28 @@ def run_process(command):
     command: str
        The command to run
     """
+
     command_to_run = shlex.split(command)
     process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     return process
 
 def read_process_output(process, output_types):
+    """
+    Read the output from process
+    Parameters
+    _________
+    process: subprocess process
+    the process to read output from
+    output_types: dictionary
+    contains fields for stdout and stderr set to True (get output), or False (ignore output)
+
+    Returns
+    _______
+    process_output: dictionary
+    Has keys 'stdout' and 'stderr' with arrays for output
+    if output is captured.
+    """
+
     process_output = {
         'stdout': [],
         'stderr': []
@@ -55,6 +72,15 @@ def process_ret_code(process, command, rc_tries = 10):
     """
     Try up to rc_tries times to get return code of process.
     process.poll() returns None while process is still running
+
+    Parameters
+    _________
+    process: subprocess process
+    the process to read output from
+    command: str
+    The command that was run (print if there was an error)
+    rc_tries: int
+    The number of retries to get the return code (default 10)
     """
 
     i = 0
@@ -71,7 +97,7 @@ def process_ret_code(process, command, rc_tries = 10):
 
 def source_file(file, cmd_args):
     """
-    Emulate the bash source file_name command
+    Emulate the bash/zsh source file_name command
     Does a source of the file running /bin/env with no predefined environment
     variables. After sourcing the file. It runs /bin/env to display all defined
     variables (only those from the file). It then reads each environment
@@ -82,7 +108,7 @@ def source_file(file, cmd_args):
     ----------
     file: str
        The full path to the file containing the environment variable
-       definitions in bash format (VAR="VALUE")
+       definitions in bash/zsh format (VAR="VALUE")
     cmd_args: str
        The list of arguments to pass along with the file name
     """
