@@ -275,7 +275,8 @@
 (defun revert-buffer-no-confirm ()
     "Revert buffer without confirmation."
     (interactive)
-    (revert-buffer :ignore-auto :noconfirm))
+    (revert-buffer :ignore-auto :noconfirm)
+    (message "Reverted `%s`" (buffer-name)))
 
 ;; On Mac run following commands by type <Command>-<Character>
 (global-set-key (kbd "s-a") 'mark-whole-buffer)
