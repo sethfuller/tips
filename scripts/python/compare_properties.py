@@ -5,6 +5,22 @@ import argparse
 
 class CompareProperties:
     """
+    This script requires python3, to install do:
+    brew install python3
+
+    This will install python3 to /usr/local/bin. Make sure that dir. is in your path.
+
+    This script needs the module jproperties which must be installed, do:
+    pip3 install jproperties
+
+    Run as:
+    /path/to/compare_properties.py --prop1 /path/to/prop1.properties --prop2 /path/to/prop2.properties
+
+    Make this script executable with:
+    chmod 755 /path/to/compare_properties.py
+
+    When run it will automatically look for python3 on the path.
+
     """
 
     def __init__(self):
@@ -15,9 +31,6 @@ class CompareProperties:
     def init_args(self):
         # Process command line arguments
         parser = argparse.ArgumentParser(description='Sort properties in a properties file')
-        parser.add_argument('--log_level', '-l',
-                            help='Set the log level (Default INFO)',
-                           default='INFO')
 
         parser.add_argument('--prop1', '-1',
                             help='Properties File', required=True)
@@ -36,26 +49,26 @@ class CompareProperties:
         with open(self.args.prop2, 'rb') as prop2_file:
             self.config2.load(prop2_file)
 
-            print(f'Properties File: {self.args.prop1}\n')
+            print(f'Compare Properties File: {self.args.prop1} to {self.args.prop2}\n')
 
             for key in self.config1.keys():
                 value1 = self.config1.get(key)
                 value2 = self.config2.get(key)
                 if not value2:
-                    print(f'\tNo {key} in {self.args.prop2}')
+                    print(f'\n\tNO {key} in {self.args.prop2}')
                 else:
                     val1_data = value1.data
                     val2_data = value2.data
                     if val1_data != val2_data:
                         print(f'\t{key} {val1_data} != {val2_data}')
 
-            print(f'\nProperties File: {self.args.prop2}\n')
+            print(f'\nKeys in Properties File: {self.args.prop2} Not in: {self.args.prop1}\n')
 
             for key in self.config2.keys():
                 value1 = self.config1.get(key)
                 value2 = self.config2.get(key)
                 if not value1:
-                    print(f'\tNo {key} in {self.args.prop1}')
+                    print(f'\tNO {key} in {self.args.prop1}')
 
 def main():
     compare_properties = CompareProperties()
