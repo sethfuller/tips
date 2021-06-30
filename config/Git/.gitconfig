@@ -51,6 +51,8 @@
         ph = push
 # Push a local branch to remote (origin)
         phu = push --set-upstream origin
+# Reset added file(s) to un-added (append path/to/file)
+        rsa = restore --staged
 # Status aliases (-s short form)
 	st = status
 	sts = status -s
