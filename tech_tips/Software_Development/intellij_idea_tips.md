@@ -13,6 +13,8 @@
 
 ### Documentation
 
-> ### [IntelliJ IDEA Documentation](https://www.jetbrains.com/help/idea/discover-intellij-idea.html)
+|                                                                                                |                        |
+|------------------------------------------------------------------------------------------------|------------------------|
+| [IntelliJ IDEA Documentation](https://www.jetbrains.com/help/idea/discover-intellij-idea.html) | [Key Reference Card](https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf) |
 
 ### [Main Tech Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)
