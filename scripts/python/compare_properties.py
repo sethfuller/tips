@@ -5,6 +5,9 @@ import argparse
 
 class CompareProperties:
     """
+    Author: Seth Fuller
+    Date: 09/23/2020
+
     This script requires python3, to install do:
     brew install python3
 
