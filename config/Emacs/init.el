@@ -272,6 +272,7 @@
 
 ;; Source: http://www.emacswiki.org/emacs-en/download/misc-cmds.el
 ;; Revert (reload) buffer without asking for confirmation
+;; Message displays in the echo area, below the mode line
 (defun revert-buffer-no-confirm ()
     "Revert buffer without confirmation."
     (interactive)
