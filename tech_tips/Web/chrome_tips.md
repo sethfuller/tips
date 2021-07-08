@@ -72,7 +72,7 @@
 | [Session Buddy Data Location](https://sessionbuddy.com/data-location/) |   |
 
 |                                               |                                                                                                                     |
-# Tab Search
+### Tab Search
 
 Chrome has a new feature to let you search tab titles and URLs over
 multiple Chrome windows. Go to chrome://flags/#enable-tab-search set
