@@ -13,14 +13,14 @@
     | [[https://github.com/sethfuller/tips/tree/main/config/Git][Git Config Files]] | [[https://github.com/sethfuller/tips/tree/main/config/Emacs][Emacs Config Files]] |
 
 *** Scripts
-|                                                                               |                                                                                 |
-|-------------------------------------------------------------------------------+---------------------------------------------------------------------------------|
+|               |                |
+|---------------+----------------|
 | [[https://github.com/sethfuller/tips/tree/main/scripts/shell][Shell Scripts]] | [[https://github.com/sethfuller/tips/tree/main/scripts/python][Python Scripts]] |
 
 ______________________
 
 *** General
 |                                                                                                           |   |
-|-----------------------------------------------------------------------------------------------------------+---|
+|------------------------------------------------------------------------------------------------+---           |
 | [[https://github.com/sethfuller/tips/blob/main/General/cut_the_cord.md][Cut the Cord - Get Rid of Cable]] |   |
     
