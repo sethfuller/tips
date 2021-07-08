@@ -9,7 +9,7 @@
 
     |                                                                               |                                                                                  |
     |-------------------------------------------------------------------------------+----------------------------------------------------------------------------------|
-    | [[Zsh Config Files][https://github.com/sethfuller/tips/tree/main/config/Zsh][Zsh Config Files]] | [[https://github.com/sethfuller/tips/tree/main/config/Bash][Bash Config Files]]  |
+    | [[https://github.com/sethfuller/tips/tree/main/config/Zsh][Zsh Config Files]] | [[https://github.com/sethfuller/tips/tree/main/config/Bash][Bash Config Files]]  |
     | [[Git Config Files][https://github.com/sethfuller/tips/tree/main/config/Git][Git Config Files]] | [[https://github.com/sethfuller/tips/tree/main/config/Emacs][Emacs Config Files]] |
 
 *** Scripts
