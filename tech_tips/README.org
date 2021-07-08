@@ -7,7 +7,7 @@ _______________________
 |             |          |
 |-------------+----------|
 | [[Os_Shell_Terminal/iTerm2_tips.org][Iterm2 Tips]] | [[Os_Shell_Terminal/mac_tips.org][Mac Tips]] |
-| [[https://github.com/sethfuller/tips/blob/main/tech_tips/Os_Shell_Terminal/zsh_tips.md][Zsh Tips]]    |          |
+| [[Os_Shell_Terminal/zsh_tips.org][Zsh Tips]]    |          |
 
 _______________________
 
