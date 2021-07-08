@@ -6,13 +6,16 @@
 
 |                                                                                                                    |                                                                |
 |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| [Karibiner Key Customizer Documentation](https://karabiner-elements.pqrs.org/docs/)                                | [MacOS Setup Guide](https://sourabhbajaj.com/mac-setup)        |
-| [Apple Support Mac Shortcuts](https://support.apple.com/en-us/HT201236)                                            | [ICanHazShortcut](https://github.com/deseven/icanhazshortcut)  |
+| [MacOS Setup Guide](https://sourabhbajaj.com/mac-setup)                                                            |                                                                |
 | [Quicktime Screen Recording](https://support.apple.com/guide/quicktime-player/record-your-screen-qtp97b08e666/mac) | [PNG to Icons Converter](https://cloudconvert.com/png-to-icns) |
 | [Mac Setup Tips](https://sourabhbajaj.com/mac-setup/)                                                              |                                                                |
-| [Homebrew Blog](https://brew.sh/blog/)                                                                             | [Homebrew Formlae](https://formulae.brew.sh/formula/)          |
-| [Homebrew Documentation](https://formulae.brew.sh/formula/)                                                        |                                                                |
 
+#### Homebrew
+
+|                                                             |                                                       |
+|-------------------------------------------------------------|-------------------------------------------------------|
+| [Homebrew Blog](https://brew.sh/blog/)                      | [Homebrew Formlae](https://formulae.brew.sh/formula/) |
+| [Homebrew Documentation](https://formulae.brew.sh/formula/) |                                                       |
 
 ### Shortcuts
 
@@ -23,12 +26,19 @@
 | **\<Control>-\<Down Arrow>** | Show only current Application       |
 | **\<Control>-\<Up Arrow>**   | Show all windows for an Application |
 
+|                                                                         |                                                                                     |
+|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| [Apple Support Mac Shortcuts](https://support.apple.com/en-us/HT201236) | [Karibiner Key Customizer Documentation](https://karabiner-elements.pqrs.org/docs/) |
+| [ICanHazShortcut](https://github.com/deseven/icanhazshortcut)           |                                                                                     |
+
 ### View all Open Windows
 **\<Command>-\<Space>**Mission
 
 Select Mission Control
 
 All open windows will be displayed
+
+[Mission Control Usage](https://support.apple.com/guide/mac-help/open-windows-spaces-mission-control-mh35798/mac)
 
 ### MS Teams Shortcuts
 
