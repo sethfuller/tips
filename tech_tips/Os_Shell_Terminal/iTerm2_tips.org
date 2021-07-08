@@ -1,4 +1,4 @@
-*** [[https://github.com/sethfuller/tips][Main Tech Tips Page]]
+*** [[/tips/tech_tips][Main Tech Tips Page]]
 
 ----------
 
