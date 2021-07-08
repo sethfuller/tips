@@ -4,9 +4,10 @@
 
 *** Bookmarks
 
-|                                  |   |
-|----------------------------------+---|
-| [[chrome://bookmarks/][My Bookmarks chrome://bookmarks/]] |   |
+|                                  |                                                |
+|----------------------------------+------------------------------------------------|
+| [[chrome://bookmarks/][My Bookmarks chrome://bookmarks/]] | <a href="chrome://bookmarks/">My Bookmarks</a> |
+
 
 *** Chromium
 
