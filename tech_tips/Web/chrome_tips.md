@@ -10,6 +10,7 @@
 
 ### Chromium
 
+|                                               |                                                                                                                     |
 |-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | [Chromium Website](https://www.chromium.org/) | [Chromium for Mac](https://chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/mac_build_instructions.md) |
 
