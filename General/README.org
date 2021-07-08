@@ -1,0 +1,10 @@
+** [[https://github.com/sethfuller/tips][Top Level README]]
+
+_____________________
+
+|              |   |
+|--------------+---|
+| [[https://github.com/sethfuller/tips/General/cut_the_cord.org][Cut the Cord]] |   |
+_____________________
+
+** [[https://github.com/sethfuller/tips][Top Level README]]
