@@ -15,9 +15,9 @@ _______________________
 
 |               |          |
 |---------------+----------|
-| [[https://github.com/sethfuller/tips/blob/main/tech_tips/Software_Development/emacs_tips.md][Emacs Tips]]    | [[https://github.com/sethfuller/tips/blob/main/tech_tips/Software_Development/git_tips.md][Git Tips]] |
-| [[https://github.com/sethfuller/tips/blob/main/tech_tips/Software_Development/intellij_idea_tips.md][IntelliJ IDEA]] | [[https://github.com/sethfuller/tips/blob/main/tech_tips/Software_Development/mvn_tips.md][Mvn Tips]] |
-| [[https://github.com/sethfuller/tips/blob/main/tech_tips/Software_Development/python_tips.md][Python Tips]]   |          |
+| [[Software_Development/emacs_tips.org][Emacs Tips]]    | [[Software_Development/git_tips.org][Git Tips]] |
+| [[Software_Development/intellij_idea_tips.org][IntelliJ IDEA]] | [[Software_Development/mvn_tips.org][Mvn Tips]] |
+| [[Software_Development/python_tips.org][Python Tips]]   |          |
 
 _______________________
 
