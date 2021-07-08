@@ -6,7 +6,7 @@
 
 |                                     |   |
 |-------------------------------------|---|
-| [My Bookmarks](chrome://bookmarks/) |   |
+| My Bookmarks chrome://bookmarks/ |   |
 
 ### Chromium
 
@@ -17,7 +17,7 @@
 ### Extensions
 |                                                                                  |                                                |
 |----------------------------------------------------------------------------------|------------------------------------------------|
-| [Chrome Extensions Documentation](https://developer.chrome.com/docs/extensions/) | [My Extensions](chrome://extensions/shortcuts) |
+| [Chrome Extensions Documentation](https://developer.chrome.com/docs/extensions/) |  <a href="chrome://extensions/shortcuts">My Extensions</a> |
 | [Chrome Web Store](https://chrome.google.com/webstore/category/extensions)       |                                                |
 
 ### Screenshots
