@@ -70,7 +70,7 @@
 |                                                                        |   |
 |------------------------------------------------------------------------|---|
 | [Session Buddy Data Location](https://sessionbuddy.com/data-location/) |   |
-                                                                               |
+
 ### Tab Search
 
 Chrome has a new feature to let you search tab titles and URLs over
