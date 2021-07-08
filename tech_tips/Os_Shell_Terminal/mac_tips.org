@@ -1,0 +1,57 @@
+*** [[https://github.com/sethfuller/tips][Main Tech Tips Page]]
+
+----------
+
+*** Documentation
+
+|                        |                |
+|------------------------+----------------|
+| [[https://sourabhbajaj.com/mac-setup][MacOS Setup Guide]]      | [[https://sourabhbajaj.com/mac-setup/][Mac Setup Tips]] |
+| [[https://cloudconvert.com/png-to-icns][PNG to Icons Converter]] |                |
+
+**** Homebrew
+
+|                        |                  |
+|------------------------+------------------|
+| [[https://brew.sh/blog/][Homebrew Blog]]          | [[https://formulae.brew.sh/formula/][Homebrew Formlae]] |
+| [[https://formulae.brew.sh/formula/][Homebrew Documentation]] |                  |
+
+**** Quicktime
+
+|                            |   |
+|----------------------------+---|
+| [[https://support.apple.com/guide/quicktime-player/record-your-screen-qtp97b08e666/mac][Quicktime Screen Recording]] |   |
+
+**** Stop Screen Recording
+
+In the top menu bar click the stop recording button toward the right (the leftmost icon usually).
+
+*** Shortcuts
+
+| Shortcut                   | Description                         |
+|----------------------------+-------------------------------------|
+| *<Command>-<Control>--F*   | Toggle Full Screen                  |
+| *<Command>-W*              | Close Current Window                |
+| *<Control>-<Down Arrow>*   | Show only current Application       |
+| *<Control>-<Up Arrow>*     | Show all windows for an Application |
+| *<Command>-<Space>Mission* | View all Open Windows               |
+
+|                             |                                        |
+|-----------------------------+----------------------------------------|
+| [[https://support.apple.com/en-us/HT201236][Apple Support Mac Shortcuts]] | [[https://karabiner-elements.pqrs.org/docs/][Karibiner Key Customizer Documentation]] |
+| [[https://github.com/deseven/icanhazshortcut][ICanHazShortcut]]             |                                        |
+
+[[https://support.apple.com/guide/mac-help/open-windows-spaces-mission-control-mh35798/mac][Mission Control Usage]]
+
+*** MS Teams Shortcuts
+
+| Shortcut              | Description   |
+|-----------------------+---------------|
+| *<Command>-<Shift>-B* | Leave Meeting |
+| *<Command>-<Shift>-M* | Toggle Mute   |
+| *<Command>-<Shift>-E* | Share Content |
+
+----------
+
+
+*** [[https://github.com/sethfuller/tips][Main Tech Tips Page]]
