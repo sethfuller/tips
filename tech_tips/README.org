@@ -25,8 +25,8 @@ _______________________
 
 |                     |                     |
 |---------------------+---------------------|
-| [[https://github.com/sethfuller/tips/blob/main/tech_tips/Web/chrome_tips.md][Chrome Tips]]         | [[https://github.com/sethfuller/tips/blob/main/tech_tips/Web/markdown_tips.md][Markdown Tips]]       |
-| [[https://github.com/sethfuller/tips/blob/main/tech_tips/Web/development.md][Development]]         |                     |
+| [[Web/chrome_tips.org][Chrome Tips]]         | [[Web/markdown_tips.org][Markdown Tips]]       |
+| [[Web/development.org][Development]]         |                     |
 | [[https://jsonformatter.org/json-pretty-print][JSON Pretty Printer]] | [[https://meyerweb.com/eric/tools/dencoder/][URL Encoder/Decoder]] |
 _______________________
 

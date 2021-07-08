@@ -49,15 +49,15 @@
 
 **** Frequently Used Shortcuts
 
-| Shortcut                              | Description                              |
-|---------------------------------------+------------------------------------------|
-| *<Command>-<Option>-<Right-arrow>*  | Go to Next Tab                           |
-| *<Command>-<Option>-<Left-arrow>*   | Go to Previous Tab                       |
-| *<Command>-<number>*                | Go to Tab Number (1-8) in Current Window |
-| *<Command>-9*                       | Go to Last Tab                           |
-| *<Command>-<left-mouse-click>*      | Open Link New Tab                        |
-| *<Shift>-<left-mouse-click>*        | Open Link New Window                     |
-| *<Command>-`* (backtick)            | Cycle Between Windows                    |
+| Shortcut                           | Description                              |
+|------------------------------------+------------------------------------------|
+| *<Command>-<Option>-<Right-arrow>* | Go to Next Tab                           |
+| *<Command>-<Option>-<Left-arrow>*  | Go to Previous Tab                       |
+| *<Command>-<number>*               | Go to Tab Number (1-8) in Current Window |
+| *<Command>-9*                      | Go to Last Tab                           |
+| *<Command>-<left-mouse-click>*     | Open Link New Tab                        |
+| *<Shift>-<left-mouse-click>*       | Open Link New Window                     |
+| *<Command>-`* (backtick)           | Cycle Between Windows                    |
 
 *** General Tips
 
