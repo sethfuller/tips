@@ -59,6 +59,8 @@
 | *<Command>-<left-mouse-click>*     | Open Link New Tab                        |
 | *<Shift>-<left-mouse-click>*       | Open Link New Window                     |
 | *<Command>-`* (backtick)           | Cycle Between Windows                    |
+| *<Command>-W*                      | Close the Current Tab                    |
+| *<Command>-<Shift>-W*              | Close the Current Window                 |
 
 *** General Tips
 
