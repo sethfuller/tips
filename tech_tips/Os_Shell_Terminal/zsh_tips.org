@@ -3,9 +3,9 @@
 ----------
 
 *** [[https://github.com/sethfuller/tips/tree/main/config/Zsh][My Zsh Config Files]]
-|                  |                                                              |
-|------------------+--------------------------------------------------------------|
-| [[../../config/Zsh/.zshenv][.zshenv]]          | [[../../config/Zsh/.zshrc][.zshrc]]                                                       |
+|                  |                     |
+|------------------+---------------------|
+| [[../../config/Zsh/.zshenv][.zshenv]]          | [[../../config/Zsh/.zshrc][.zshrc]]              |
 | [[../../config/Zsh/.zshrc-functions][.zshrc-functions]] | [[../../config/Zsh/.zshrc-liquidprompt][.zshrc-liquidprompt]] |
 
 *** [[../../scripts/shell][My Shell Scripts]]
