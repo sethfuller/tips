@@ -6,7 +6,7 @@
 |                  |                                                              |
 |------------------+--------------------------------------------------------------|
 | [[../../config/Zsh/.zshenv][.zshenv]]          | [[../../config/Zsh/.zshrc][.zshrc]]                                                       |
-| [[../../config/Zsh/.zshrc-functions][.zshrc-functions]] | [[../../config/Zsh/.zshrc-liquidprompt][.zshrc-liquidprompt] |
+| [[../../config/Zsh/.zshrc-functions][.zshrc-functions]] | [[../../config/Zsh/.zshrc-liquidprompt][.zshrc-liquidprompt]] |
 
 *** [[../../scripts/shell][My Shell Scripts]]
 
