@@ -4,9 +4,9 @@
 
 ### Bookmarks
 
-|                                     |   |
-|-------------------------------------|---|
-| My Bookmarks chrome://bookmarks/ |   |
+|                                    |   |
+|------------------------------------|---|
+| My Bookmarks - chrome://bookmarks/ |   |
 
 ### Chromium
 
@@ -15,10 +15,10 @@
 | [Chromium Website](https://www.chromium.org/) | [Chromium for Mac](https://chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/mac_build_instructions.md) |
 
 ### Extensions
-|                                                                                  |                                                |
-|----------------------------------------------------------------------------------|------------------------------------------------|
-| [Chrome Extensions Documentation](https://developer.chrome.com/docs/extensions/) |  <a href="chrome://extensions/shortcuts">My Extensions</a> |
-| [Chrome Web Store](https://chrome.google.com/webstore/category/extensions)       |                                                |
+|                                                                                  |                                               |
+|----------------------------------------------------------------------------------|-----------------------------------------------|
+| [Chrome Extensions Documentation](https://developer.chrome.com/docs/extensions/) | My Extensions - chrome://extensions/shortcuts |
+| [Chrome Web Store](https://chrome.google.com/webstore/category/extensions)       |                                               |
 
 ### Screenshots
 
@@ -36,9 +36,9 @@
 
 ### Settings
 
-|   |                                   |
-|---|-----------------------------------|
-|   | [My Settings](chrome://settings/) |
+|   |                                  |
+|---|----------------------------------|
+|   | My Settings - chrome://settings/ |
 
 ### Shortcuts
 
