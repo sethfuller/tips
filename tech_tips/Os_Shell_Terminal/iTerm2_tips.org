@@ -1,4 +1,4 @@
-*** [[/tips/tech_tips][Main Tech Tips Page]]
+*** [[..][Main Tech Tips Page]]
 
 ----------
 
