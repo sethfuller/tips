@@ -12,104 +12,104 @@
 
 **** Undo Last Commit
 
-```bash
+#+BEGIN_SRC bash
 	git reset --soft HEAD~1
-```
+#+END_SRC
 **** Undo a Pushed Commit
 This only reverts the specific commit:
 
-```bash
+#+BEGIN_SRC bash
 	git revert <commit-hash>
 	git push
-```
+#+END_SRC
 **** Undo a Range of Commits
-```bash
+#+BEGIN_SRC bash
 	git revert <oldest-commit-hash>..<newest-commit-hash>
 	git push
-```
+#+END_SRC
 
 **** Undo to a Specific Commit Before Being Pushed (Using Commit's Partial or Full SHA-1)
 
-```bash
+#+BEGIN_SRC bash
 	git reset 9ef9173
-```
+#+END_SRC
 
 **** Undo Add
 
-```bash
+#+BEGIN_SRC bash
 	git restore --staged /path/to/file
-```
+#+END_SRC
 
 [Top](*top)
 
 **** Add Part of Changes Done
 
-```bash
+#+BEGIN_SRC bash
 	git add --patch|-p /path/to/file
-```
+#+END_SRC
 
 **** Checkout (Undo) Part of Changes Done, e.g. Debug Statements
 
 
-```bash
+#+BEGIN_SRC bash
 	git checkout|co --patch|-p /path/to/file
-```
+#+END_SRC
 
 **** Checkout Only One or More Files on a Branch
 
-```bash
+#+BEGIN_SRC bash
 	git checkout|co <BRANCH> -- /path/to/file
-```
+#+END_SRC
 
 **** Checkout the Last Branch
 
-```bash
+#+BEGIN_SRC bash
 	git checkout|co -
-```
+#+END_SRC
 
 **** Fix Detached Head
 Checkout the branch you want
 
-```bash
+#+BEGIN_SRC bash
 	git checkout|co develop
-```
+#+END_SRC
 
 [Top](*top)
 
 **** Show all Branches that have been Merged (or Not)
 
 
-```bash
+#+BEGIN_SRC bash
 	git branch --merged
-```
+#+END_SRC
 
-```bash
+#+BEGIN_SRC bash
 	git branch --no-merged
-```
+#+END_SRC
 
 *** Delete all Merged Branches
 	Add --remote to get remote branches
 
-```bash
+#+BEGIN_SRC bash
 	git branch --merged | xargs git branch -d
-```
+#+END_SRC
 
 *** Diff Working Copy With Stash
 
 **** If it is the Latest Stash
 
-```bash
+#+BEGIN_SRC bash
 	git diff stage@{0}
-```
+#+END_SRC
 
 In thw above diff command replace '0' with the stash number.
 
 **** Find an Earlier Stash
 List all stashes.
 
-```bash
+#+BEGIN_SRC bash
 	git stash list
-```
+#+END_SRC
 
 **** Submodules
 
@@ -121,21 +121,21 @@ List all stashes.
 
 To move a submodule to a particular branch:
 
-```bash
+#+BEGIN_SRC bash
     cd submodule_directory
     git checkout|co <branch_name>
     cd ..
 	git add submodule_directory
     git commit -m "Moved submodule_directory to <branch_name>"
     git push
-```
+#+END_SRC
 
 For another developer to change submodule to the branch:
 
-```bash
+#+BEGIN_SRC bash
     git pull
     git submodule update --init
-```
+#+END_SRC
 
 [Top](*top)
 

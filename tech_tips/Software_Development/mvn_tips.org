@@ -34,40 +34,40 @@
 	- deploy: org.apache.maven.plugins:maven-deploy-plugin:2.7:deploy
 
 *** List Goals for Specified Phases
-```bash
+#+BEGIN_SRC bash
 mvn fr.jcgay.maven.plugins:buildplan-maven-plugin:list -Dbuildplan.tasks=clean,deploy
-```
+#+END_SRC
 
 *** Display the Effective POM
-```bash
+#+BEGIN_SRC bash
 mvn help:eeffective-pom
-```
+#+END_SRC
 
 *** Get Sources/Javadoc
 **** Sources For All Dependencies
-```bash
+#+BEGIN_SRC bash
     mvn dependency:sources
-```
+#+END_SRC
 
 **** Sources For a Specific Dependency
-```bash
+#+BEGIN_SRC bash
     mvn dependency:sources -DincludeGroupIds=com.example.api.agents -DincludeArtifactIds=api-agent-spark
-```
+#+END_SRC
 
 **** Javadoc for All Dependencies
-```bash
+#+BEGIN_SRC bash
     mvn dependency:resolve -Dclassifier=javadoc
-```
+#+END_SRC
 
 **** Sources and Javadoc for All Dependencies
-```bash
+#+BEGIN_SRC bash
     mvn dependency:sources dependency:resolve -Dclassifier=javadoc
-```
+#+END_SRC
 
 **** Sources/Javadoc For a Specific Dependency
-```bash
+#+BEGIN_SRC bash
     mvn dependency:sources dependency:resolve -Dclassifier=javadoc -DincludeGroupIds=com.example.api.agents -DincludeArtifactIds=api-agent-spark
-```
+#+END_SRC
 
 ----------
 

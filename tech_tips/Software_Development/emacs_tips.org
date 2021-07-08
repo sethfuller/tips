@@ -65,7 +65,7 @@ _____________________
     It would be too easy to mangle the file and the entries won't cause any problems.
 
 *** Add Command Suggestions With dired-x
-```elisp
+#+BEGIN_SRC emacs-lisp
 (setq dired-guess-shell-alist-user
       '(("\\.pdf\\'" "open" "evince" "okular")
         ("\\.\\(?:djvu\\|eps\\)\\'" "evince")
@@ -79,7 +79,7 @@ _____________________
         ("\\.\\(?:mp3\\|flac\\)\\'" "rhythmbox")
         ("\\.html?\\'" "firefox")
         ("\\.cue?\\'" "audacious")))
-```
+#+END_SRC
 
 *** Organice
 
