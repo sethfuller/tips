@@ -15,6 +15,7 @@
 #+BEGIN_SRC bash
 	git reset --soft HEAD~1
 #+END_SRC
+
 **** Undo a Pushed Commit
 This only reverts the specific commit:
 
@@ -22,6 +23,7 @@ This only reverts the specific commit:
 	git revert <commit-hash>
 	git push
 #+END_SRC
+
 **** Undo a Range of Commits
 #+BEGIN_SRC bash
 	git revert <oldest-commit-hash>..<newest-commit-hash>
@@ -40,7 +42,14 @@ This only reverts the specific commit:
 	git restore --staged /path/to/file
 #+END_SRC
 
-[Top](*top)
+
+**** Reset Local to Remote
+*WARNING: This throws away all of your changes.*
+
+#+BEGIN_SRC bash
+  git pull OR git fetch origin
+  git reset --hard origin/<branch>
+#+END_SRC
 
 **** Add Part of Changes Done
 
