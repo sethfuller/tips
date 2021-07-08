@@ -3,35 +3,35 @@
 ----------
 
 *** [[https://github.com/sethfuller/tips/tree/main/config/Zsh][My Zsh Config Files]]
-|                                                                                        |                                                                                              |
-|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| [[../../config/Zsh/.zshenv][.zshenv]]                 |  [[../../config/Zsh/.zshrc][.zshrc]]                    |
+|                  |                                                              |
+|------------------+--------------------------------------------------------------|
+| [[../../config/Zsh/.zshenv][.zshenv]]          | [[../../config/Zsh/.zshrc][.zshrc]]                                                       |
 | [[../../config/Zsh/.zshrc-functions][.zshrc-functions]] | [[../../config/Zsh/.zshrc-liquidprompt][.zshrc-liquidprompt] |
 
 *** [[../../scripts/shell][My Shell Scripts]]
 
 
 *** Plugins
-|                                                                                 |                                                     |
-|---------------------------------------------------------------------------------|-----------------------------------------------------|
-| [Zinit Plugin Manager Github](https://github.com/zdharma/zinit)                 | [Zinit Wiki](https://zdharma.github.io/zinit/wiki/) |
-| [Awesome Zsh Plugins](https://github.com/unixorn/awesome-zsh-plugins)           | [OhMyZsh](https://github.com/ohmyzsh/ohmyzsh)       |
-| [Liquidprompt Docs.](https://liquidprompt.readthedocs.io/en/stable/config.html) |                                                     |
+|                             |            |
+|-----------------------------+------------|
+| [[https://github.com/zdharma/zinit][Zinit Plugin Manager Github]] | [[https://zdharma.github.io/zinit/wiki/][Zinit Wiki]] |
+| [[https://github.com/unixorn/awesome-zsh-plugins][Awesome Zsh Plugins]]         | [[https://github.com/ohmyzsh/ohmyzsh][OhMyZsh]]    |
+| [[https://liquidprompt.readthedocs.io/en/stable/config.html][Liquidprompt Docs.]]          |            |
 
 
 *** Zsh Documentation
 
-|                                                                                                      |                                                                                                            |
-|------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [Zsh Manual](http://zsh.sourceforge.net/Doc/Release/index.html)                                      | [Writing Zsh Completion Scripts](https://mads-hartmann.com/2017/08/06/writing-zsh-completion-scripts.html) |
-| [Setting Color for ls](https://www.cyberciti.biz/faq/apple-mac-osx-terminal-color-ls-output-option/) | [Output 256 Colors](https://askubuntu.com/questions/821157/print-a-256-color-test-pattern-in-the-terminal) |
-| [ANSI Color Script](https://code.google.com/archive/p/ansi-color/)                                   | [Zsh Get File name Extension](https://zaiste.net/posts/zsh-get-filename-extension-path/)                   |
+|                      |                                |
+|----------------------+--------------------------------|
+| [[http://zsh.sourceforge.net/Doc/Release/index.html][Zsh Manual]]           | [[https://mads-hartmann.com/2017/08/06/writing-zsh-completion-scripts.html][Writing Zsh Completion Scripts]] |
+| [[https://www.cyberciti.biz/faq/apple-mac-osx-terminal-color-ls-output-option/][Setting Color for ls]] | [[https://askubuntu.com/questions/821157/print-a-256-color-test-pattern-in-the-terminal][Output 256 Colors]]              |
+| [[https://code.google.com/archive/p/ansi-color/][ANSI Color Script]]    | [[https://zaiste.net/posts/zsh-get-filename-extension-path/][Zsh Get File name Extension]]    |
 
 *** Zsh Tips
-|                                                                                                   |                                                                 |
-|--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| [5 Tips Productivity Zsh](https://opensource.com/article/18/9/tips-productivity-zsh)                   | [Zsh Tips & Tricks](https://www.sitepoint.com/zsh-tips-tricks/)     |
-| [75 Zsh Commands/Plugins/Aliases/Tools](https://www.sitepoint.com/zsh-commands-plugins-aliases-tools/) | [Useful Zsh Aliases](https://gist.github.com/JonathanBeech/3403282) |
+|                                       |                    |
+|---------------------------------------+--------------------|
+| [[https://opensource.com/article/18/9/tips-productivity-zsh][5 Tips Productivity Zsh]]               | [[https://www.sitepoint.com/zsh-tips-tricks/][Zsh Tips & Tricks]]  |
+| [[https://www.sitepoint.com/zsh-commands-plugins-aliases-tools/][75 Zsh Commands/Plugins/Aliases/Tools]] | [[https://gist.github.com/JonathanBeech/3403282][Useful Zsh Aliases]] |
 
 ----------
 
