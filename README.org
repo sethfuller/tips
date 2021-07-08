@@ -15,12 +15,12 @@
 *** Scripts
 |                                                                               |                                                                                 |
 |-------------------------------------------------------------------------------+---------------------------------------------------------------------------------|
-| [[Shell Scripts][https://github.com/sethfuller/tips/tree/main/scripts/shell]][Shell Scripts]] | [[https://github.com/sethfuller/tips/tree/main/scripts/python][Python Scripts]] |
+| [[Shell Scripts][https://github.com/sethfuller/tips/tree/main/scripts/shell][Shell Scripts]] | [[https://github.com/sethfuller/tips/tree/main/scripts/python][Python Scripts]] |
 
 ______________________
 
 *** General
 |                                                                                                           |   |
 |-----------------------------------------------------------------------------------------------------------+---|
-| [[Cut the Cord - Get Rid of Cable][https://github.com/sethfuller/tips/blob/main/General/cut_the_cord.md]][Cut the Cord - Get Rid of Cable]] |   |
+| [[Cut the Cord - Get Rid of Cable][https://github.com/sethfuller/tips/blob/main/General/cut_the_cord.md][Cut the Cord - Get Rid of Cable]] |   |
     
