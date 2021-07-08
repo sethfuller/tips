@@ -1,0 +1,15 @@
+*** [[..][Main Tech Tips Page]]
+
+----------
+
+<a name="top"></a>
+
+*** JavaScript
+|                              |                     |
+|------------------------------+---------------------|
+| [[https://developer.mozilla.org/en-US/docs/Web/JavaScript][Mozilla JavaScript Reference]] | [[https://fusejs.io/][FuseJS Fuzzy Search]] |
+
+
+----------
+
+*** [[..][Main Tech Tips Page]]

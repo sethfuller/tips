@@ -1,0 +1,20 @@
+*** [[..][Main Tech Tips Page]]
+
+*** Shortcuts
+
+| Keys                      | Description          |
+|---------------------------+----------------------|
+| *<Command>-<Shift>-F*     | Search Files         |
+| *<Command>-F*             | Search Current File  |
+| *<Command>-O*             | Find a Class by Name |
+| *<Ctrl>-D*                | Run Debug Mode       |
+| *<Ctrl>-R*                | Run                  |
+| *<Command>-<F2>*          | Stop                 |
+
+*** Documentation
+
+|                             |                    |
+|-----------------------------+--------------------|
+| [[https://www.jetbrains.com/help/idea/discover-intellij-idea.html][IntelliJ IDEA Documentation]] | [[https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf][Key Reference Card]] |
+
+*** [[..][Main Tech Tips Page]]

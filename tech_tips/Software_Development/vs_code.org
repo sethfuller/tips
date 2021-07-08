@@ -1,0 +1,14 @@
+*** [[..][Main Tech Tips Page]]
+
+----------
+<a name="top"></a>
+
+*** Documentation
+
+|                         |   |
+|-------------------------+---|
+| [[https://code.visualstudio.com/docs][VS Code Documentation]]   |   |
+| [[https://code.visualstudio.com/docs/getstarted/themes#_customizing-a-color-theme][Customizing Color Theme]] |   |
+
+________________
+*** [[..][Main Tech Tips Page]]
