@@ -3,7 +3,7 @@
     - config files (Emacs, bash, zsh, iTerm2, Mac, Git, Maven, Python, etc.)
     - scripts
 
-*** [[[[Technical Tips][https://github.com/sethfuller/tips/blob/main/tech_tips/README.md][Technical Tips]]
+*** [[https://github.com/sethfuller/tips/blob/main/tech_tips/README.md][Technical Tips]]
 
 *** Config Files
 
