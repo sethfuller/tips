@@ -3,24 +3,24 @@
     - config files (Emacs, bash, zsh, iTerm2, Mac, Git, Maven, Python, etc.)
     - scripts
 
-*** [[Technical Tips][https://github.com/sethfuller/tips/blob/main/tech_tips/README.md]]
+*** [[[[Technical Tips][https://github.com/sethfuller/tips/blob/main/tech_tips/README.md]]][Technical Tips]]
 
 *** Config Files
 
-    |                                                         |                                                           |
-    |---------------------------------------------------------+-----------------------------------------------------------|
-    | [[Zsh Config Files][https://github.com/sethfuller/tips/tree/main/config/Zsh]] | [[Bash Config Files][https://github.com/sethfuller/tips/tree/main/config/Bash]]  |
-    | [[Git Config Files][https://github.com/sethfuller/tips/tree/main/config/Git]] | [[Emacs Config Files][https://github.com/sethfuller/tips/tree/main/config/Emacs]] |
+    |                                                                               |                                                                                  |
+    |-------------------------------------------------------------------------------+----------------------------------------------------------------------------------|
+    | [[[[Zsh Config Files][https://github.com/sethfuller/tips/tree/main/config/Zsh]]][Zsh Config Files]] | [[[[Bash Config Files][https://github.com/sethfuller/tips/tree/main/config/Bash]]][Bash Config Files]]  |
+    | [[[[Git Config Files][https://github.com/sethfuller/tips/tree/main/config/Git]]][Git Config Files]] | [[Emacs Config Files][[[https://github.com/sethfuller/tips/tree/main/config/Emacs]][Emacs Config Files]] |
 
 *** Scripts
-|                                                                                |                                                                                  |
-|--------------------------------------------------------------------------------+----------------------------------------------------------------------------------|
-| [[Shell Scripts][https://github.com/sethfuller/tips/tree/main/scripts/shell]] | [[Python Scripts][https://github.com/sethfuller/tips/tree/main/scripts/python]]]] |
+|                                                                               |                                                                                 |
+|-------------------------------------------------------------------------------+---------------------------------------------------------------------------------|
+| [[[[Shell Scripts][https://github.com/sethfuller/tips/tree/main/scripts/shell]]][Shell Scripts]] | [[[[Python Scripts][https://github.com/sethfuller/tips/tree/main/scripts/python]]][Python Scripts]] |
 
 ______________________
 
 *** General
-|                                                                      |   |
-|----------------------------------------------------------------------+---|
-| [[Cut the Cord - Get Rid of Cable][https://github.com/sethfuller/tips/blob/main/General/cut_the_cord.md]] |   |
+|                                                                                                           |   |
+|-----------------------------------------------------------------------------------------------------------+---|
+| [[[[Cut the Cord - Get Rid of Cable][https://github.com/sethfuller/tips/blob/main/General/cut_the_cord.md]]][Cut the Cord - Get Rid of Cable]] |   |
     
