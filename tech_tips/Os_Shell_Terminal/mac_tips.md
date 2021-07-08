@@ -4,10 +4,10 @@
 
 ### Documentation
 
-|                                                                                                                    |                                                                |
-|--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| [MacOS Setup Guide](https://sourabhbajaj.com/mac-setup)                                                            |  [Mac Setup Tips](https://sourabhbajaj.com/mac-setup/)                                                               |
-| [Quicktime Screen Recording](https://support.apple.com/guide/quicktime-player/record-your-screen-qtp97b08e666/mac) | [PNG to Icons Converter](https://cloudconvert.com/png-to-icns) |
+|                                                                |                                                       |
+|----------------------------------------------------------------|-------------------------------------------------------|
+| [MacOS Setup Guide](https://sourabhbajaj.com/mac-setup)        | [Mac Setup Tips](https://sourabhbajaj.com/mac-setup/) |
+| [PNG to Icons Converter](https://cloudconvert.com/png-to-icns) |                                                       |
 
 #### Homebrew
 
@@ -15,6 +15,16 @@
 |-------------------------------------------------------------|-------------------------------------------------------|
 | [Homebrew Blog](https://brew.sh/blog/)                      | [Homebrew Formlae](https://formulae.brew.sh/formula/) |
 | [Homebrew Documentation](https://formulae.brew.sh/formula/) |                                                       |
+
+#### Quicktime
+
+|                                                                                                                    |   |
+|--------------------------------------------------------------------------------------------------------------------|---|
+| [Quicktime Screen Recording](https://support.apple.com/guide/quicktime-player/record-your-screen-qtp97b08e666/mac) |   |
+
+#### Stop Screen Recording
+
+In the top menu bar click the stop recording button toward the right (the leftmost icon usually).
 
 ### Shortcuts
 
