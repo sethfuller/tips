@@ -23,6 +23,13 @@
 | **\<Control>-\<Down Arrow>** | Show only current Application       |
 | **\<Control>-\<Up Arrow>**   | Show all windows for an Application |
 
+### View all Open Windows
+**\<Command>-\<Space>**Mission
+
+Select Mission Control
+
+All open windows will be displayed
+
 ### MS Teams Shortcuts
 
 | Shortcut                     | Description                         |
