@@ -1,0 +1,33 @@
+** [[https://github.com/sethfuller/tips][Top Level README]]
+
+_______________________
+
+*** OS/Shell/Terminal
+
+|             |          |
+|-------------+----------|
+| [[https://github.com/sethfuller/tips/blob/main/tech_tips/Os_Shell_Terminal/iTerm2_tips.md][Iterm2 Tips]] | [[https://github.com/sethfuller/tips/blob/main/tech_tips/Os_Shell_Terminal/mac_tips.md][Mac Tips]] |
+| [[https://github.com/sethfuller/tips/blob/main/tech_tips/Os_Shell_Terminal/zsh_tips.md][Zsh Tips]]    |          |
+
+_______________________
+
+*** Software Development
+
+|               |          |
+|---------------+----------|
+| [[https://github.com/sethfuller/tips/blob/main/tech_tips/Software_Development/emacs_tips.md][Emacs Tips]]    | [[https://github.com/sethfuller/tips/blob/main/tech_tips/Software_Development/git_tips.md][Git Tips]] |
+| [[https://github.com/sethfuller/tips/blob/main/tech_tips/Software_Development/intellij_idea_tips.md][IntelliJ IDEA]] | [[https://github.com/sethfuller/tips/blob/main/tech_tips/Software_Development/mvn_tips.md][Mvn Tips]] |
+| [[https://github.com/sethfuller/tips/blob/main/tech_tips/Software_Development/python_tips.md][Python Tips]]   |          |
+
+_______________________
+
+*** Web
+
+|                     |                     |
+|---------------------+---------------------|
+| [[https://github.com/sethfuller/tips/blob/main/tech_tips/Web/chrome_tips.md][Chrome Tips]]         | [[https://github.com/sethfuller/tips/blob/main/tech_tips/Web/markdown_tips.md][Markdown Tips]]       |
+| [[https://github.com/sethfuller/tips/blob/main/tech_tips/Web/development.md][Development]]         |                     |
+| [[https://jsonformatter.org/json-pretty-print][JSON Pretty Printer]] | [[https://meyerweb.com/eric/tools/dencoder/][URL Encoder/Decoder]] |
+_______________________
+
+** [[https://github.com/sethfuller/tips][Top Level README]]
