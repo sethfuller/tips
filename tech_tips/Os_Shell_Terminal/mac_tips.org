@@ -1,4 +1,4 @@
-*** [[https://github.com/sethfuller/tips][Main Tech Tips Page]]
+*** [[..][Main Tech Tips Page]]
 
 ----------
 
@@ -54,4 +54,4 @@ In the top menu bar click the stop recording button toward the right (the leftmo
 ----------
 
 
-*** [[https://github.com/sethfuller/tips][Main Tech Tips Page]]
+*** [[..][Main Tech Tips Page]]

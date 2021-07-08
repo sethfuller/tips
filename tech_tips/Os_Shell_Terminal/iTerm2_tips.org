@@ -20,4 +20,5 @@
 
 ----------
 
-*** [[https://github.com/sethfuller/tips][Main Tech Tips Page]]
+*** [[..][Main Tech Tips Page]]
+

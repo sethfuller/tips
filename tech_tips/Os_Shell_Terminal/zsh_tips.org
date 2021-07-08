@@ -1,17 +1,17 @@
-### [Main Tech Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)
+*** [[..][Main Tech Tips Page]]
 
 ----------
 
-> ### [My Zsh Config Files](https://github.com/sethfuller/tips/tree/main/config/Zsh)
+*** [[https://github.com/sethfuller/tips/tree/main/config/Zsh][My Zsh Config Files]]
 |                                                                                        |                                                                                              |
 |---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| [.zshenv](https://github.com/sethfuller/tips/tree/main/config/Zsh/.zshenv)                   |  [.zshrc](https://github.com/sethfuller/tips/tree/main/config/Zsh/.zshrc)                           |
-| [.zshrc-functions](https://github.com/sethfuller/tips/tree/main/config/Zsh/.zshrc-functions) | [.zshrc-liquidprompt](https://github.com/sethfuller/tips/tree/main/config/Zsh/.zshrc-liquidprompt) |
+| [[../../config/Zsh/.zshenv][.zshenv]]                 |  [[../../config/Zsh/.zshrc][.zshrc]]                    |
+| [[../../config/Zsh/.zshrc-functions][.zshrc-functions]] | [[../../config/Zsh/.zshrc-liquidprompt][.zshrc-liquidprompt] |
 
-> ### [My Shell Scripts](https://github.com/sethfuller/tips/tree/main/scripts/shell)
+*** [[../../scripts/shell][My Shell Scripts]]
 
 
-### Plugins
+*** Plugins
 |                                                                                 |                                                     |
 |---------------------------------------------------------------------------------|-----------------------------------------------------|
 | [Zinit Plugin Manager Github](https://github.com/zdharma/zinit)                 | [Zinit Wiki](https://zdharma.github.io/zinit/wiki/) |
@@ -19,7 +19,7 @@
 | [Liquidprompt Docs.](https://liquidprompt.readthedocs.io/en/stable/config.html) |                                                     |
 
 
-### Zsh Documentation
+*** Zsh Documentation
 
 |                                                                                                      |                                                                                                            |
 |------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
@@ -27,7 +27,7 @@
 | [Setting Color for ls](https://www.cyberciti.biz/faq/apple-mac-osx-terminal-color-ls-output-option/) | [Output 256 Colors](https://askubuntu.com/questions/821157/print-a-256-color-test-pattern-in-the-terminal) |
 | [ANSI Color Script](https://code.google.com/archive/p/ansi-color/)                                   | [Zsh Get File name Extension](https://zaiste.net/posts/zsh-get-filename-extension-path/)                   |
 
-### Zsh Tips
+*** Zsh Tips
 |                                                                                                   |                                                                 |
 |--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
 | [5 Tips Productivity Zsh](https://opensource.com/article/18/9/tips-productivity-zsh)                   | [Zsh Tips & Tricks](https://www.sitepoint.com/zsh-tips-tricks/)     |
@@ -35,4 +35,5 @@
 
 ----------
 
-### [Main Tech Tips Page](https://github.com/sethfuller/tips/blob/main/tech_tips/README.md)
+*** [[..][Main Tech Tips Page]]
+
