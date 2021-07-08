@@ -6,9 +6,8 @@
 
 |                                                                                                                    |                                                                |
 |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| [MacOS Setup Guide](https://sourabhbajaj.com/mac-setup)                                                            |                                                                |
+| [MacOS Setup Guide](https://sourabhbajaj.com/mac-setup)                                                            |  [Mac Setup Tips](https://sourabhbajaj.com/mac-setup/)                                                               |
 | [Quicktime Screen Recording](https://support.apple.com/guide/quicktime-player/record-your-screen-qtp97b08e666/mac) | [PNG to Icons Converter](https://cloudconvert.com/png-to-icns) |
-| [Mac Setup Tips](https://sourabhbajaj.com/mac-setup/)                                                              |                                                                |
 
 #### Homebrew
 
