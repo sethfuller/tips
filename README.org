@@ -22,5 +22,5 @@ ______________________
 *** General
 |                                                                                                           |   |
 |-----------------------------------------------------------------------------------------------------------+---|
-| [[Cut the Cord - Get Rid of Cable][https://github.com/sethfuller/tips/blob/main/General/cut_the_cord.md][Cut the Cord - Get Rid of Cable]] |   |
+| [[https://github.com/sethfuller/tips/blob/main/General/cut_the_cord.md][Cut the Cord - Get Rid of Cable]] |   |
     
