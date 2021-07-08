@@ -15,7 +15,7 @@
 *** Scripts
 |                                                                               |                                                                                 |
 |-------------------------------------------------------------------------------+---------------------------------------------------------------------------------|
-| [[Shell Scripts][https://github.com/sethfuller/tips/tree/main/scripts/shell][Shell Scripts]] | [[https://github.com/sethfuller/tips/tree/main/scripts/python][Python Scripts]] |
+| [[https://github.com/sethfuller/tips/tree/main/scripts/shell][Shell Scripts]] | [[https://github.com/sethfuller/tips/tree/main/scripts/python][Python Scripts]] |
 
 ______________________
 
