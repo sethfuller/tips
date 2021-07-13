@@ -176,6 +176,7 @@
 (exec-path-from-shell-initialize)
 (exec-path-from-shell-copy-env "JAVA_HOME")
 (exec-path-from-shell-copy-env "M2_HOME")
+(exec-path-from-shell-copy-env "MVN_REPO")
 (exec-path-from-shell-copy-env "CM")
 
 ;; Function to toggle between opening and closing parens

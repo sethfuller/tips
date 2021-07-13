@@ -1,0 +1,4 @@
+* GSON
+  - [[GSON Javadoc][https://javadoc.io/doc/com.google.code.gson/gson/latest/com.google.gson/module-summary.html]]
+  - [[GSON Examples][https://zetcode.com/java/gson/]]
+

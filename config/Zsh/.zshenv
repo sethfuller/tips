@@ -4,6 +4,9 @@ export HOMEBREW_REPOSITORY="/opt/homebrew";
 
 export RUBY_HOME="/opt/homebrew/opt/ruby/"
 
+export M2_HOME="${HOMEBREW_CELLAR}/apache-maven-3.8.1"
+export MVN_REPO="${HOME}/.m2/repository"
+
 # For building Chromium
 export DEPOT_TOOLS_HOME="$HOME/Src/SoftwareDev/Browsers/Chromium/depot_tools"
 
