@@ -51,6 +51,12 @@ function allnet() {
     arp -a
 }
 
+
+# Show man page in Preview
+function preman() {
+    man -t "$@" | open -f -a "Preview"
+}
+
 numfiles() {
     ARGS="$1"
     NUM="$(ls $ARGS | wc -l)";

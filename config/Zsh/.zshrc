@@ -55,8 +55,8 @@ alias gal="$HOME/bin/git_aliases.py"
 alias brg="git brr | grep"
 
 # alias em="$HOME/bin/emacs-mac.sh"
-alias em="$HOME/bin/emacs-mac.sh -d"
-alias emp="$HOME/bin/emacs-mac.sh -d 1 2 3"
+alias em="$HOME/bin/emacs-mac.sh -n"
+alias emp="$HOME/bin/emacs-mac.sh -n 1 2 3"
 
 alias ssht='~/Comcast/bin/ssh_tunnel.sh'
 
