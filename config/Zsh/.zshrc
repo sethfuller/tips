@@ -67,7 +67,7 @@ export DV="develop"
 # Make fpath contain only unique entries
 typeset -U fpath
 typeset -U cdpath
-cdpath=(.. ~/Comcast ~/Src /usr/local /usr/local/opt)
+cdpath=(.. ~/Src /usr/local /usr/local/opt /opt/homebrew)
 
 if type brew &>/dev/null; then
   fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
