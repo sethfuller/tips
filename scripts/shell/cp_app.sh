@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 ##^ ## Author: Seth Fuller
-##^ ## Date: 25-June-20201
+##^ ## Date: 25-June-2021
 ##^
 ##^ ## This script will create a new EmacsX.app with links from the original Emacs.app
 ##^ ## The main purpose is to create another EmacsX.app that can be run separately with a different icon
