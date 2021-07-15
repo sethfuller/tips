@@ -150,7 +150,8 @@
 
 (package-initialize)
 
-;; Add smex to package-selected-packages
+;; which-key
+;; '(discover-my-major makey yaml-mode smex org company-jedi company emmet-mode helm markdown-mode+ bm exec-path-from-shell dockerfile-mode use-package leaf edit-indirect markdown-mode markdown-preview-mode js2-refactor xref-js2 js2-mode)))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
