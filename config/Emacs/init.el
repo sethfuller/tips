@@ -289,6 +289,7 @@
 (global-set-key (kbd "s-f") 'grep-find)
 (global-set-key (kbd "s-m") 'manual-entry)
 (global-set-key (kbd "s-r") 'revert-buffer-no-confirm)
+(global-set-key (kbd "s-s") 'discover-my-major)
 (global-set-key (kbd "s-x") 'make-frame-command)
 
 ;; Use <Command>-i or <Command>-<Left Mouse Click>
