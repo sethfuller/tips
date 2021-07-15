@@ -78,6 +78,9 @@ fi
 
 source $HOME/.zshrc-functions
 
+# Path to find function files
+fpath=($HOME/Src/Shell/zsh-completions/src $fpath)
+
 # source $HOME/.gsf-completion.bash
 
 # Zplug Init
@@ -89,9 +92,6 @@ source $HOME/.zshrc-functions
 # source $HOME/.zshrc-antigen
 source $HOME/.zshrc-liquidprompt
 
-
-# Path to find function files
-fpath=($HOME/Src/Shell/zsh-completions/src $fpath)
 
 #launchctl setenv PATH $PATH
 
