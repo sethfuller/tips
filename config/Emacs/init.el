@@ -151,7 +151,8 @@
 (package-initialize)
 
 ;; which-key
-;; '(discover-my-major makey yaml-mode smex org company-jedi company emmet-mode helm markdown-mode+ bm exec-path-from-shell dockerfile-mode use-package leaf edit-indirect markdown-mode markdown-preview-mode js2-refactor xref-js2 js2-mode)))
+;; '(package-selected-packages
+;;   '(discover-my-major makey yaml-mode smex org company-jedi company emmet-mode helm markdown-mode+ bm exec-path-from-shell dockerfile-mode use-package leaf edit-indirect markdown-mode markdown-preview-mode js2-refactor xref-js2 js2-mode))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -167,6 +168,8 @@
  )
 
 (add-to-list 'load-path "~/.emacs.d/lisp")
+
+(add-to-list 'load-path "~/.emacs.d/lisp/multi-web-mode")
 
 ;; Read environment variables from .zshenv, .bashrc, or .bash_profile
 ;; For zsh use .zshenv to define environment variables you want since this is only
@@ -281,73 +284,7 @@
     (revert-buffer :ignore-auto :noconfirm)
     (message "Reverted `%s`" (buffer-name)))
 
-;; On Mac run following commands by type <Command>-<Character>
-(global-set-key (kbd "s-a") 'mark-whole-buffer)
-(global-set-key (kbd "s-b") 'ediff-buffers)
-(global-set-key (kbd "s-d") 'find-dired)
-(global-set-key (kbd "s-e") 'ediff-directories)
-(global-set-key (kbd "s-f") 'grep-find)
-(global-set-key (kbd "s-m") 'manual-entry)
-(global-set-key (kbd "s-r") 'revert-buffer-no-confirm)
-(global-set-key (kbd "s-s") 'discover-my-major)
-(global-set-key (kbd "s-x") 'make-frame-command)
-
-;; Use <Command>-i or <Command>-<Left Mouse Click>
-;; Saves the highlighted text without removing it from the buffer
-;; (global-set-key (kbd "C-<f9>") 'kill-ring-save)
-(global-set-key (kbd "s-i") 'kill-ring-save)
-(global-set-key (kbd "s-<mouse-1>") 'kill-ring-save)
-
-;; find-file-at-point - If the string at the current point in the buffer
-;; can be interpreted as a file, go to that file
-(global-set-key (kbd "C-<tab>") 'find-file-at-point)
-(global-set-key (kbd "C-/") 'comment-region)
-(global-set-key (kbd "C-\\") 'uncomment-region)
-
-;; Set suspend-frame to ignore (does nothing)
-;; Normally '<Ctrl>-X <Ctrl>-z' and <Ctrl>-Z minify frame to dock - I never want to do this
-(global-set-key (kbd "C-x C-z") `ignore)
-(global-set-key (kbd "C-z") 'ignore)
-
-;; M-<up> and M-<down> are activated by <Option|ESC>-<Up|Down Arrow>
-(global-set-key (kbd "M-<up>") 'beginning-of-buffer) ; ESC-up arrow
-(global-set-key (kbd "M-<down>") 'end-of-buffer)     ; ESC-down arrow
-;; Old style key bindings
-;; (global-set-key [?\e up] 'beginning-of-buffer) ; ESC-up arrow
-;; (global-set-key [?\e down] 'end-of-buffer)     ; ESC-down arrow
-
-; Bind compile to <Option|ESC>-P and  <Option|ESC>-C-P
-(global-set-key (kbd "M-p") 'compile)
-(global-set-key (kbd "M-C-p") 'compile)
-
-;; Create a list of my key bindings with the functions they are bound to
-;; so that I can examine the list with:
-;; <Ctrl>-h v<Return>my-key-bindings
-;; Or Since no other variable (in my Emacs bindings) begins with 'my'
-;; <Ctrl>-h v<Return>my<Tab>
-(setq my-key-bindings '())
-
-(add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "C-x C-z")) "C-x C-z"))
-(add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "C-z")) "C-z"))
-(add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-a")) "s-a"))
-(add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-a")) "s-a"))
-(add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-d")) "s-d"))
-(add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-e")) "s-e"))
-(add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-f")) "s-f"))
-(add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-i")) "s-i"))
-(add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-m")) "s-m"))
-(add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-r")) "s-r"))
-(add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-x")) "s-x"))
-;; (add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "C-<f9>")) "C-<f9>"))
-(add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "s-<mouse-1>")) "s-<mouse-1>"))
-(add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "C-/")) "C-/"))
-(add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "C-\\")) "C-\\"))
-
-(add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "M-<up>")) "M-<up> (<Option>-<Up Arrow>)"))
-(add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "M-<down>")) "M-<down> (<Option>-<Down Arrow>)"))
-
-(add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "M-p")) "M-p"))
-(add-to-list 'my-key-bindings  (cons (lookup-key (current-global-map) (kbd "M-C-p")) "M-C-p"))
+(load "my-key-bindings")
 
 ;; Create a list of interesting Emacs default key bindings with the functions they are bound to
 ;; so I don't have to remember them
@@ -367,10 +304,6 @@
 (add-to-list '_emacs-key-bindings  (cons (lookup-key (current-global-map) (kbd "C-M-\\")) "C-M-\\"))
 (add-to-list '_emacs-key-bindings  (cons (lookup-key (current-global-map) (kbd "C-<wheel-down>")) "C-<wheel-down>"))
 (add-to-list '_emacs-key-bindings  (cons (lookup-key (current-global-map) (kbd "C-<wheel-up>")) "C-<wheel-up>"))
-
-(add-to-list 'load-path "~/.emacs.d/lisp")
-
-(add-to-list 'load-path "~/.emacs.d/lisp/multi-web-mode")
 
 ;; (defun my/python-mode-hook ()
 ;;   (add-to-list 'company-backends 'company-jedi))
