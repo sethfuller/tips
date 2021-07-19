@@ -8,6 +8,7 @@ _____________________
 | [[https://realpython.com/emacs-the-best-python-editor/][Emacs Python Development]]       | [[https://github.com/emacsorphanage][Emacs Orphanage Github]]            |
 | [[http://company-mode.github.io/][Github Company Mode]]            | [[https://tychoish.com/post/better-company/][Better Company Article]]            |
 | [[http://tuhdo.github.io/helm-intro.html][Helm]]                           | [[https://github.com/emacs-helm/helm][Helm Github]]                       |
+| [[https://github.com/emacs-helm/helm-descbinds][Helm Describe Key Bindings]]     |                                   |
 | [[https://ftp.gnu.org/old-gnu/Manuals/elisp-manual-20-2.5/html_node/elisp_toc.html][Emacs Elisp Manual]]             | [[https://github.com/plexus/chemacs2.git][Multiple Configs]]                  |
 | [[https://blog.lambda.cx/posts/using-emacsclient-on-macos/][Using emacsclient on MacOS]]     | [[https://gist.github.com/jaeschliman][Jason Aeschliman Gist Emacs Hacks]] |
 | [[https://github.com/d12frosted/homebrew-emacs-plus][Homebrew Emacs Plus]]            |                                   |
