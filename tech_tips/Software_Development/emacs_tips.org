@@ -19,6 +19,8 @@ _____________________
 | [[https://github.com/alphapapa/unpackaged.el][Unpackaged Project Small Files]] |                                   |
 
 *** Keyboard Commands
+    [[https://www.heinrichhartmann.com/archive/the-emacs-key-bindings][Emacs Key Bindings]]
+
     | Keys          | Command                                   |
     |---------------+-------------------------------------------|
     | M-@           | Mark word (repeat to mark multiple words) |
