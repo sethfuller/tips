@@ -29,7 +29,7 @@ _____________________
     | C-x h         | Mark Whole Buffer                         |
     | M-=           | Count Words Region                        |
     | C-x C-d       | List Directory                            |
-    | Cx d          | dired                                     |
+    | C-x d         | dired                                     |
     | M-&           | Async Shell Command                       |
     | M-<pipe>      | Shell Command on Region                   |
     | C-x C-q       | Read Only Mode                            |
