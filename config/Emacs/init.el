@@ -210,6 +210,10 @@
         ("\\.mov\\'" "open")
         ("\\.pptx\\'" "open")
         ("\\.xslx\\'" "open")
+        ("\\.jpg\\'" "open")
+        ("\\.jpeg\\'" "open")
+        ("\\.png\\'" "open")
+        ("\\.gif\\'" "open")
         ))
 
 ;; (require 'dired-sort-menu)
