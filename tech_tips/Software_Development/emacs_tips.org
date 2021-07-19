@@ -18,7 +18,23 @@ _____________________
 | [[https://www.gnu.org/software/emacs/manual/emacs.html][Emacs Manual]]                   | [[https://www.gnu.org/software/emacs/manual/html_node/elisp/index.htm/][Emacs Lisp Manual]]                 |
 | [[https://github.com/alphapapa/unpackaged.el][Unpackaged Project Small Files]] |                                   |
 
-
+*** Keyboard Commands
+    | Keys          | Command                                   |
+    |---------------+-------------------------------------------|
+    | M-@           | Mark word (repeat to mark multiple words) |
+    | M-h           | Mark paragraph                            |
+    | C-x h         | Mark Whole Buffer                         |
+    | M-=           | Count Words Region                        |
+    | C-x C-d       | List Directory                            |
+    | Cx d          | dired                                     |
+    | M-&           | Async Shell Command                       |
+    | M-<pipe>      | Shell Command on Region                   |
+    | C-x C-q       | Read Only Mode                            |
+    | C-x C-r       | Find File Read Only                       |
+    | C-x C-<left>  | Previous Buffer                           |
+    | C-x <left>    | Previous Buffer                           |
+    | C-x C-<right> | Next Buffer                               |
+    | C-x <right>   | Next Buffer                               |
 
 *** Setup Multiple Emacs Copies with Different Icons
     Doing this will cause multiple copies of Emacs to run at once if you
