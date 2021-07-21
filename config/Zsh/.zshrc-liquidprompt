@@ -1,5 +1,6 @@
 #!/usr/bin/env zsh
 
+# Documentation: https://liquidprompt.readthedocs.io/en/stable/
 # Add the following lines to your bash or zsh config (e.g. ~/.bash_profile):
 if [ -f $(brew --prefix)/share/liquidprompt ]; then
   source $(brew --prefix)/share/liquidprompt
