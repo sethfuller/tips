@@ -18,10 +18,10 @@
 
 **** Quicktime
 
-|                            |                                                                |
-|----------------------------+----------------------------------------------------------------|
-| [[https://support.apple.com/guide/quicktime-player/record-your-screen-qtp97b08e666/mac][Quicktime Screen Recording]] | [[Blackhole Setup][https://techwiser.com/mac-screen-recorder-with-internal-audio/]] |
-|                            |                                                                |
+|                            |                 |
+|----------------------------+-----------------|
+| [[https://support.apple.com/guide/quicktime-player/record-your-screen-qtp97b08e666/mac][Quicktime Screen Recording]] | [[https://techwiser.com/mac-screen-recorder-with-internal-audio/][Blackhole Setup]] |
+|                            |                 |
 
 **** Stop Screen Recording
 
