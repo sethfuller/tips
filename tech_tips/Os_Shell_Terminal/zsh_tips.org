@@ -21,11 +21,12 @@
 
 *** Zsh Documentation
 
-|                      |                                |
-|----------------------+--------------------------------|
-| [[http://zsh.sourceforge.net/Doc/Release/index.html][Zsh Manual]]           | [[https://mads-hartmann.com/2017/08/06/writing-zsh-completion-scripts.html][Writing Zsh Completion Scripts]] |
-| [[https://www.cyberciti.biz/faq/apple-mac-osx-terminal-color-ls-output-option/][Setting Color for ls]] | [[https://askubuntu.com/questions/821157/print-a-256-color-test-pattern-in-the-terminal][Output 256 Colors]]              |
-| [[https://code.google.com/archive/p/ansi-color/][ANSI Color Script]]    | [[https://zaiste.net/posts/zsh-get-filename-extension-path/][Zsh Get File name Extension]]    |
+|                                                              |                                |
+|--------------------------------------------------------------+--------------------------------|
+| [[http://zsh.sourceforge.net/Doc/Release/index.html][Zsh Manual]]                                                   | [[https://mads-hartmann.com/2017/08/06/writing-zsh-completion-scripts.html][Writing Zsh Completion Scripts]] |
+| [[https://www.cyberciti.biz/faq/apple-mac-osx-terminal-color-ls-output-option/][Setting Color for ls]]                                         | [[https://askubuntu.com/questions/821157/print-a-256-color-test-pattern-in-the-terminal][Output 256 Colors]]              |
+| [[https://code.google.com/archive/p/ansi-color/][ANSI Color Script]]                                            | [[https://zaiste.net/posts/zsh-get-filename-extension-path/][Zsh Get File name Extension]]    |
+| [[Prompt Expansion][https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html]] |                                |
 
 *** Zsh Tips
 |                                       |                    |
