@@ -13,6 +13,9 @@
 ;; click + to add ruby
 ;; The /usr directory is hidden by default <Command>-<Shift>-. (period) unhides it.
 
+;; Show buffer name and file name
+(setq frame-title-format '("" "%b %f"))
+
 ;; Turn off Package cl is deprecated warning
 (setq byte-compile-warnings '(cl-functions))
 
