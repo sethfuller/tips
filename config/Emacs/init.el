@@ -79,9 +79,11 @@
 
 (setq markdown-command "/usr/local/bin/pandoc")
 
+(set-face-attribute `default (selected-frame) :height 142)
+
 (defconst frame-default-top     10  "The 'top'  position property of a frame.")
 (defconst frame-default-left    10  "The 'left' position property of a frame.")
-(defconst frame-default-height  65  "The default frame height.")
+(defconst frame-default-height  70  "The default frame height.")
 (defconst frame-default-width  100  "The default frame width.")
 
 (add-to-list 'default-frame-alist (cons 'left   frame-default-left))
