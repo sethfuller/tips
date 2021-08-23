@@ -13,6 +13,8 @@
 	brd = branch --delete --force
 # List remote branch
 	brr = ! git branch --remote
+# Git current branch name
+        brc = rev-parse --abbrev-ref HEAD
 # Checkout
 	co = checkout
 	cob = checkout -b
