@@ -17,6 +17,8 @@
 (bind-key "s-i" 'kill-ring-save)
 (bind-key "s-<mouse-1>" 'kill-ring-save)
 
+;; <Ctrl>-Z set to undo like other programs (instead of minify frame)
+(bind-key "C-z" 'undo)
 ;; find-file-at-point - If the string at the current point in the buffer
 ;; can be interpreted as a file, go to that file
 (bind-key "C-<tab>" 'find-file-at-point)
@@ -24,9 +26,8 @@
 (bind-key "C-\\" 'uncomment-region)
 
 ;; Set suspend-frame to ignore (does nothing)
-;; Normally '<Ctrl>-X <Ctrl>-z' and <Ctrl>-Z minify frame to dock - I never want to do this
+;; Normally '<Ctrl>-X <Ctrl>-z' minify frame to dock - I never want to do this
 (bind-key "C-x C-z" `ignore)
-(bind-key "C-z" 'ignore)
 
 ;; M-<up> and M-<down> are activated by <Option|ESC>-<Up|Down Arrow>
 (bind-key "M-<up>" 'beginning-of-buffer) ; ESC-up arrow

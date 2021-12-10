@@ -76,6 +76,9 @@
 
 (setq markdown-command "/usr/local/bin/pandoc")
 
+;; (selected-frame) instead of 'nil only sets for the initial frame
+(set-face-attribute `default 'nil :height 142)
+
 (defconst frame-default-top     10  "The 'top'  position property of a frame.")
 (defconst frame-default-left    10  "The 'left' position property of a frame.")
 (defconst frame-default-height  65  "The default frame height.")
@@ -134,6 +137,18 @@
 ;;       (ido-mode t)
 
 (set-background-color "ivory")
+
+(defun get-bg-color ()
+  "Get the current background color"
+  (interactive)
+  (message "Background %s" (face-attribute 'default :background))
+  )
+
+(defun bg-color (new-color)
+  "Set the new background color"
+  (interactive "sBackground Color ")
+  (set-background-color new-color)
+  )
 
 ;; ls-lisp is a standard library that comes with Emacs
 ;; It provides options that MacOS ls does not

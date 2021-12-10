@@ -43,6 +43,7 @@ if [ ! -z "$DEFAULT_PROFILE" ]
 then
     PROFILE="default"
 fi
+
 EMACS_ARGS=""
 
 for VERSION in $*

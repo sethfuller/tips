@@ -46,6 +46,8 @@ alias -g eh='|& head'
 alias -g el='|& less'
 alias -g etl='|& tail -20'
 alias -g et='|& tail'
+alias -g gvg='|& grep -v grep'
+alias -g brc='git brc'
 
 alias -g cod='checkout develop'
 
@@ -91,7 +93,6 @@ fpath=($HOME/Src/Shell/zsh-completions/src $fpath)
 # source $HOME/.zshrc-emacs
 # source $HOME/.zshrc-antigen
 source $HOME/.zshrc-liquidprompt
-
 
 #launchctl setenv PATH $PATH
 
