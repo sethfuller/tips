@@ -13,7 +13,7 @@
 (bind-key "s-x" 'make-frame-command)
 (bind-key "s-C-l" 'goto-line)
 
-;; Use <Command>-i or <Command>-<Left Mouse Click>
+;; Use <Command>-i or <Command>-z or <Command>-<Left Mouse Click>
 ;; Saves the highlighted text without removing it from the buffer
 ;; (bind-key "C-<f9>" 'kill-ring-save)
 (bind-key "s-i" 'kill-ring-save)
