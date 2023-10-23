@@ -13,6 +13,9 @@
 ;; click + to add ruby
 ;; The /usr directory is hidden by default <Command>-<Shift>-. (period) unhides it.
 
+;; Show buffer name and file name
+(setq frame-title-format '("" "%b %f"))
+
 ;; Turn off Package cl is deprecated warning
 (setq byte-compile-warnings '(cl-functions))
 
@@ -64,7 +67,7 @@
 (add-to-list 'semantic-default-submodes 'global-semantic-idle-completions-mode)
 
 ;; Enable Semantic
-(semantic-mode 1)
+;; (semantic-mode 1)
 
 ;; Org mode commands available globally
 (global-set-key (kbd "C-c l") 'org-store-link)
@@ -173,6 +176,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(column-number-mode t)
  '(package-selected-packages
    '(company-jedi markdown-preview-mode use-package exec-path-from-shell pandoc-mode browse-at-remote magit emmet-mode dockerfile-mode jenkinsfile-mode smex yaml-mode yaml-tomato mkdown markdown-mode tide dired-sort-menu dired-sort-menu+ dired+ json-mode jss jst jtags jvm-mode kfg kite kite-mini java-imports java-snippets javadoc-lookup autodisass-java-bytecode flymake-gjshint import-js js2-closure js2-highlight-vars js2-refactor js2-mode findr company show-css)))
 (custom-set-faces
@@ -363,3 +367,41 @@
 
 ;; (setq grep-find-command '("find . -type f \\( -name '.git' \\) -prune -type f -exec egrep  -nH --null -e  \\{\\} +" . 77))
 ;; (setq grep-find-template "find <D> <X> -type f <F> -exec egrep <C> -nH -e <R> \\{\\} +")
+
+(setq emacs-path (expand-file-name invocation-name invocation-directory))
+
+(if (string-match "Emacs1" emacs-path)
+    (progn
+      (add-to-list 'initial-frame-alist '(background-color . "lightgray"))
+    (add-to-list 'default-frame-alist '(background-color . "gray79"))
+  ))
+
+(if (string-match "Emacs2" emacs-path)
+    (progn
+      (add-to-list 'initial-frame-alist '(background-color . "thistle2"))
+      (add-to-list 'default-frame-alist '(background-color . "thistle1"))
+      ))
+
+(if (string-match "Emacs3" emacs-path)
+    (progn
+      (add-to-list 'initial-frame-alist '(background-color . "wheat1"))
+      (add-to-list 'default-frame-alist '(background-color . "wheat2"))
+    ))
+
+(if (string-match "Emacs4" emacs-path)
+    (progn
+      (add-to-list 'initial-frame-alist '(background-color . "khaki1"))
+      (add-to-list 'default-frame-alist '(background-color . "khaki2"))
+    ))
+
+(if (string-match "Emacs5" emacs-path)
+    (progn
+      (add-to-list 'initial-frame-alist '(background-color . "DarkSlateGray1"))
+      (add-to-list 'default-frame-alist '(background-color . "DarkSlateGray2"))
+    ))
+
+(if (string-match "Emacs6" emacs-path)
+    (progn
+      (add-to-list 'initial-frame-alist '(background-color . "ivory2"))
+      (add-to-list 'default-frame-alist '(background-color . "ivory3"))
+      ))

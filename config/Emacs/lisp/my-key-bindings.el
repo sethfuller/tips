@@ -1,6 +1,7 @@
 ;; My key bindings
 ;; C-h v personal-keybindings (show all bindings)
 ;; On Mac run following commands by type <Command>-<Character>
+(bind-key "S-s-SPC" 'set-mark-command)
 (bind-key "s-a" 'mark-whole-buffer)
 (bind-key "s-b" 'ediff-buffers)
 (bind-key "s-d" 'find-dired)
@@ -10,11 +11,13 @@
 (bind-key "s-r" 'revert-buffer-no-confirm)
 (bind-key "s-s" 'discover-my-major)
 (bind-key "s-x" 'make-frame-command)
+(bind-key "s-C-l" 'goto-line)
 
 ;; Use <Command>-i or <Command>-<Left Mouse Click>
 ;; Saves the highlighted text without removing it from the buffer
 ;; (bind-key "C-<f9>" 'kill-ring-save)
 (bind-key "s-i" 'kill-ring-save)
+;;(bind-key "s-z" 'kill-ring-save)
 (bind-key "s-<mouse-1>" 'kill-ring-save)
 
 ;; <Ctrl>-Z set to undo like other programs (instead of minify frame)
