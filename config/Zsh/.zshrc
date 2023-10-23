@@ -29,7 +29,7 @@ alias mci="mvn $MVN_CL_INS"
 alias muci="mvn -U $MVN_CL_INS"
 
 alias extip="curl http://ipecho.net/plain;echo" # Public IP
-alias myip='echo "Current IP: $(ifconfig | grep 192.)"' # Internal IP
+alias myip='echo "Current IP: $(ifconfig | fgrep 10.0)"' # Internal IP
 
 # Python pip
 alias pip='pip3'
@@ -55,6 +55,7 @@ alias -g cod='checkout develop'
 
 alias gal="$HOME/bin/git_aliases.py"
 alias brg="git brr | grep"
+alias mc="minicom -c on"
 
 # alias em="$HOME/bin/emacs-mac.sh"
 alias em="$HOME/bin/emacs-mac.sh -n"
@@ -92,7 +93,7 @@ fpath=($HOME/Src/Shell/zsh-completions/src $fpath)
 
 # source $HOME/.zshrc-emacs
 # source $HOME/.zshrc-antigen
-source $HOME/.zshrc-liquidprompt
+[[ $- = *i* ]] && source $HOME/.zshrc-liquidprompt
 
 #launchctl setenv PATH $PATH
 
