@@ -139,4 +139,8 @@ compinit
 unalias gsd
 alias gsd='_gsd'
 
+alias python3=/opt/homebrew/opt/python3/bin/python3
+alias pip3=/opt/homebrew/opt/python3/bin/pip3
+alias ruby3=/opt/homebrew/opt/ruby/bin/ruby
+
 echo "End .zshrc $(date)"
