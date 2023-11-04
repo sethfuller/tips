@@ -79,6 +79,8 @@ if type brew &>/dev/null; then
   # compinit
 fi
 
+# source $HOME/Src/Shell/Zsh/sh-autocomplete/zsh-autocomplete.plugin.zsh
+
 source $HOME/.zshrc-functions
 
 # Path to find function files
@@ -97,9 +99,12 @@ fpath=($HOME/Src/Shell/zsh-completions/src $fpath)
 
 #launchctl setenv PATH $PATH
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+source /usr/local/Cellar/gnu-getopt/2.39.2/etc/bash_completion.d/getopt
+# source $HOME/.gsf-completion.bash
 
 myip.sh
 
