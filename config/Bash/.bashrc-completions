@@ -1,0 +1,15 @@
+echo "Start $HOME/.bashrc-completions At: $(date)"
+# set -x
+#source /usr/local/etc/profile.d/bash_completion.sh
+source /usr/local/etc/bash_completion
+#source /usr/local/etc/bash_completion.d/brew
+#source /usr/local/etc/bash_completion.d/open
+#source /usr/local/etc/bash_completion.d/spring
+source /usr/local/etc/bash_completion.d/git-completion.bash --prefix=
+source $HOME/bash/npm-completion.bash
+#source $HOME/bash/bower-completion.bash
+
+complete -o default -F _npm_completion npmh
+#complete -o default -F _bower_completion bowerh
+# set +x
+echo "Finish $HOME/.bashrc-completions At: $(date)"

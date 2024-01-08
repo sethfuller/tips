@@ -1,0 +1,78 @@
+# function _update_ps1() {
+#     PS1="$(~/Src/Bash/powerline-shell/powerline-shell.py $? 2> /dev/null)"
+# }
+
+# if [ "$TERM" != "linux" ]; then
+#     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+# fi
+echo "Start $HOME/.bashrc At: $(date)"
+
+source $HOME/.bashrc-bash-it
+source $HOME/.bashrc-functions
+source $HOME/.bashrc-completions
+source $HOME/.bash_aliases
+#source $HOME/.bashrc-hadoop
+
+#export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-14.0.2.jdk/Contents/Home"
+export JAVA_HOME="/usr/local/opt/openjdk"
+export GO_HOME="/usr/local/go"
+export GOPATH="/usr/local/go"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+# export SDKMAN_DIR="/Users/sethfuller/.sdkman"
+# [[ -s "/Users/sethfuller/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/sethfuller/.sdkman/bin/sdkman-init.sh"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+## nvm set default node version
+## nvm alias default 15.0.1
+## OR
+## nvm alias default 15
+## Upgrade Rails
+## gem update rails
+
+
+# For compilers to find ruby you may need to set:
+# export LDFLAGS="-L/usr/local/opt/ruby/lib"
+# export CPPFLAGS="-I/usr/local/opt/ruby/include"
+
+# For pkg-config to find ruby you may need to set:
+# export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
+
+
+# echo "Step 1 $HOME/.bashrc At: $(date)"
+
+export RUBY_HOME="/usr/local/opt/ruby"
+export RUBY_LIB=""
+export GEM_HOME="/usr/local/lib/ruby/gems/2.7.0"
+export YARN_HOME="$HOME/.yarn"
+#export SPHINX_DOC_HOME="/usr/local/opt/sphinx-doc"
+
+if [ -z "$ORIG_PATH" ]
+then
+    #    ORIG_PATH=$HOME/bin:$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$JAVA_HOME/bin:$GO_HOME/bin:/usr/local/sbin:$PATH
+    ORIG_PATH=$HOME/bin:$JAVA_HOME/bin:$GO_HOME/bin:/usr/local/sbin:$PATH
+fi
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+#export PATH="$PATH:$HOME/.rvm/bin"
+export PATH=$ORIG_PATH
+
+export PATH="$RUBY_HOME/bin:$GEM_HOME/bin:$YARN_HOME/bin:$HOME/.config/yarn/global/node_modules/.bin:$ORIG_PATH"
+
+# echo "Step 2 $HOME/.bashrc At: $(date)"
+
+export SD="$HOME/Src/SoftwareDevelopment"
+export WEB="${SD}/Web"
+export DOCK="${SD}/Docker"
+export LG="${SD}/Languages"
+export SB="${LG}/Java/SpringBoot"
+
+# added for npm-completion https://github.com/Jephuff/npm-bash-completion
+
+PATH_TO_NPM_COMPLETION="/Users/sethfuller/.nvm/versions/node/v15.0.1/lib/node_modules/npm-completion"
+source $PATH_TO_NPM_COMPLETION/npm-completion.sh
+
+echo "Finish $HOME/.bashrc At: $(date)"
