@@ -1,6 +1,9 @@
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
+alias java-11="export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version"
+alias java-21="export JAVA_HOME=`/usr/libexec/java_home -v 21`; java -version"
+
 # print 1 column
 alias pr1='print -C1'
 
