@@ -2,6 +2,12 @@
 
 ----------
 
+*** System Settings
+
+**** Desktop & Dock -> Stage Manager
+Puts all windows that don't have focus on the left side of the monitor. Helps
+avoid cludder
+
 *** Documentation
 
 |                        |                |
