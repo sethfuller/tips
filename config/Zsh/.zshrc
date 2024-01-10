@@ -89,8 +89,6 @@ source $HOME/.zshrc-functions
 # Path to find function files
 fpath=($HOME/Src/Shell/zsh-completions/src $fpath)
 
-# source ~/Src/Shell/zsh-completions/src/kubectl-autocomplete.plugin.zsh
-
 # source $HOME/.gsf-completion.bash
 
 # Zplug Init
@@ -113,44 +111,39 @@ source /usr/local/Cellar/gnu-getopt/2.39.2/etc/bash_completion.d/getopt
 
 myip.sh
 
-### Added by Zinit's installer
-if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
-    print -P "%F{33}▓▒░ %F{220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma/zinit%F{220})…%f"
-    command mkdir -p "$HOME/.zinit" && command chmod g-rwX "$HOME/.zinit"
-    command git clone https://github.com/zdharma/zinit "$HOME/.zinit/bin" && \
-        print -P "%F{33}▓▒░ %F{34}Installation successful.%f%b" || \
-        print -P "%F{160}▓▒░ The clone has failed.%f%b"
-fi
-
-source "$HOME/.zinit/bin/zinit.zsh"
-autoload -Uz _zinit
-(( ${+_comps} )) && _comps[zinit]=_zinit
-
-# Load a few important annexes, without Turbo
-# (this is currently required for annexes)
-# https://zdharma.github.io/zinit/wiki/ (Docs)
-zinit light-mode for \
-    zinit-zsh/z-a-rust \
-    zinit-zsh/z-a-as-monitor \
-    zinit-zsh/z-a-patch-dl \
-    zinit-zsh/z-a-bin-gem-node
-
-### End of Zinit's installer chunk
-# zinit snippet 'https://github.com/robbyrussell/oh-my-zsh/raw/master/plugins/git/git.plugin.zsh'
-# zinit snippet 'https://github.com/sorin-ionescu/prezto/blob/master/modules/helper/init.zsh'
-zinit snippet OMZ::plugins/git/git.plugin.zsh
-
-# zinit light zsh-users/zsh-syntax-highlighting
-zinit load zsh-users/zsh-syntax-highlighting
-
 autoload -Uz compinit
 compinit
 
 unalias gsd
 alias gsd='_gsd'
 
+alias git=/opt/homebrew/opt/git/bin/git
 alias python3=/opt/homebrew/opt/python3/bin/python3
 alias pip3=/opt/homebrew/opt/python3/bin/pip3
 alias ruby3=/opt/homebrew/opt/ruby/bin/ruby
+
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+[ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
+[ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+source "${ZINIT_HOME}/zinit.zsh"
+
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
+
+# Load a few important annexes, without Turbo
+# (this is currently required for annexes)
+zinit light-mode for \
+    zdharma-continuum/zinit-annex-as-monitor \
+    zdharma-continuum/zinit-annex-bin-gem-node \
+    zdharma-continuum/zinit-annex-patch-dl \
+    zdharma-continuum/zinit-annex-rust
+
+# zinit snippet 'https://github.com/robbyrussell/oh-my-zsh/raw/master/plugins/git/git.plugin.zsh'
+zinit snippet OMZ::plugins/git/git.plugin.zsh
+# zinit snippet PZT::modules/helper/init.zsh
+### End of Zinit's installer chunk
+
+source ~/Src/Shell/zsh-completions/src/kubectl-autocomplete.plugin.zsh
+source ~/Src/Shell/zsh-completions/src/mvn.plugin.zsh
 
 echo "End .zshrc $(date)"
