@@ -1,8 +1,8 @@
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
-alias java-11="export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version"
-alias java-21="export JAVA_HOME=`/usr/libexec/java_home -v 21`; java -version"
+alias java-11="export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version; echo $JAVA_HOME"
+alias java-21="export JAVA_HOME=`/usr/libexec/java_home -v 21`; java -version; echo $JAVA_HOME"
 
 # print 1 column
 alias pr1='print -C1'
@@ -88,6 +88,8 @@ source $HOME/.zshrc-functions
 
 # Path to find function files
 fpath=($HOME/Src/Shell/zsh-completions/src $fpath)
+
+# source ~/Src/Shell/zsh-completions/src/kubectl-autocomplete.plugin.zsh
 
 # source $HOME/.gsf-completion.bash
 
