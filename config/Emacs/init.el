@@ -169,8 +169,6 @@
 (package-initialize)
 
 ;; which-key
-;; '(package-selected-packages
-;;   '(discover-my-major makey yaml-mode smex org company-jedi company emmet-mode helm markdown-mode+ bm exec-path-from-shell dockerfile-mode use-package leaf edit-indirect markdown-mode markdown-preview-mode js2-refactor xref-js2 js2-mode))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -178,7 +176,7 @@
  ;; If there is more than one, they won't work right.
  '(column-number-mode t)
  '(package-selected-packages
-   '(company-jedi markdown-preview-mode use-package exec-path-from-shell pandoc-mode browse-at-remote magit emmet-mode dockerfile-mode jenkinsfile-mode smex yaml-mode yaml-tomato mkdown markdown-mode tide dired-sort-menu dired-sort-menu+ dired+ json-mode jss jst jtags jvm-mode kfg kite kite-mini java-imports java-snippets javadoc-lookup autodisass-java-bytecode flymake-gjshint import-js js2-closure js2-highlight-vars js2-refactor js2-mode findr company show-css)))
+   '(company company-jedi markdown-preview-mode use-package exec-path-from-shell pandoc-mode browse-at-remote magit emmet-mode dockerfile-mode smex yaml-mode yaml-tomato mkdown markdown-mode dired+ json-mode jss jst jtags jvm-mode kfg kite kite-mini java-imports java-snippets javadoc-lookup autodisass-java-bytecode flymake-gjshint import-js js2-closure js2-highlight-vars js2-mode show-css)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -235,9 +233,9 @@
         ("\\.gif\\'" "open")
         ))
 
-;; (require 'dired-sort-menu)
-;; (require 'dired-sort-menu+)
-;; (require 'dired+)
+(require 'dired-sort-menu)
+(require 'dired-sort-menu+)
+(require 'dired+)
 
 ;; When using sort adds option to sort by time (t), name (n), extension (x), and size (s)
 ;; In dired buffer type s, then one of the above character
@@ -268,8 +266,8 @@
 ;; Improved JavaScript mode
 ;; All modules available in Melpa and Melpa-stable
 (require 'js2-mode)
-(require 'js2-refactor)
-(require 'xref-js2)
+;; (require 'js2-refactor)
+;; (require 'xref-js2)
 
 ;; JavaScript indentation
 (setq js-indent-level 2)
@@ -282,7 +280,7 @@
 
 (add-hook 'js2-mode-hook #'js2-refactor-mode)
 
-(js2r-add-keybindings-with-prefix "C-c C-r")
+;; (js2r-add-keybindings-with-prefix "C-c C-r")
 (define-key js2-mode-map (kbd "C-k") #'js2r-kill)
 
 ;; js-mode (which js2-mode is based on) binds "M-." which conflicts with xref, so
