@@ -3,6 +3,7 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 alias java-11="export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version; echo $JAVA_HOME"
 alias java-21="export JAVA_HOME=`/usr/libexec/java_home -v 21`; java -version; echo $JAVA_HOME"
+export JAVA_HOME=$(/usr/libexec/java_home -v 11)
 
 # print 1 column
 alias pr1='print -C1'
@@ -64,13 +65,36 @@ alias mc="minicom -c on"
 alias em="$HOME/bin/emacs-mac.sh -n"
 alias emp="$HOME/bin/emacs-mac.sh -n 1 2 3"
 
-alias ssht='~/Comcast/bin/ssh_tunnel.sh'
+# Documentation: https://liquidprompt.readthedocs.io/en/stable/
+# Add the following lines to your bash or zsh config (e.g. ~/.bash_profile):
+if [ -f $(brew --prefix)/share/liquidprompt ]; then
+  source $(brew --prefix)/share/liquidprompt
+fi
 
-# git Branch Prefixes
-export X1="sfulle176_EMX1"
-export DV="develop"
+### Added by Zinit's installer
+if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
+    print -P "%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f"
+    command mkdir -p "$HOME/.local/share/zinit" && command chmod g-rwX "$HOME/.local/share/zinit"
+    command git clone https://github.com/zdharma-continuum/zinit "$HOME/.local/share/zinit/zinit.git" && \
+        print -P "%F{33} %F{34}Installation successful.%f%b" || \
+        print -P "%F{160} The clone has failed.%f%b"
+fi
 
-# Make fpath contain only unique entries
+source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
+
+# Load a few important annexes, without Turbo
+# (this is currently required for annexes)
+zinit light-mode for \
+    zdharma-continuum/zinit-annex-as-monitor \
+    zdharma-continuum/zinit-annex-bin-gem-node \
+    zdharma-continuum/zinit-annex-patch-dl \
+    zdharma-continuum/zinit-annex-rust
+
+### End of Zinit's installer chunk
+zinit snippet OMZ::plugins/git/git.plugin.zsh
+
 typeset -U fpath
 typeset -U cdpath
 cdpath=(.. ~/Src /usr/local /usr/local/opt /opt/homebrew)
@@ -86,64 +110,12 @@ fi
 
 source $HOME/.zshrc-functions
 
+if type brew &>/dev/null; then
+    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+    autoload -Uz compinit
+    compinit
+fi
 # Path to find function files
 fpath=($HOME/Src/Shell/zsh-completions/src $fpath)
 
-# source $HOME/.gsf-completion.bash
-
-# Zplug Init
-# export ZPLUG_HOME=/usr/local/opt/zplug
-# source $ZPLUG_HOME/init.zsh
-# zplug "plugins/git" from:oh-my-zsh
-
-# source $HOME/.zshrc-emacs
-# source $HOME/.zshrc-antigen
-[[ $- = *i* ]] && source $HOME/.zshrc-liquidprompt
-
-#launchctl setenv PATH $PATH
-
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-source /usr/local/Cellar/gnu-getopt/2.39.2/etc/bash_completion.d/getopt
-# source $HOME/.gsf-completion.bash
-
-myip.sh
-
-autoload -Uz compinit
-compinit
-
-unalias gsd
-alias gsd='_gsd'
-
-alias git=/opt/homebrew/opt/git/bin/git
-alias python3=/opt/homebrew/opt/python3/bin/python3
-alias pip3=/opt/homebrew/opt/python3/bin/pip3
-alias ruby3=/opt/homebrew/opt/ruby/bin/ruby
-
-ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
-[ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
-[ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
-source "${ZINIT_HOME}/zinit.zsh"
-
-autoload -Uz _zinit
-(( ${+_comps} )) && _comps[zinit]=_zinit
-
-# Load a few important annexes, without Turbo
-# (this is currently required for annexes)
-zinit light-mode for \
-    zdharma-continuum/zinit-annex-as-monitor \
-    zdharma-continuum/zinit-annex-bin-gem-node \
-    zdharma-continuum/zinit-annex-patch-dl \
-    zdharma-continuum/zinit-annex-rust
-
-# zinit snippet 'https://github.com/robbyrussell/oh-my-zsh/raw/master/plugins/git/git.plugin.zsh'
-zinit snippet OMZ::plugins/git/git.plugin.zsh
-# zinit snippet PZT::modules/helper/init.zsh
-### End of Zinit's installer chunk
-
-source ~/Src/Shell/zsh-completions/src/kubectl-autocomplete.plugin.zsh
-source ~/Src/Shell/zsh-completions/src/mvn.plugin.zsh
-
-echo "End .zshrc $(date)"
