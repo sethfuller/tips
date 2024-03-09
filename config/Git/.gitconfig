@@ -1,6 +1,10 @@
+[credential]
+	helper = osxkeychain
+[credential "https://dev.azure.com"]
+	useHttpPath = true
 [user]
-   name = sethfuller
-   email = sethfuller@mac.com
+	name = Seth Fuller
+	email = fuller.sethm@gmail.com
 
 [core]
    autocrlf = input
