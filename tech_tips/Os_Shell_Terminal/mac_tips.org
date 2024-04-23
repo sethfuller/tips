@@ -60,5 +60,13 @@ In the top menu bar click the stop recording button toward the right (the leftmo
 
 ----------
 
+Here’s what you need to do to reset Core Audio as a Chrome user in Terminal:
+
+Start by shutting down Chrome.
+Type in “sudo killall Google\ Chrome” and press Enter
+If this command doesn’t disable the browser, try “pgrep -x Google Chrome"
+Terminal will now show you a number. Type in “kill -9 _” with the number in place of the underscore. Hit Enter. This will knock out Chrome
+
+You can now use the sudo “killall coreaudiod” command again to reset Core Audio. Google Chrome will work normally when you open it again
 
 *** [[..][Main Tech Tips Page]]
