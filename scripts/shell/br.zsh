@@ -1,5 +1,7 @@
 #!/usr/bin/env zsh
 
+# Attempt to shorten Homebrew command arguments
+
     zparseopts -D -E n::=infos i::=installs -upd=upd -upg=upg
     print "infos $infos[@] Count: ${#infos}"
     print "installs $installs[@] Count: ${#installs}"

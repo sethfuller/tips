@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# Start Chrome with a a specified profile
+
 CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 USER_DATA_DIR_EXT="$1"
