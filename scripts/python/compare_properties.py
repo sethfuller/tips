@@ -3,6 +3,10 @@
 from jproperties import Properties
 import argparse
 
+"""
+Compare the contents of two Java properties files and report the differences
+"""
+
 class CompareProperties:
     """
     Author: Seth Fuller

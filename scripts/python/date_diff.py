@@ -3,6 +3,7 @@
 """
 date_diff.py
 Get the difference between two dates or today's date
+First version
 """
 
 import argparse
@@ -23,6 +24,7 @@ class DateDiff:
 
     def calc_date_diff(self):
         """
+        Use datetime.strptime requires try/except
         """
         
         dt2 = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)

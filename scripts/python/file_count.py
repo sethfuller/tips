@@ -4,6 +4,15 @@ import os, os.path
 import sys
 import argparse
 
+"""
+Count the files in a given directory
+Exit code:
+2 - Dir. does not exist or no permission
+0 - File count less than min (success)
+1 - File count greater than max
+9 - File count between min and max
+"""
+
 def count_files(args):
     file_count = 0
     try:

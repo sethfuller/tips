@@ -3,6 +3,7 @@
 """
 dt_diff.py
 Get the difference between two dates or today's date
+Second version
 """
 
 import argparse

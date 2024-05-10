@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 
 """
-date_diff.py
+date_parse_diff.py
 Get the difference between two dates or today's date
+Final version
 """
 
 import argparse
@@ -41,6 +42,7 @@ class DateDiff:
 
     def calc_date_diff(self):
         """
+        Use dateparser.parse to parse date without needing a try/except block
         """
         dt2 = datetime.now()
         dt1 = dateparser.parse(self.args.date1)
@@ -61,6 +63,7 @@ class DateDiff:
         print('Date 1: {} - Date 2: {}'.format(dt1.strftime("%m-%d-%Y %H:%M:%S"),
                                                dt2.strftime("%m-%d-%Y %H:%M:%S")))
         print('Difference: {}'.format(self.format_relativedelta(rdelta)))
+
 def create_parser():
     """
         Create the parser for all command line arguments
