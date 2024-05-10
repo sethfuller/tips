@@ -3,6 +3,11 @@ import sys
 import subprocess
 import re
 
+"""
+Attempt to simplify the command line args of Homebrew app "brew"
+Abandoned as too complex for now.
+"""
+
 def run_brew():
     cmd = ['brew']
     args = []
