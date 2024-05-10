@@ -7,13 +7,16 @@
 
 ## Config Files
 
-    - [Zsh Config Files](https://github.com/sethfuller/tips/tree/main/config/Zsh)
-    - [Git Config Files](https://github.com/sethfuller/tips/tree/main/config/Git)
-    - [Emacs Config Files](https://github.com/sethfuller/tips/tree/main/config/Emacs)
+[Zsh Config Files](https://github.com/sethfuller/tips/tree/main/config/Zsh)
+
+[Git Config Files](https://github.com/sethfuller/tips/tree/main/config/Git)
+
+[Emacs Config Files](https://github.com/sethfuller/tips/tree/main/config/Emacs)
 
 ## Scripts
 
-    - [Shell Scripts](https://github.com/sethfuller/tips/tree/main/scripts/shell)
-    - [Python Scripts](https://github.com/sethfuller/tips/tree/main/scripts/python)
+[Shell Scripts](https://github.com/sethfuller/tips/tree/main/scripts/shell)
+
+[Python Scripts](https://github.com/sethfuller/tips/tree/main/scripts/python)
 
     
