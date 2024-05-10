@@ -6,6 +6,7 @@
 [Technical Tips](https://github.com/sethfuller/tips/blob/main/tech_tips/)
 
 ## Config Files
+These are config files with some documentation in comments that I use.
 
 [Zsh Config Files](https://github.com/sethfuller/tips/tree/main/config/Zsh)
 
