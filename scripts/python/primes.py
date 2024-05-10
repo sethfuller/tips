@@ -1,6 +1,10 @@
 
 import sys
 
+"""
+List all of the primes less than top
+"""
+
 def list_primes_below_top(top):
     for x in range(2, top):
         for y in range(2, x):

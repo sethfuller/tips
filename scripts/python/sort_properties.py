@@ -5,6 +5,7 @@ import argparse
 
 class SortProperties:
     """
+    Read a Java properties file and sort the property keys alphabetically
     """
 
     def __init__(self):

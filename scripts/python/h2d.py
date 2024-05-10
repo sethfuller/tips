@@ -2,6 +2,10 @@
 import sys
 import math
 
+"""
+For all base 10 numbers given on the command line output their hexadecimal equivalents
+"""
+
 def hex_to_decimal(hex_str):
     dec_num = sum(int(x, 16) * math.pow(16, len(hex_str)-i-1) for i, x in enumerate(hex_str)) 
 

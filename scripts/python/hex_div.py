@@ -2,6 +2,12 @@
 import sys
 import math
 
+"""
+Take two hex numbers as arguments.
+Convert them to decimal and divide the resulting numbers arg1/arg2.
+Output the decimal numbers and the result of the division.
+"""
+
 def hex_to_decimal(hex_str):
     dec_num = sum(int(x, 16) * math.pow(16, len(hex_str)-i-1) for i, x in enumerate(hex_str)) 
 

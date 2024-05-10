@@ -7,6 +7,10 @@ import logging
 
 logger = logging.getLogger(__name__)
 
+"""
+Various util functions used in other scripts
+"""
+
 ut_debug = False
 
 def print_log(msg, logger):

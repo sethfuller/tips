@@ -4,6 +4,11 @@ import argparse
 import re
 import sys
 
+"""
+Turn a python, shell, JavaScript, Java or C file into Markdown making all comments
+headers in the Markdown
+"""
+
 class Script2Markdown:
     def __init__(self):
         self.parse_args()

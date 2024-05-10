@@ -7,6 +7,10 @@ except:
 import logging
 import stat
 
+"""
+Utility functions to emulate various Linux functions or commands
+"""
+
 logger = logging.getLogger(__name__)
 
 ut_debug = False

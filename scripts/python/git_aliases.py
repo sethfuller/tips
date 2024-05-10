@@ -5,6 +5,12 @@ import sys
 import re
 import out_colors
 
+"""
+Read the ~/.gitconfig file and output all aliases contained it.
+This script determines if the output is going to a tty and does paging if the output is to a tty
+I.e. not redirected to a file or piped to another program.
+"""
+
 class ReadGitAliases:
     def __init__(self):
         colors = out_colors.OutColors()

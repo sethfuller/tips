@@ -1,4 +1,8 @@
 
+"""
+Dictionary with shortcuts for Mac and iTerm2
+"""
+
 shortcuts = {
     'mac': [
         {

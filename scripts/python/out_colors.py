@@ -1,4 +1,8 @@
 
+"""
+Functions to display different colors to the terminal
+"""
+
 class OutColors:
       def __init__(self):
          self.colors = {}

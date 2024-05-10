@@ -3,6 +3,11 @@
 import argparse
 import shortcut_dict
 
+"""
+Display the shortcuts defined in shortcut_dict.py for the specified application.
+Shortcuts for Chrome and IntelliJ have not been defined.
+"""
+
 class Shortcuts:
     """
     """
