@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 """
 rm_files.py
 Remove files in directories specified in a YAML file
