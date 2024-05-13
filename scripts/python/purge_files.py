@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 """
 purge_files.py
 Purge files in directories specified in a YAML file.
