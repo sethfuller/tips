@@ -37,6 +37,8 @@ class Script2Markdown:
         parser.add_argument('--type', '-t',
                             help="Optional Script Type if Script Doesn't have a standard extension for it language")
 
+        parser.add_argument('--debug', '-d', action='store_true',
+                            help="Debug output (the contents of the file")
 
         self.args = parser.parse_args()
         self.parser = parser
@@ -119,8 +121,9 @@ class Script2Markdown:
             if file_dict.get('type'):
                 file_contents.append(file_dict)
 
-        print('file_contents:\n')
-        print(file_contents)
+        if self.args.debug:
+            print('file_contents:\n')
+            print(file_contents)
 
         last_type = ''
         with open(output_file, 'w') as markdown_f:
