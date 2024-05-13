@@ -3,6 +3,10 @@
 """
 date_parse_diff.py
 Get the difference between two dates or today's date
+
+This script needs the module dateparser which must be installed, do:
+pip3 install dateparser
+
 Final version
 """
 
