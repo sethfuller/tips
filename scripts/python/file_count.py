@@ -1,4 +1,4 @@
-#!/bin/env python
+#!/usr/bin/env python3
 
 import os, os.path
 import sys
@@ -8,9 +8,9 @@ import argparse
 Count the files in a given directory
 Exit code:
 2 - Dir. does not exist or no permission
-0 - File count less than min (success)
-1 - File count greater than max
-9 - File count between min and max
+1 - File count less than min
+3 - File count greater than max
+0 - File count between min and max (success)
 """
 
 def count_files(args):
@@ -23,16 +23,16 @@ def count_files(args):
         sys.exit(2)
 
     if file_count < args.min_count:
-        sys.exit(0)
-
-    if file_count > args.max_count:
         sys.exit(1)
 
+    if file_count > args.max_count:
+        sys.exit(3)
+
     if file_count >= args.min_count and file_count <= args.max_count:
-        sys.exit(9)
+        sys.exit(0)
 
     print("I should not have got to this line. Something went wrong.")
-    sys.exit(3)
+    sys.exit(4)
     
 parser = argparse.ArgumentParser(description='Count files in a directory')
 parser.add_argument('--dir_path', '-d', help='directory path', required=True)
