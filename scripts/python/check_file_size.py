@@ -1,4 +1,4 @@
-#!/bin/env python
+#!/usr/bin/env python3
 ## check_file_size.py
 ## Combine functionality of check_file_size.sh and check_size.sh
 ##
