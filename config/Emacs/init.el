@@ -1,5 +1,6 @@
 ;;^ ## Author: Seth Fuller
 ;;^ ## Date: 17-June-2021
+;;^ ## Modified: 10-July-2024
 ;;
 ;; Convert a file with dos line endings <CR><LF> to unix <LF>
 ;; <Ctrl>-x RET f (defaults to utf-8-unix which is a good selection)
@@ -13,7 +14,7 @@
 ;; click + to add ruby
 ;; The /usr directory is hidden by default <Command>-<Shift>-. (period) unhides it.
 
-;; Show buffer name and file name
+;; Show buffer name and full path of file name
 (setq frame-title-format '("" "%b %f"))
 
 ;; Turn off Package cl is deprecated warning
@@ -76,8 +77,6 @@
 
 ;; automatically reload files when they change on disk
 ;; (global-auto-revert-mode 1)
-
-(setq markdown-command "/usr/local/bin/pandoc")
 
 ;; (selected-frame) instead of 'nil only sets for the initial frame
 (set-face-attribute `default 'nil :height 142)
@@ -176,7 +175,7 @@
  ;; If there is more than one, they won't work right.
  '(column-number-mode t)
  '(package-selected-packages
-   '(company company-jedi markdown-preview-mode use-package exec-path-from-shell pandoc-mode browse-at-remote magit emmet-mode dockerfile-mode smex yaml-mode yaml-tomato mkdown markdown-mode dired+ json-mode jss jst jtags jvm-mode kfg kite kite-mini java-imports java-snippets javadoc-lookup autodisass-java-bytecode flymake-gjshint import-js js2-closure js2-highlight-vars js2-mode show-css)))
+   '(impatient-mode org-anki anki-editor anki-editor-view vue-mode typescript-mode company company-jedi markdown-preview-mode use-package exec-path-from-shell pandoc-mode browse-at-remote magit emmet-mode dockerfile-mode smex yaml-mode yaml-tomato mkdown markdown-mode dired+ json-mode jss jst jtags jvm-mode kfg kite kite-mini java-imports java-snippets javadoc-lookup autodisass-java-bytecode import-js show-css)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -184,7 +183,8 @@
  ;; If there is more than one, they won't work right.
  )
 
-(add-to-list 'load-path "~/.emacs.d/lisp")
+(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+;; (add-to-list 'load-path "~/.emacs.d/lisp")
 
 (add-to-list 'load-path "~/.emacs.d/lisp/multi-web-mode")
 
@@ -198,7 +198,6 @@
 (exec-path-from-shell-copy-env "JAVA_HOME")
 (exec-path-from-shell-copy-env "M2_HOME")
 (exec-path-from-shell-copy-env "MVN_REPO")
-(exec-path-from-shell-copy-env "CM")
 
 ;; Function to toggle between opening and closing parens
 (defun match-paren (arg)
@@ -232,7 +231,7 @@
         ("\\.png\\'" "open")
         ("\\.gif\\'" "open")
         ))
-
+(setq diredp-hide-details-initially-flag nil)
 (require 'dired-sort-menu)
 (require 'dired-sort-menu+)
 (require 'dired+)
