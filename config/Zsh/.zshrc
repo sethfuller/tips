@@ -4,6 +4,10 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 alias java-11="export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version; echo $JAVA_HOME"
 alias java-21="export JAVA_HOME=`/usr/libexec/java_home -v 21`; java -version; echo $JAVA_HOME"
 export JAVA_HOME=$(/usr/libexec/java_home -v 11)
+path=($HOME/bin $HOME/bin/python /opt/homebrew/bin $path)
+
+# Use locally installed angular
+alias _ng='./node_modules/.bin/ng'
 
 # print 1 column
 alias pr1='print -C1'
@@ -71,6 +75,10 @@ if [ -f $(brew --prefix)/share/liquidprompt ]; then
   source $(brew --prefix)/share/liquidprompt
 fi
 
+# Setup a virtual environment
+# python -m venv /path/to/new/virtual/environment
+export PYTHONPATH=$(brew --prefix)/lib/python3.12/site-packages
+
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
     print -P "%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f"
@@ -110,12 +118,33 @@ fi
 
 source $HOME/.zshrc-functions
 
+# echo "Before brew completions"
 if type brew &>/dev/null; then
     FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
 
     autoload -Uz compinit
     compinit
 fi
-# Path to find function files
-fpath=($HOME/Src/Shell/zsh-completions/src $fpath)
+# echo "After brew completions"
 
+# Path to find function files
+fpath=($HOME/Src/Shell/Zsh/zsh-completions/src $fpath)
+export ZSH_COMPLETIONS="${HOME}/Src/Shell/Zsh/zsh-completions/src"
+
+echo "Before completions"
+source ${ZSH_COMPLETIONS}/_kubectl
+source ${ZSH_COMPLETIONS}/_angular
+
+source /Applications/Docker.app/Contents/Resources/etc/docker-compose.zsh-completion
+source /Applications/Docker.app/Contents/Resources/etc/docker.zsh-completion
+echo "After completions"
+
+
+# echo "Before Angular completions"
+# # Load Angular CLI autocompletion.
+# # source <(ng completion script)
+# echo "After Angular completions"
+
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh --no-use"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
