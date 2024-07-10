@@ -132,11 +132,15 @@ fpath=($HOME/Src/Shell/Zsh/zsh-completions/src $fpath)
 export ZSH_COMPLETIONS="${HOME}/Src/Shell/Zsh/zsh-completions/src"
 
 echo "Before completions"
-source ${ZSH_COMPLETIONS}/_kubectl
-source ${ZSH_COMPLETIONS}/_angular
+[ -f ${ZSH_COMPLETIONS}/_kubectl ] && source ${ZSH_COMPLETIONS}/_kubectl
+[ -f ${ZSH_COMPLETIONS}/_angular ] && source ${ZSH_COMPLETIONS}/_angular
 
-source /Applications/Docker.app/Contents/Resources/etc/docker-compose.zsh-completion
-source /Applications/Docker.app/Contents/Resources/etc/docker.zsh-completion
+export DOCKER_HOME=/Applications/Docker.app
+export DOCKER_ETC=${DOCKER_HOME}/Contents/Resources/etc
+
+[ -f ${DOCKER_ETC}/docker-compose.zsh-completion ] && source ${DOCKER_ETC}/docker-compose.zsh-completion
+[ -f ${DOCKER_ETC}/docker.zsh-completion ] && source ${DOCKER_ETC}/docker.zsh-completion
+
 echo "After completions"
 
 
