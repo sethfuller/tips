@@ -19,7 +19,7 @@ class Shortcuts:
 
     def init_args(self):
         # Process command line arguments
-        parser = argparse.ArgumentParser(description='Get mvn sources/javadocs')
+        parser = argparse.ArgumentParser(description='Show shortcuts for different apps')
         parser.add_argument('--log_level', '-l',
                             help='Set the log level (Default INFO)',
                            default='INFO')
@@ -46,20 +46,20 @@ class Shortcuts:
 
     def validate_args(self):
         print(self.args)
-        has_errors = False
+        self.has_errors = False
 
         if  not self.args.chrome and not self.args.mac and not self.args.intellij and not self.args.iterm:
             print('Must pick one of  --chrome or --mac or --intellij or --iterm')
-            has_errors = True
+            self.has_errors = True
 
-        if has_errors:
+        if self.has_errors:
             self.parser.print_help()
             print('Exiting')
             sys.exit(1)
 
     def display_shortcuts(self):
-        if self.args.mac:
-            self.print_shortcuts('Mac', shortcut_dict.shortcuts.get('mac'))
+
+        self.print_shortcuts('Mac', shortcut_dict.shortcuts.get('mac'))
 
         if self.args.chrome:
             self.print_shortcuts('Chrome', shortcut_dict.shortcuts.get('chrome'))
