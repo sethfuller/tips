@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
-## check_file_size.py
-## Combine functionality of check_file_size.sh and check_size.sh
-##
-## Author: Seth Fuller
-## Date: 12/23/2019
 
 from pathlib import Path
 import os
 import sys
+
+"""
+check_file_size.py
+Combine functionality of check_file_size.sh and check_size.sh
+
+Author: Seth Fuller
+Date: 12/23/2019
+"""
 
 usage = "Usage: " + sys.argv[0] + " directory [filename] size_threshold"
 directory = ''
