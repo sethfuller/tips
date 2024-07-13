@@ -1,6 +1,8 @@
 
 """
-Functions to display different colors to the terminal
+Functions to display different colors to the terminal.
+
+This script is not meant to be run by itself.
 """
 
 class OutColors:
