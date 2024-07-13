@@ -15,6 +15,14 @@ avoid cludder
 | [[https://sourabhbajaj.com/mac-setup][MacOS Setup Guide]]      | [[https://sourabhbajaj.com/mac-setup/][Mac Setup Tips]] |
 | [[https://cloudconvert.com/png-to-icns][PNG to Icons Converter]] |                |
 
+*** Ports
+**** List Commands Using Ports
+lsof
+
+**** List Command Using a Port
+
+lsof -i :8080
+
 **** Homebrew
 
 |                        |                  |
