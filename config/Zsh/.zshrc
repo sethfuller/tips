@@ -128,8 +128,8 @@ fi
 # echo "After brew completions"
 
 # Path to find function files
-fpath=($HOME/Src/Shell/Zsh/zsh-completions/src $fpath)
 export ZSH_COMPLETIONS="${HOME}/Src/Shell/Zsh/zsh-completions/src"
+fpath=($ZSH_COMPLETIONS $fpath)
 
 echo "Before completions"
 [ -f ${ZSH_COMPLETIONS}/_kubectl ] && source ${ZSH_COMPLETIONS}/_kubectl
