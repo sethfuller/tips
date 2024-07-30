@@ -4,9 +4,11 @@
 
 ### Bookmarks
 
-|                                    |   |
-|------------------------------------|---|
-| My Bookmarks - chrome://bookmarks/ |   |
+|                                    |                                                                |
+|------------------------------------|----------------------------------------------------------------|
+| My Bookmarks - chrome://bookmarks/ |                                                                |
+| Bookmarks file                     | ~//Library/Application Support/Google/Chrome/Default/Bookmarks |
+
 
 ### Chromium
 
