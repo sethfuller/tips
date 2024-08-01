@@ -8,6 +8,9 @@
 |----------------+------------------|
 | [[https://maven.apache.org/][Maven Web Site]] | [[https://mvnrepository.com/][Maven Repository]] |
 
+** Maven Master POM
+M2_HOME/libexec/lib/maven-model-builder-3.X.Y.jar:org/apache/maven/model/pom-4.0.0.xml
+
 ** Phases in Order of Execution
 	- validate: Not defined
 	- initialize: Not defined
