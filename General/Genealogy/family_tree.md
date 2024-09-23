@@ -17,7 +17,7 @@ https://www.geni.com/people/Timothy-Fuller/6000000016415049626
 ### Father: Timothy Fuller
 ### Mother: Mary Fuller
 
-## Timothy Fulle
+## Timothy Fuller
 https://www.geni.com/people/Timothy-Fuller/6000000014775001090
 
 #### Birth: circa 1740
