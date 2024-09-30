@@ -146,6 +146,18 @@ For another developer to change submodule to the branch:
     git submodule update --init
 #+END_SRC
 
+**** Merge fork from another repo
+#+BEGIN_SRC
+git remote add <shortname> git://github.com/<ownerName>/repo.git
+#+END_SRC
+
+After that's all set up, you should indeed be able to (github changed default branch from master to main, change as necessary)
+
+#+BEGIN_SRC
+git pull <shortname> master
+git push origin
+#+END_SRC
+
 [Top](*top)
 
 *** Merge Commit
