@@ -1,9 +1,14 @@
+# duplicates slow down searching
+#############################################
+builtin declare -aU fpath
+builtin declare -aU path
+builtin declare -aU manpath
+
+export GITHUB_USERNAME=sethfuller
+
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
-alias java-11="export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version; echo $JAVA_HOME"
-alias java-21="export JAVA_HOME=`/usr/libexec/java_home -v 21`; java -version; echo $JAVA_HOME"
-export JAVA_HOME=$(/usr/libexec/java_home -v 11)
 path=($HOME/bin $HOME/bin/python /opt/homebrew/bin $path)
 
 # Use locally installed angular
@@ -103,8 +108,6 @@ zinit light-mode for \
 ### End of Zinit's installer chunk
 zinit snippet OMZ::plugins/git/git.plugin.zsh
 
-typeset -U fpath
-typeset -U cdpath
 cdpath=(.. ~/Src /usr/local /usr/local/opt /opt/homebrew)
 
 if type brew &>/dev/null; then
@@ -152,3 +155,14 @@ echo "After completions"
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh --no-use"  # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+# https://sdkman.io/usage
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/sethfuller/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/sethfuller/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/sethfuller/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/sethfuller/google-cloud-sdk/completion.zsh.inc'; fi
