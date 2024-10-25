@@ -24,6 +24,7 @@ __pycache__/
 # Python
 *.py[cod]
 *$py.class
+venv
 
 # Mac
 .DS_Store
