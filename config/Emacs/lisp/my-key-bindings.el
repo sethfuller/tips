@@ -12,6 +12,7 @@
 (bind-key "s-s" 'discover-my-major)
 (bind-key "s-x" 'make-frame-command)
 (bind-key "s-C-l" 'goto-line)
+(bind-key "s-C-m" 'markdown-preview-mode)
 
 ;; Use <Command>-i or <Command>-<Left Mouse Click>
 ;; Saves the highlighted text without removing it from the buffer
